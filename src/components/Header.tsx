@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import { Menu, X, Phone } from "lucide-react";
+import { NAV_LINKS, SITE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -48,14 +48,23 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden p-2 text-foreground"
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* CTA + Mobile Toggle */}
+        <div className="flex items-center gap-2">
+          <a
+            href={`tel:${SITE.phone}`}
+            className="relative flex items-center gap-2 bg-black text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-black/90 transition-colors glass-shimmer"
+          >
+            <Phone size={15} />
+            <span className="hidden md:inline">{SITE.phone}</span>
+          </a>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="lg:hidden p-2 text-foreground"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
