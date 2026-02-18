@@ -17,7 +17,7 @@ export default function CTABar() {
         </a>
         <Link
           href="/contact"
-          className="flex items-center gap-2 bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold"
+          className="relative flex items-center gap-2 bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold glass-shimmer"
         >
           <Calendar size={16} />
           Book Inspection

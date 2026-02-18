@@ -158,7 +158,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={pending}
-          className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all w-full sm:w-auto justify-center disabled:opacity-60"
+          className="relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all w-full sm:w-auto justify-center disabled:opacity-60 glass-shimmer"
         >
           {pending ? "Sending..." : "Send Enquiry"}{" "}
           {!pending && <ArrowRight size={18} />}

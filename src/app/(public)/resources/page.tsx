@@ -89,7 +89,7 @@ export default async function ResourcesPage() {
                       href={report.file_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/90 transition-colors"
+                      className="relative inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/90 transition-colors glass-shimmer"
                     >
                       <Download size={14} /> Download
                     </a>
@@ -169,7 +169,7 @@ export default async function ResourcesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
+            className="relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all glass-shimmer"
           >
             Book Your Inspection <ArrowRight size={18} />
           </Link>

@@ -81,7 +81,7 @@ export default function Hero() {
           {/* Badge */}
           <div
             ref={badgeRef}
-            className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8 shadow-[inset_0_1px_2px_rgba(0,0,0,0.06)] border border-black/[0.08]"
           >
             <Shield size={14} className="text-black/50" />
             <span className="text-xs font-medium text-black/50">
@@ -92,12 +92,12 @@ export default function Hero() {
           {/* Headline */}
           <h1
             ref={headlineRef}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[1.1] mb-6"
           >
             Inspect to{" "}
             <span className="text-white">Protect</span>
             <br />
-            <span className="text-muted text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium">
+            <span className="text-muted text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-light">
               Clear Reporting. Confident Property Decisions.
             </span>
           </h1>
@@ -119,7 +119,7 @@ export default function Hero() {
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all hover:scale-[1.02]"
+              className="relative inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all hover:scale-[1.02] glass-shimmer"
             >
               Book Your Inspection
               <ArrowRight size={18} />

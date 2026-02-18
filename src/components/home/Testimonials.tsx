@@ -45,7 +45,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="bg-surface border border-border rounded-2xl p-8"
+            className="glass-card rounded-2xl p-8 transition-transform hover:scale-[1.01]"
           >
             {/* Stars */}
             <div className="flex gap-0.5 mb-4">

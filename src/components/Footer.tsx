@@ -4,7 +4,7 @@ import { SITE, NAV_LINKS, SERVICES } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-black/[0.015] border-t border-glass-border">
+    <footer className="glass-card backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}

@@ -59,7 +59,7 @@ export default function HowItWorks() {
               {i + 1}
             </div>
 
-            <div className="glass-card glass-shimmer rounded-2xl overflow-hidden h-full">
+            <div className="glass-card glass-shimmer rounded-2xl overflow-hidden h-full transition-transform hover:scale-[1.01]">
               <div className="relative h-36 w-full">
                 <Image
                   src={step.image}

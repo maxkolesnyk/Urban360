@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-xl border-b border-glass-border">
+    <header className="fixed top-3 left-4 right-4 z-50 rounded-2xl glass-card bg-background/70 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
@@ -52,7 +52,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href={`tel:${SITE.phone}`}
-            className="flex items-center gap-2 bg-black text-white p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-black/90 transition-colors"
+            className="relative flex items-center gap-2 bg-black text-white p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-black/90 transition-colors glass-shimmer"
           >
             <Phone size={16} />
             <span className="hidden md:inline">{SITE.phone}</span>
@@ -95,7 +95,7 @@ export default function Header() {
               ))}
               <a
                 href={`tel:${SITE.phone}`}
-                className="mt-3 flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-lg text-sm font-semibold"
+                className="relative mt-3 flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-lg text-sm font-semibold glass-shimmer"
               >
                 <Phone size={16} />
                 {SITE.phone}

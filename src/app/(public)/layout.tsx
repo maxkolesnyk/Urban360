@@ -10,7 +10,7 @@ export default function PublicLayout({
   return (
     <>
       <Header />
-      <main className="pt-[73px] pb-[72px] lg:pb-0">{children}</main>
+      <main className="pt-[85px] pb-[72px] lg:pb-0">{children}</main>
       <Footer />
       <CTABar />
     </>

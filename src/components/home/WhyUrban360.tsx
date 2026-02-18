@@ -77,7 +77,7 @@ export default function WhyUrban360() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="flex gap-4 p-6 rounded-xl glass-card transition-all"
+            className="flex gap-4 p-6 rounded-xl glass-card transition-all hover:scale-[1.01]"
           >
             <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-black/50 shrink-0">
               {item.icon}
