@@ -5,8 +5,8 @@ export const SITE = {
   headline: "Melbourne's Expert Building Inspections — Beyond the Checklist",
   description:
     "Urban 360 provides expert-led, technically rigorous building inspection services. Clear reporting, real-world risk assessment, and confident property decisions across Melbourne and Victoria.",
-  phone: "1300 000 000",
-  email: "info@urban360.com.au",
+  phone: "0421 588 588",
+  email: "inspect@urban360.com.au",
   address: "Melbourne, VIC",
   license: "Licensed Building Surveyor — Victoria",
   founder: "Mark Rozin",
