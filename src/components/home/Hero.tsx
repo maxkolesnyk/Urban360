@@ -66,7 +66,7 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover opacity-15"
+        className="object-cover opacity-25"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />

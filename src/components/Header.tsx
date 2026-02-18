@@ -20,7 +20,7 @@ export default function Header() {
           <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:scale-105">
             U3
           </div>
-          <div className="hidden sm:block">
+          <div>
             <span className="text-lg font-bold tracking-tight text-foreground">
               Urban <span className="text-primary">360</span>
             </span>
