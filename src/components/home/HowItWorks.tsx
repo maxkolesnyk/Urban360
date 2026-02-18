@@ -65,7 +65,7 @@ export default function HowItWorks() {
                   src={step.image}
                   alt={step.title}
                   fill
-                  className="object-cover grayscale opacity-60"
+                  className="object-cover opacity-60"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--glass)]" />
