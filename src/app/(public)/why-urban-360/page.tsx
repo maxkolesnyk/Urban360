@@ -117,12 +117,12 @@ export default function WhyUrban360Page() {
       {/* Hero */}
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Why Choose Urban 360
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Technical Clarity,{" "}
-            <span className="text-white">Not Checklists</span>
+            <span className="text-muted">Not Checklists</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Urban 360 is not a checklist inspector — it&apos;s your expert
@@ -142,7 +142,7 @@ export default function WhyUrban360Page() {
               key={pillar.title}
               className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
             >
-              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-white mb-5">
+              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground mb-5">
                 {pillar.icon}
               </div>
               <h3 className="text-lg font-semibold mb-3">{pillar.title}</h3>
@@ -157,7 +157,7 @@ export default function WhyUrban360Page() {
       {/* Comparison Table */}
       <Section>
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             How We Compare
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -172,7 +172,7 @@ export default function WhyUrban360Page() {
                 <th className="text-left py-4 px-4 text-muted font-medium">
                   Feature
                 </th>
-                <th className="py-4 px-4 text-white font-semibold">
+                <th className="py-4 px-4 text-foreground font-semibold">
                   Urban 360
                 </th>
                 <th className="py-4 px-4 text-muted font-medium">
@@ -189,23 +189,23 @@ export default function WhyUrban360Page() {
                   <td className="py-4 px-4 text-foreground">{row.feature}</td>
                   <td className="py-4 px-4 text-center">
                     {row.urban360 ? (
-                      <Check size={18} className="text-white mx-auto" />
+                      <Check size={18} className="text-foreground mx-auto" />
                     ) : (
-                      <X size={18} className="text-muted/40 mx-auto" />
+                      <X size={18} className="text-muted mx-auto" />
                     )}
                   </td>
                   <td className="py-4 px-4 text-center">
                     {row.marketplace ? (
                       <Check size={18} className="text-muted mx-auto" />
                     ) : (
-                      <X size={18} className="text-muted/40 mx-auto" />
+                      <X size={18} className="text-muted mx-auto" />
                     )}
                   </td>
                   <td className="py-4 px-4 text-center">
                     {row.franchise ? (
                       <Check size={18} className="text-muted mx-auto" />
                     ) : (
-                      <X size={18} className="text-muted/40 mx-auto" />
+                      <X size={18} className="text-muted mx-auto" />
                     )}
                   </td>
                 </tr>

@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-medium text-white bg-black/[0.03] px-2.5 py-0.5 rounded-full">
+            <span className="text-xs font-medium text-foreground bg-black/[0.05] px-2.5 py-0.5 rounded-full">
               {post.category}
             </span>
             <span className="flex items-center gap-1 text-sm text-muted">
@@ -124,7 +124,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               a: ({ href, children }) => (
                 <a
                   href={href}
-                  className="text-white hover:underline"
+                  className="text-foreground font-medium hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

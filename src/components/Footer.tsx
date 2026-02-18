@@ -15,7 +15,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-lg font-bold tracking-tight text-foreground">
-                  Urban <span className="text-white">360</span>
+                  Urban <span className="text-muted">360</span>
                 </span>
                 <p className="text-xs text-muted leading-none">
                   Building Inspections
@@ -77,7 +77,7 @@ export default function Footer() {
                   href={`tel:${SITE.phone}`}
                   className="flex items-center gap-3 text-sm text-muted hover:text-black transition-colors"
                 >
-                  <Phone size={16} className="text-black/30 shrink-0" />
+                  <Phone size={16} className="text-black/50 shrink-0" />
                   {SITE.phone}
                 </a>
               </li>
@@ -86,13 +86,13 @@ export default function Footer() {
                   href={`mailto:${SITE.email}`}
                   className="flex items-center gap-3 text-sm text-muted hover:text-black transition-colors"
                 >
-                  <Mail size={16} className="text-black/30 shrink-0" />
+                  <Mail size={16} className="text-black/50 shrink-0" />
                   {SITE.email}
                 </a>
               </li>
               <li>
                 <div className="flex items-center gap-3 text-sm text-muted">
-                  <MapPin size={16} className="text-black/30 shrink-0" />
+                  <MapPin size={16} className="text-black/50 shrink-0" />
                   {SITE.address}
                 </div>
               </li>

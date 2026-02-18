@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: PageProps) {
         </Link>
 
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Our Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -87,7 +87,7 @@ export default async function ServicePage({ params }: PageProps) {
 
         {/* Ideal For badge row */}
         <div className="mt-12 flex items-start gap-4 p-5 bg-surface border border-border rounded-xl">
-          <Users size={20} className="text-white shrink-0 mt-0.5" />
+          <Users size={20} className="text-foreground shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-semibold mb-2">Ideal For</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: PageProps) {
                   key={item}
                   className="text-muted flex items-start gap-2"
                 >
-                  <span className="text-white mt-1">&#8250;</span> {item}
+                  <span className="text-foreground mt-1">&#8250;</span> {item}
                 </li>
               ))}
             </ul>
@@ -120,7 +120,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-2.5">
                   <Check
                     size={16}
-                    className="text-white mt-0.5 shrink-0"
+                    className="text-foreground mt-0.5 shrink-0"
                   />
                   <span className="text-muted">{item}</span>
                 </li>
@@ -143,7 +143,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={point}
                 className="flex items-start gap-3 bg-surface border border-border rounded-xl p-4"
               >
-                <Check size={18} className="text-white mt-0.5 shrink-0" />
+                <Check size={18} className="text-foreground mt-0.5 shrink-0" />
                 <span className="text-muted">{point}</span>
               </div>
             ))}
@@ -167,7 +167,7 @@ export default async function ServicePage({ params }: PageProps) {
                 className="flex items-start gap-3 p-4 bg-background border border-border rounded-xl"
               >
                 <div className="w-6 h-6 rounded-full bg-black/[0.03] flex items-center justify-center shrink-0 mt-0.5">
-                  <Check size={14} className="text-white" />
+                  <Check size={14} className="text-foreground" />
                 </div>
                 <span className="text-foreground">{point}</span>
               </div>
@@ -243,7 +243,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-3">
                   <Check
                     size={18}
-                    className="text-white mt-0.5 shrink-0"
+                    className="text-foreground mt-0.5 shrink-0"
                   />
                   <span className="text-foreground">{item}</span>
                 </li>
@@ -258,7 +258,7 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <Clock size={20} className="text-white" />
+              <Clock size={20} className="text-foreground" />
               <h3 className="font-semibold">Report Turnaround</h3>
             </div>
             <p className="text-muted leading-relaxed">
@@ -267,7 +267,7 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <FileText size={20} className="text-white" />
+              <FileText size={20} className="text-foreground" />
               <h3 className="font-semibold">Sample Report</h3>
             </div>
             <p className="text-muted leading-relaxed mb-4">
@@ -275,7 +275,7 @@ export default async function ServicePage({ params }: PageProps) {
             </p>
             <Link
               href="/resources"
-              className="inline-flex items-center gap-1 text-sm text-white font-medium hover:underline"
+              className="inline-flex items-center gap-1 text-sm text-foreground font-medium hover:underline"
             >
               View Sample Reports <ArrowRight size={14} />
             </Link>
@@ -326,7 +326,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <p className="text-muted leading-relaxed mb-3">
                   {service.shortDescription}
                 </p>
-                <span className="inline-flex items-center gap-1 text-sm text-white font-medium">
+                <span className="inline-flex items-center gap-1 text-sm text-foreground font-medium">
                   Learn more <ArrowRight size={14} />
                 </span>
               </Link>
@@ -363,7 +363,7 @@ export default async function ServicePage({ params }: PageProps) {
               </a>
               <Link
                 href="/resources"
-                className="inline-flex items-center gap-2 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-black/[0.02] transition-all"
+                className="inline-flex items-center gap-2 text-muted px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.02] transition-all"
               >
                 <FileText size={18} />
                 Download Sample Report

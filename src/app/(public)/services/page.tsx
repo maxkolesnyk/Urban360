@@ -34,7 +34,7 @@ export default function ServicesPage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+            <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
               Our Services
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -67,7 +67,7 @@ export default function ServicesPage() {
               className="group bg-background border border-border rounded-2xl p-8 hover:border-black/10 transition-all hover:shadow-[0_0_30px_rgba(0,0,0,0.03)]"
             >
               <div className="flex items-start gap-5">
-                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-white shrink-0 group-hover:bg-black/5 transition-colors">
+                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground shrink-0 group-hover:bg-black/5 transition-colors">
                   {ICON_MAP[service.icon]}
                 </div>
                 <div>
@@ -77,7 +77,7 @@ export default function ServicesPage() {
                   <p className="text-muted leading-relaxed mb-4">
                     {service.shortDescription}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm text-white font-medium">
+                  <span className="inline-flex items-center gap-1 text-sm text-foreground font-medium">
                     Learn more <ArrowRight size={14} />
                   </span>
                 </div>

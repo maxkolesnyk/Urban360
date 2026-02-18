@@ -83,8 +83,8 @@ export default function Hero() {
             ref={badgeRef}
             className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8 shadow-[inset_0_1px_2px_rgba(0,0,0,0.06)] border border-black/[0.08]"
           >
-            <Shield size={14} className="text-black/50" />
-            <span className="text-xs font-medium text-black/50">
+            <Shield size={14} className="text-black/60" />
+            <span className="text-xs font-medium text-black/60">
               AS 4349.1 Compliant &middot; Licensed Victorian Building Surveyor
             </span>
           </div>
@@ -95,7 +95,7 @@ export default function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[1.1] mb-6"
           >
             Inspect to{" "}
-            <span className="text-white">Protect</span>
+            <span className="text-muted">Protect</span>
             <br />
             <span className="text-muted text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-light">
               Clear Reporting. Confident Property Decisions.
@@ -108,7 +108,7 @@ export default function Hero() {
               Melbourne&apos;s expert building inspections — beyond the
               checklist. Technical clarity, risk-focused reporting, and decisive
               advice from Senior Building Consultant{" "}
-              <span className="text-white font-medium">
+              <span className="text-foreground font-medium">
                 {SITE.founder}
               </span>
               .
@@ -132,7 +132,7 @@ export default function Hero() {
             </Link>
             <a
               href={`tel:${SITE.phone}`}
-              className="inline-flex items-center justify-center gap-2 text-black/50 px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
+              className="inline-flex items-center justify-center gap-2 text-muted px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
             >
               <Phone size={18} />
               Call Us Now

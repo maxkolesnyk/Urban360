@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { Menu, X } from "lucide-react";
+import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
           </div>
           <div>
             <span className="text-lg font-bold tracking-tight text-foreground">
-              Urban <span className="text-white">360</span>
+              Urban <span className="text-muted">360</span>
             </span>
             <p className="text-xs text-muted leading-none">
               Building Inspections
@@ -48,23 +48,14 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* CTA + Mobile Toggle */}
-        <div className="flex items-center gap-3">
-          <a
-            href={`tel:${SITE.phone}`}
-            className="relative flex items-center gap-2 bg-black text-white p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-black/90 transition-colors glass-shimmer"
-          >
-            <Phone size={16} />
-            <span className="hidden md:inline">{SITE.phone}</span>
-          </a>
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-foreground"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        {/* Mobile Toggle */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden p-2 text-foreground"
+          aria-label="Toggle menu"
+        >
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Nav */}
@@ -93,13 +84,6 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={`tel:${SITE.phone}`}
-                className="relative mt-3 flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-lg text-sm font-semibold glass-shimmer"
-              >
-                <Phone size={16} />
-                {SITE.phone}
-              </a>
             </nav>
           </motion.div>
         )}

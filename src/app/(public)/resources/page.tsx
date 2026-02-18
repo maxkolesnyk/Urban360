@@ -28,12 +28,12 @@ export default async function ResourcesPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Resources
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Sample Reports &amp;{" "}
-            <span className="text-white">Property Guides</span>
+            <span className="text-muted">Property Guides</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             See the quality and detail of our reporting firsthand. Download
@@ -67,7 +67,7 @@ export default async function ResourcesPage() {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <FileText size={48} className="text-white/30" />
+                    <FileText size={48} className="text-muted" />
                   )}
                 </div>
                 <h3 className="font-semibold mb-2">{report.title}</h3>
@@ -123,13 +123,13 @@ export default async function ResourcesPage() {
                 key={guide.id}
                 className="flex items-start gap-5 bg-surface border border-border rounded-2xl p-6 hover:border-black/8 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-black/[0.03] flex items-center justify-center text-white shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
                   <BookOpen size={24} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-semibold">{guide.title}</h3>
-                    <span className="text-xs font-medium text-white bg-black/[0.03] px-2 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-foreground bg-black/[0.05] px-2 py-0.5 rounded-full">
                       {guide.resource_type}
                     </span>
                   </div>
@@ -141,7 +141,7 @@ export default async function ResourcesPage() {
                       href={guide.file_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-white font-medium hover:underline"
+                      className="inline-flex items-center gap-1 text-sm text-foreground font-medium hover:underline"
                     >
                       <Download size={14} /> Download Free
                     </a>

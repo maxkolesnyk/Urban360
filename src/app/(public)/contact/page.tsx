@@ -15,12 +15,12 @@ export default function ContactPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Contact Us
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Book Your{" "}
-            <span className="text-white">Inspection</span>
+            <span className="text-muted">Inspection</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Get in touch with {SITE.founder} to discuss your inspection needs
@@ -47,12 +47,12 @@ export default function ContactPage() {
                 href={`tel:${SITE.phone}`}
                 className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
                   <Phone size={20} />
                 </div>
                 <div>
                   <p className="text-sm font-medium mb-1">Call Us</p>
-                  <p className="text-white font-semibold">{SITE.phone}</p>
+                  <p className="text-foreground font-semibold">{SITE.phone}</p>
                 </div>
               </a>
 
@@ -60,17 +60,17 @@ export default function ContactPage() {
                 href={`mailto:${SITE.email}`}
                 className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
                   <p className="text-sm font-medium mb-1">Email</p>
-                  <p className="text-white font-semibold">{SITE.email}</p>
+                  <p className="text-foreground font-semibold">{SITE.email}</p>
                 </div>
               </a>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
                   <Clock size={20} />
                 </div>
                 <div>

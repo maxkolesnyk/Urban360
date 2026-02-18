@@ -27,7 +27,7 @@ export default function ServicesSnapshot() {
   return (
     <Section dark>
       <div className="text-center mb-14">
-        <p className="text-sm font-semibold text-black/40 uppercase tracking-widest mb-3">
+        <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Our Services
         </p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -52,7 +52,7 @@ export default function ServicesSnapshot() {
               href={`/services/${service.slug}`}
               className="group block h-full glass-card glass-shimmer rounded-2xl p-8 transition-all hover:scale-[1.01]"
             >
-              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-black/50 mb-5 group-hover:bg-black/5 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-black/60 mb-5 group-hover:bg-black/5 transition-colors">
                 {ICON_MAP[service.icon]}
               </div>
               <h3 className="text-lg font-semibold mb-3 group-hover:text-black transition-colors">
@@ -61,7 +61,7 @@ export default function ServicesSnapshot() {
               <p className="text-muted leading-relaxed mb-4">
                 {service.shortDescription}
               </p>
-              <span className="inline-flex items-center gap-1 text-sm text-black/40 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="inline-flex items-center gap-1 text-sm text-muted font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                 Learn more <ArrowRight size={14} />
               </span>
             </Link>
@@ -72,7 +72,7 @@ export default function ServicesSnapshot() {
       <div className="text-center mt-10">
         <Link
           href="/services"
-          className="inline-flex items-center gap-2 text-black/50 font-semibold hover:text-black transition-colors"
+          className="inline-flex items-center gap-2 text-muted font-semibold hover:text-black transition-colors"
         >
           View All Services <ArrowRight size={16} />
         </Link>

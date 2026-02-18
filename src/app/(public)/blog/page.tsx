@@ -26,12 +26,12 @@ export default async function BlogPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Blog & Insights
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Property Knowledge,{" "}
-            <span className="text-white">Expert Insight</span>
+            <span className="text-muted">Expert Insight</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Educational content, industry insights, and practical guidance from
@@ -62,7 +62,7 @@ export default async function BlogPage() {
 
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-medium text-white bg-black/[0.03] px-2.5 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-foreground bg-black/[0.05] px-2.5 py-0.5 rounded-full">
                       {post.category}
                     </span>
                   </div>

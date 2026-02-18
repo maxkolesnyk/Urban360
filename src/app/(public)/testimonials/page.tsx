@@ -15,12 +15,12 @@ export default function TestimonialsPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Google Reviews
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             {REVIEW_STATS.total} Five-Star Reviews on{" "}
-            <span className="text-white">Google</span>
+            <span className="text-muted">Google</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Real, verified reviews from Melbourne property owners. Every review
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
         {/* Stats bar */}
         <div className="mt-10 flex flex-wrap gap-6 items-center">
           <div className="flex items-center gap-2">
-            <span className="text-4xl font-bold text-white">
+            <span className="text-4xl font-bold text-foreground">
               {REVIEW_STATS.average}
             </span>
             <div>

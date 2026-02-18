@@ -39,7 +39,7 @@ export default function CTASection() {
             </a>
             <Link
               href="/resources"
-              className="inline-flex items-center gap-2 text-black/40 px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
+              className="inline-flex items-center gap-2 text-muted px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
             >
               <FileText size={18} />
               Download Sample Report

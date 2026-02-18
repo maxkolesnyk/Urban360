@@ -10,7 +10,7 @@ export default function CTABar() {
       <div className="flex items-center justify-around gap-2">
         <a
           href={`tel:${SITE.phone}`}
-          className="flex flex-col items-center gap-1 text-black/40"
+          className="flex flex-col items-center gap-1 text-muted"
         >
           <Phone size={20} />
           <span className="text-[10px] font-medium">Call Now</span>
@@ -24,7 +24,7 @@ export default function CTABar() {
         </Link>
         <Link
           href="/resources"
-          className="flex flex-col items-center gap-1 text-black/40"
+          className="flex flex-col items-center gap-1 text-muted"
         >
           <FileText size={20} />
           <span className="text-[10px] font-medium">Reports</span>

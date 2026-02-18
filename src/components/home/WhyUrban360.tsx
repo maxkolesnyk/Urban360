@@ -56,7 +56,7 @@ export default function WhyUrban360() {
   return (
     <Section dark>
       <div className="text-center mb-14">
-        <p className="text-sm font-semibold text-black/40 uppercase tracking-widest mb-3">
+        <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Why Choose Us
         </p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -79,7 +79,7 @@ export default function WhyUrban360() {
             transition={{ duration: 0.4, delay: i * 0.08 }}
             className="flex gap-4 p-6 rounded-xl glass-card transition-all hover:scale-[1.01]"
           >
-            <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-black/50 shrink-0">
+            <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-black/60 shrink-0">
               {item.icon}
             </div>
             <div>
@@ -95,7 +95,7 @@ export default function WhyUrban360() {
       <div className="text-center mt-10">
         <Link
           href="/why-urban-360"
-          className="inline-flex items-center gap-2 text-black/50 font-semibold hover:text-black transition-colors"
+          className="inline-flex items-center gap-2 text-muted font-semibold hover:text-black transition-colors"
         >
           Learn More About Our Approach <ArrowRight size={16} />
         </Link>

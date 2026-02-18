@@ -97,12 +97,12 @@ export default function FAQPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             FAQ
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Frequently Asked{" "}
-            <span className="text-white">Questions</span>
+            <span className="text-muted">Questions</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Everything you need to know about our building inspection services.
