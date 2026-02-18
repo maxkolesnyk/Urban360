@@ -29,12 +29,12 @@ export default function NewsletterForm() {
           name="email"
           required
           placeholder="Enter your email"
-          className="flex-1 bg-surface border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors"
+          className="flex-1 bg-surface border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-white/20 transition-colors"
         />
         <button
           type="submit"
           disabled={pending}
-          className="bg-primary text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-colors shrink-0 disabled:opacity-60"
+          className="bg-white text-black px-6 py-3 rounded-xl text-sm font-semibold hover:bg-white/90 transition-colors shrink-0 disabled:opacity-60"
         >
           {pending ? "..." : "Subscribe"}
         </button>

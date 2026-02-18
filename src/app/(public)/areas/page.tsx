@@ -130,12 +130,12 @@ export default function AreasPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Service Areas
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Serving All of{" "}
-            <span className="text-primary">Melbourne &amp; Victoria</span>
+            <span className="text-white">Melbourne &amp; Victoria</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Urban 360 provides building inspection services across metropolitan
@@ -150,10 +150,10 @@ export default function AreasPage() {
           {MELBOURNE_AREAS.map((area) => (
             <div
               key={area}
-              className="bg-background border border-border rounded-2xl p-6 hover:border-primary/30 transition-colors"
+              className="bg-background border border-border rounded-2xl p-6 hover:border-white/10 transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
-                <MapPin size={20} className="text-primary" />
+                <MapPin size={20} className="text-white" />
                 <h3 className="text-lg font-semibold">{area}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -182,7 +182,7 @@ export default function AreasPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
           >
             Get in Touch <ArrowRight size={18} />
           </Link>

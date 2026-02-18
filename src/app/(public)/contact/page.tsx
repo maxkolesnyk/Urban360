@@ -15,12 +15,12 @@ export default function ContactPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Contact Us
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Book Your{" "}
-            <span className="text-primary">Inspection</span>
+            <span className="text-white">Inspection</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Get in touch with {SITE.founder} to discuss your inspection needs
@@ -45,32 +45,32 @@ export default function ContactPage() {
             <div className="space-y-6">
               <a
                 href={`tel:${SITE.phone}`}
-                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
+                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-white/10 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
                   <Phone size={20} />
                 </div>
                 <div>
                   <p className="text-sm font-medium mb-1">Call Us</p>
-                  <p className="text-primary font-semibold">{SITE.phone}</p>
+                  <p className="text-white font-semibold">{SITE.phone}</p>
                 </div>
               </a>
 
               <a
                 href={`mailto:${SITE.email}`}
-                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-primary/30 transition-colors"
+                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-white/10 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
                   <p className="text-sm font-medium mb-1">Email</p>
-                  <p className="text-primary font-semibold">{SITE.email}</p>
+                  <p className="text-white font-semibold">{SITE.email}</p>
                 </div>
               </a>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
                   <Clock size={20} />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
             </div>
 
             {/* Trust badge */}
-            <div className="mt-8 p-5 bg-primary/5 border border-primary/20 rounded-xl">
+            <div className="mt-8 p-5 bg-white/[0.03] border border-white/8 rounded-xl">
               <p className="text-sm font-medium mb-2">
                 Why Book With Urban 360?
               </p>

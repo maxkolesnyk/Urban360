@@ -15,12 +15,12 @@ export default function TestimonialsPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Google Reviews
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             {REVIEW_STATS.total} Five-Star Reviews on{" "}
-            <span className="text-primary">Google</span>
+            <span className="text-white">Google</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Real, verified reviews from Melbourne property owners. Every review
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
         {/* Stats bar */}
         <div className="mt-10 flex flex-wrap gap-6 items-center">
           <div className="flex items-center gap-2">
-            <span className="text-4xl font-bold text-primary">
+            <span className="text-4xl font-bold text-white">
               {REVIEW_STATS.average}
             </span>
             <div>
@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
           {GOOGLE_REVIEWS.map((review, i) => (
             <div
               key={i}
-              className="bg-background border border-border rounded-2xl p-7 hover:border-primary/20 transition-colors flex flex-col"
+              className="bg-background border border-border rounded-2xl p-7 hover:border-white/8 transition-colors flex flex-col"
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
@@ -130,7 +130,7 @@ export default function TestimonialsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all"
+              className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
             >
               Book Your Inspection <ArrowRight size={18} />
             </Link>

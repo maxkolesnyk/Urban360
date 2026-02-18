@@ -52,13 +52,13 @@ export default async function ServicePage({ params }: PageProps) {
       <Section>
         <Link
           href="/services"
-          className="inline-flex items-center gap-1 text-sm text-muted hover:text-primary transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-muted hover:text-white transition-colors mb-8"
         >
           <ArrowLeft size={14} /> All Services
         </Link>
 
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Our Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -72,7 +72,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-white px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-white text-black px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
             >
               Book This Inspection <ArrowRight size={16} />
             </Link>
@@ -87,7 +87,7 @@ export default async function ServicePage({ params }: PageProps) {
 
         {/* Ideal For badge row */}
         <div className="mt-12 flex items-start gap-4 p-5 bg-surface border border-border rounded-xl">
-          <Users size={20} className="text-primary shrink-0 mt-0.5" />
+          <Users size={20} className="text-white shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-semibold mb-2">Ideal For</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: PageProps) {
                   key={item}
                   className="text-muted flex items-start gap-2"
                 >
-                  <span className="text-primary mt-1">&#8250;</span> {item}
+                  <span className="text-white mt-1">&#8250;</span> {item}
                 </li>
               ))}
             </ul>
@@ -120,7 +120,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-2.5">
                   <Check
                     size={16}
-                    className="text-primary mt-0.5 shrink-0"
+                    className="text-white mt-0.5 shrink-0"
                   />
                   <span className="text-muted">{item}</span>
                 </li>
@@ -143,7 +143,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={point}
                 className="flex items-start gap-3 bg-surface border border-border rounded-xl p-4"
               >
-                <Check size={18} className="text-primary mt-0.5 shrink-0" />
+                <Check size={18} className="text-white mt-0.5 shrink-0" />
                 <span className="text-muted">{point}</span>
               </div>
             ))}
@@ -166,8 +166,8 @@ export default async function ServicePage({ params }: PageProps) {
                 key={point}
                 className="flex items-start gap-3 p-4 bg-background border border-border rounded-xl"
               >
-                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-                  <Check size={14} className="text-primary" />
+                <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check size={14} className="text-white" />
                 </div>
                 <span className="text-foreground">{point}</span>
               </div>
@@ -220,7 +220,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={step.step}
                 className="relative bg-background border border-border rounded-xl p-6"
               >
-                <div className="absolute -top-3 left-5 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">
+                <div className="absolute -top-3 left-5 w-7 h-7 rounded-full bg-white text-black text-xs font-bold flex items-center justify-center">
                   {i + 1}
                 </div>
                 <h3 className="font-semibold mb-2 mt-1">{step.step}</h3>
@@ -243,7 +243,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-3">
                   <Check
                     size={18}
-                    className="text-primary mt-0.5 shrink-0"
+                    className="text-white mt-0.5 shrink-0"
                   />
                   <span className="text-foreground">{item}</span>
                 </li>
@@ -258,7 +258,7 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <Clock size={20} className="text-primary" />
+              <Clock size={20} className="text-white" />
               <h3 className="font-semibold">Report Turnaround</h3>
             </div>
             <p className="text-muted leading-relaxed">
@@ -267,7 +267,7 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <FileText size={20} className="text-primary" />
+              <FileText size={20} className="text-white" />
               <h3 className="font-semibold">Sample Report</h3>
             </div>
             <p className="text-muted leading-relaxed mb-4">
@@ -275,7 +275,7 @@ export default async function ServicePage({ params }: PageProps) {
             </p>
             <Link
               href="/resources"
-              className="inline-flex items-center gap-1 text-sm text-primary font-medium hover:underline"
+              className="inline-flex items-center gap-1 text-sm text-white font-medium hover:underline"
             >
               View Sample Reports <ArrowRight size={14} />
             </Link>
@@ -318,15 +318,15 @@ export default async function ServicePage({ params }: PageProps) {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group bg-background border border-border rounded-xl p-6 hover:border-primary/40 transition-all"
+                className="group bg-background border border-border rounded-xl p-6 hover:border-white/15 transition-all"
               >
-                <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-semibold mb-2 group-hover:text-white transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-muted leading-relaxed mb-3">
                   {service.shortDescription}
                 </p>
-                <span className="inline-flex items-center gap-1 text-sm text-primary font-medium">
+                <span className="inline-flex items-center gap-1 text-sm text-white font-medium">
                   Learn more <ArrowRight size={14} />
                 </span>
               </Link>
@@ -337,8 +337,8 @@ export default async function ServicePage({ params }: PageProps) {
 
       {/* ── CTA ── */}
       <Section>
-        <div className="relative bg-gradient-to-br from-primary/10 via-surface to-accent/5 border border-primary/20 rounded-3xl p-10 md:p-16 text-center overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/15 rounded-full blur-[100px]" />
+        <div className="relative bg-gradient-to-br from-primary/10 via-surface to-accent/5 border border-white/8 rounded-3xl p-10 md:p-16 text-center overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-white/8 rounded-full blur-[100px]" />
           <div className="relative">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Ready to Book This Inspection?
@@ -350,7 +350,7 @@ export default async function ServicePage({ params }: PageProps) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all hover:scale-[1.02]"
               >
                 Book Your Inspection <ArrowRight size={18} />
               </Link>
@@ -363,7 +363,7 @@ export default async function ServicePage({ params }: PageProps) {
               </a>
               <Link
                 href="/resources"
-                className="inline-flex items-center gap-2 text-primary px-8 py-4 rounded-xl text-base font-medium hover:bg-primary/5 transition-all"
+                className="inline-flex items-center gap-2 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-white/[0.03] transition-all"
               >
                 <FileText size={18} />
                 Download Sample Report

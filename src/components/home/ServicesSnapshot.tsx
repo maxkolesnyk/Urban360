@@ -27,7 +27,7 @@ export default function ServicesSnapshot() {
   return (
     <Section dark>
       <div className="text-center mb-14">
-        <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+        <p className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-3">
           Our Services
         </p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -50,18 +50,18 @@ export default function ServicesSnapshot() {
           >
             <Link
               href={`/services/${service.slug}`}
-              className="group block h-full bg-background border border-border rounded-2xl p-8 hover:border-primary/40 transition-all hover:shadow-[0_0_30px_rgba(0,194,255,0.08)]"
+              className="group block h-full glass-card glass-shimmer rounded-2xl p-8 transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.04)]"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5 group-hover:bg-primary/20 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white/70 mb-5 group-hover:bg-white/10 transition-colors">
                 {ICON_MAP[service.icon]}
               </div>
-              <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-lg font-semibold mb-3 group-hover:text-white transition-colors">
                 {service.title}
               </h3>
               <p className="text-muted leading-relaxed mb-4">
                 {service.shortDescription}
               </p>
-              <span className="inline-flex items-center gap-1 text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="inline-flex items-center gap-1 text-sm text-white/50 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                 Learn more <ArrowRight size={14} />
               </span>
             </Link>
@@ -72,7 +72,7 @@ export default function ServicesSnapshot() {
       <div className="text-center mt-10">
         <Link
           href="/services"
-          className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+          className="inline-flex items-center gap-2 text-white/70 font-semibold hover:text-white transition-colors"
         >
           View All Services <ArrowRight size={16} />
         </Link>

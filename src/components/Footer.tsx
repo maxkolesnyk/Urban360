@@ -4,18 +4,18 @@ import { SITE, NAV_LINKS, SERVICES } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-surface border-t border-border">
+    <footer className="bg-white/[0.02] border-t border-glass-border">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-lg">
+              <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-black font-bold text-lg">
                 U3
               </div>
               <div>
                 <span className="text-lg font-bold tracking-tight text-foreground">
-                  Urban <span className="text-primary">360</span>
+                  Urban <span className="text-white">360</span>
                 </span>
                 <p className="text-xs text-muted leading-none">
                   Building Inspections
@@ -38,7 +38,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted hover:text-primary transition-colors"
+                    className="text-sm text-muted hover:text-white transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-sm text-muted hover:text-primary transition-colors"
+                    className="text-sm text-muted hover:text-white transition-colors"
                   >
                     {service.title}
                   </Link>
@@ -75,24 +75,24 @@ export default function Footer() {
               <li>
                 <a
                   href={`tel:${SITE.phone}`}
-                  className="flex items-center gap-3 text-sm text-muted hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-sm text-muted hover:text-white transition-colors"
                 >
-                  <Phone size={16} className="text-primary shrink-0" />
+                  <Phone size={16} className="text-white/40 shrink-0" />
                   {SITE.phone}
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${SITE.email}`}
-                  className="flex items-center gap-3 text-sm text-muted hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-sm text-muted hover:text-white transition-colors"
                 >
-                  <Mail size={16} className="text-primary shrink-0" />
+                  <Mail size={16} className="text-white/40 shrink-0" />
                   {SITE.email}
                 </a>
               </li>
               <li>
                 <div className="flex items-center gap-3 text-sm text-muted">
-                  <MapPin size={16} className="text-primary shrink-0" />
+                  <MapPin size={16} className="text-white/40 shrink-0" />
                   {SITE.address}
                 </div>
               </li>
@@ -101,26 +101,26 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-glass-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
             &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link
               href="/privacy"
-              className="text-xs text-muted hover:text-primary transition-colors"
+              className="text-xs text-muted hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms"
-              className="text-xs text-muted hover:text-primary transition-colors"
+              className="text-xs text-muted hover:text-white transition-colors"
             >
               Terms of Service
             </Link>
             <Link
               href="/admin"
-              className="text-xs text-muted hover:text-primary transition-colors"
+              className="text-xs text-muted hover:text-white transition-colors"
             >
               Admin
             </Link>

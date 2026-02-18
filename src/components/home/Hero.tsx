@@ -66,25 +66,25 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover opacity-25"
+        className="object-cover opacity-20 grayscale"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
-      {/* Accent glow */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-[150px]" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/10 rounded-full blur-[150px]" />
+      {/* Subtle glow orbs */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-white/5 rounded-full blur-[150px]" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-white/3 rounded-full blur-[150px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-20 md:py-32">
         <div className="max-w-4xl">
           {/* Badge */}
           <div
             ref={badgeRef}
-            className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-8"
+            className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8"
           >
-            <Shield size={14} className="text-primary" />
-            <span className="text-xs font-medium text-primary">
+            <Shield size={14} className="text-white/70" />
+            <span className="text-xs font-medium text-white/70">
               AS 4349.1 Compliant &middot; Licensed Victorian Building Surveyor
             </span>
           </div>
@@ -95,7 +95,7 @@ export default function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
           >
             Inspect to{" "}
-            <span className="text-primary">Protect</span>
+            <span className="text-white">Protect</span>
             <br />
             <span className="text-muted text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium">
               Clear Reporting. Confident Property Decisions.
@@ -108,7 +108,7 @@ export default function Hero() {
               Melbourne&apos;s expert building inspections — beyond the
               checklist. Technical clarity, risk-focused reporting, and decisive
               advice from Senior Building Consultant{" "}
-              <span className="text-foreground font-medium">
+              <span className="text-white font-medium">
                 {SITE.founder}
               </span>
               .
@@ -119,20 +119,20 @@ export default function Hero() {
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all hover:scale-[1.02]"
             >
               Book Your Inspection
               <ArrowRight size={18} />
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-xl text-base font-medium hover:bg-surface-light transition-all"
+              className="inline-flex items-center justify-center gap-2 glass-card border border-glass-border text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-glass-hover transition-all"
             >
               View Service Details
             </Link>
             <a
               href={`tel:${SITE.phone}`}
-              className="inline-flex items-center justify-center gap-2 text-primary px-8 py-4 rounded-xl text-base font-medium hover:bg-primary/5 transition-all"
+              className="inline-flex items-center justify-center gap-2 text-white/70 px-8 py-4 rounded-xl text-base font-medium hover:text-white hover:bg-white/5 transition-all"
             >
               <Phone size={18} />
               Call Us Now

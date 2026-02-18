@@ -36,7 +36,7 @@ export default function AdminSidebar() {
           className="flex items-center gap-3"
           onClick={() => setOpen(false)}
         >
-          <div className="w-9 h-9 bg-primary text-white rounded-lg text-sm font-bold flex items-center justify-center">
+          <div className="w-9 h-9 bg-white text-black rounded-lg text-sm font-bold flex items-center justify-center">
             U3
           </div>
           <div>
@@ -60,7 +60,7 @@ export default function AdminSidebar() {
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
                 isActive
-                  ? "bg-primary/10 text-primary"
+                  ? "bg-white/10 text-white"
                   : "text-muted hover:text-foreground hover:bg-surface-light"
               )}
             >
@@ -90,7 +90,7 @@ export default function AdminSidebar() {
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 bg-surface border-b border-border flex items-center justify-between px-4 h-14">
         <Link href="/admin" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary text-white rounded-lg text-xs font-bold flex items-center justify-center">
+          <div className="w-8 h-8 bg-white text-black rounded-lg text-xs font-bold flex items-center justify-center">
             U3
           </div>
           <span className="text-sm font-semibold">Admin</span>

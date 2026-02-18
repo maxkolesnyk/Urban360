@@ -46,14 +46,14 @@ export default async function BlogPostPage({ params }: PageProps) {
       <Section>
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1 text-sm text-muted hover:text-primary transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-muted hover:text-white transition-colors mb-8"
         >
           <ArrowLeft size={14} /> All Posts
         </Link>
 
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-medium text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+            <span className="text-xs font-medium text-white bg-white/5 px-2.5 py-0.5 rounded-full">
               {post.category}
             </span>
             <span className="flex items-center gap-1 text-sm text-muted">
@@ -117,14 +117,14 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <li className="text-muted leading-relaxed">{children}</li>
               ),
               blockquote: ({ children }) => (
-                <blockquote className="border-l-4 border-primary pl-4 my-4 italic text-muted">
+                <blockquote className="border-l-4 border-white/20 pl-4 my-4 italic text-muted">
                   {children}
                 </blockquote>
               ),
               a: ({ href, children }) => (
                 <a
                   href={href}
-                  className="text-primary hover:underline"
+                  className="text-white hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -34,7 +34,7 @@ export default function ServicesPage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+            <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
               Our Services
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -64,20 +64,20 @@ export default function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group bg-background border border-border rounded-2xl p-8 hover:border-primary/40 transition-all hover:shadow-[0_0_30px_rgba(0,194,255,0.08)]"
+              className="group bg-background border border-border rounded-2xl p-8 hover:border-white/15 transition-all hover:shadow-[0_0_30px_rgba(255,255,255,0.04)]"
             >
               <div className="flex items-start gap-5">
-                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary/20 transition-colors">
+                <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors">
                   {ICON_MAP[service.icon]}
                 </div>
                 <div>
-                  <h2 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                  <h2 className="text-xl font-semibold mb-3 group-hover:text-white transition-colors">
                     {service.title}
                   </h2>
                   <p className="text-muted leading-relaxed mb-4">
                     {service.shortDescription}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm text-primary font-medium">
+                  <span className="inline-flex items-center gap-1 text-sm text-white font-medium">
                     Learn more <ArrowRight size={14} />
                   </span>
                 </div>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
           >
             Request a Consultation <ArrowRight size={18} />
           </Link>

@@ -55,7 +55,7 @@ export default function ContactForm() {
               type="text"
               name="full_name"
               required
-              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-white/30 transition-colors"
               placeholder="Your name"
             />
           </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
               type="tel"
               name="phone"
               required
-              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-white/30 transition-colors"
               placeholder="04xx xxx xxx"
             />
           </div>
@@ -77,7 +77,7 @@ export default function ContactForm() {
             type="email"
             name="email"
             required
-            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-white/30 transition-colors"
             placeholder="your@email.com"
           />
         </div>
@@ -89,7 +89,7 @@ export default function ContactForm() {
           <select
             name="service_required"
             required
-            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-white/30 transition-colors"
           >
             <option value="">Select a service</option>
             <option>Pre-Purchase Building Inspection</option>
@@ -110,7 +110,7 @@ export default function ContactForm() {
           <input
             type="text"
             name="property_address"
-            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors"
+            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-white/30 transition-colors"
             placeholder="Property address (if known)"
           />
         </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
             <input
               type="date"
               name="preferred_date"
-              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-white/30 transition-colors"
             />
           </div>
           <div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
             </label>
             <select
               name="how_found_us"
-              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-white/30 transition-colors"
             >
               <option value="">Select</option>
               <option>Google Search</option>
@@ -150,7 +150,7 @@ export default function ContactForm() {
           <textarea
             name="message"
             rows={4}
-            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-primary transition-colors resize-none"
+            className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-white/30 transition-colors resize-none"
             placeholder="Tell us about your property or inspection needs..."
           />
         </div>
@@ -158,7 +158,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={pending}
-          className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all w-full sm:w-auto justify-center disabled:opacity-60"
+          className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all w-full sm:w-auto justify-center disabled:opacity-60"
         >
           {pending ? "Sending..." : "Send Enquiry"}{" "}
           {!pending && <ArrowRight size={18} />}

@@ -29,7 +29,7 @@ export default function Section({
       transition={{ duration: 0.7, ease: "easeOut" }}
       className={cn(
         "px-6 py-20 md:py-28",
-        dark && "bg-surface",
+        dark && "bg-white/[0.02]",
         className
       )}
     >

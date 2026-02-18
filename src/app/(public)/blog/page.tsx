@@ -26,12 +26,12 @@ export default async function BlogPage() {
     <>
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Blog & Insights
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Property Knowledge,{" "}
-            <span className="text-primary">Expert Insight</span>
+            <span className="text-white">Expert Insight</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             Educational content, industry insights, and practical guidance from
@@ -48,7 +48,7 @@ export default async function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-background border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-colors"
+                className="group bg-background border border-border rounded-2xl overflow-hidden hover:border-white/10 transition-colors"
               >
                 <div className="aspect-[16/9] bg-surface-light relative">
                   <Image
@@ -62,11 +62,11 @@ export default async function BlogPage() {
 
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-medium text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-white bg-white/5 px-2.5 py-0.5 rounded-full">
                       {post.category}
                     </span>
                   </div>
-                  <h2 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                  <h2 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors">
                     {post.title}
                   </h2>
                   <p className="text-muted leading-relaxed mb-4">

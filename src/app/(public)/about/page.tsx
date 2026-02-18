@@ -51,12 +51,12 @@ export default function AboutPage() {
       {/* Hero */}
       <Section>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             About Urban 360
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
             Expert Insight.{" "}
-            <span className="text-primary">Technical Clarity.</span>
+            <span className="text-white">Technical Clarity.</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed mb-4">
             Urban 360 Building Inspections was founded on a simple principle:
@@ -89,13 +89,13 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+            <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
               Meet Your Consultant
             </p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
               {SITE.founder}
             </h2>
-            <p className="text-sm text-primary font-medium mb-4">
+            <p className="text-sm text-white font-medium mb-4">
               {SITE.founderTitle}
             </p>
             <div className="space-y-4 text-muted leading-relaxed">
@@ -124,7 +124,7 @@ export default function AboutPage() {
       {/* Qualifications & Values */}
       <Section>
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white uppercase tracking-widest mb-3">
             Qualifications & Values
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -136,9 +136,9 @@ export default function AboutPage() {
           {QUALIFICATIONS.map((item) => (
             <div
               key={item.title}
-              className="flex gap-4 p-6 rounded-xl border border-border bg-surface hover:border-primary/30 transition-colors"
+              className="flex gap-4 p-6 rounded-xl border border-border bg-surface hover:border-white/10 transition-colors"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
                 {item.icon}
               </div>
               <div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-primary-dark transition-all"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
           >
             Get in Touch <ArrowRight size={18} />
           </Link>
