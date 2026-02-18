@@ -58,7 +58,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[90vh] flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
       {/* Background photo */}
       <Image
