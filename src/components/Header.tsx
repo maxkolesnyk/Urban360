@@ -52,10 +52,10 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href={`tel:${SITE.phone}`}
-            className="hidden md:flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors"
+            className="flex items-center gap-2 bg-primary text-white p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors"
           >
             <Phone size={16} />
-            {SITE.phone}
+            <span className="hidden md:inline">{SITE.phone}</span>
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
