@@ -150,7 +150,7 @@ export default function AreasPage() {
           {MELBOURNE_AREAS.map((area) => (
             <div
               key={area}
-              className="bg-background border border-border rounded-2xl p-6 hover:border-white/10 transition-colors"
+              className="bg-background border border-border rounded-2xl p-6 hover:border-black/8 transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
                 <MapPin size={20} className="text-white" />
@@ -182,7 +182,7 @@ export default function AreasPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
           >
             Get in Touch <ArrowRight size={18} />
           </Link>

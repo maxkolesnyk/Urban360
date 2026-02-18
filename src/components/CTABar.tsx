@@ -10,21 +10,21 @@ export default function CTABar() {
       <div className="flex items-center justify-around gap-2">
         <a
           href={`tel:${SITE.phone}`}
-          className="flex flex-col items-center gap-1 text-white/60"
+          className="flex flex-col items-center gap-1 text-black/40"
         >
           <Phone size={20} />
           <span className="text-[10px] font-medium">Call Now</span>
         </a>
         <Link
           href="/contact"
-          className="flex items-center gap-2 bg-white text-black px-6 py-2.5 rounded-lg text-sm font-semibold"
+          className="flex items-center gap-2 bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold"
         >
           <Calendar size={16} />
           Book Inspection
         </Link>
         <Link
           href="/resources"
-          className="flex flex-col items-center gap-1 text-white/60"
+          className="flex flex-col items-center gap-1 text-black/40"
         >
           <FileText size={20} />
           <span className="text-[10px] font-medium">Reports</span>

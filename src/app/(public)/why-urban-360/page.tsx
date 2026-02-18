@@ -140,9 +140,9 @@ export default function WhyUrban360Page() {
           {PILLARS.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-background border border-border rounded-2xl p-8 hover:border-white/10 transition-colors"
+              className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
             >
-              <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white mb-5">
+              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-white mb-5">
                 {pillar.icon}
               </div>
               <h3 className="text-lg font-semibold mb-3">{pillar.title}</h3>
@@ -228,7 +228,7 @@ export default function WhyUrban360Page() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+              className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
             >
               Book Your Inspection <ArrowRight size={18} />
             </Link>

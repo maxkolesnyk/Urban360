@@ -45,9 +45,9 @@ export default function ContactPage() {
             <div className="space-y-6">
               <a
                 href={`tel:${SITE.phone}`}
-                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-white/10 transition-colors"
+                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -58,9 +58,9 @@ export default function ContactPage() {
 
               <a
                 href={`mailto:${SITE.email}`}
-                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-white/10 transition-colors"
+                className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
               </a>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                   <Clock size={20} />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
             </div>
 
             {/* Trust badge */}
-            <div className="mt-8 p-5 bg-white/[0.03] border border-white/8 rounded-xl">
+            <div className="mt-8 p-5 bg-black/[0.02] border border-black/[0.06] rounded-xl">
               <p className="text-sm font-medium mb-2">
                 Why Book With Urban 360?
               </p>

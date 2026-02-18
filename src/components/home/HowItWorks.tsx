@@ -33,7 +33,7 @@ export default function HowItWorks() {
   return (
     <Section>
       <div className="text-center mb-14">
-        <p className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-3">
+        <p className="text-sm font-semibold text-black/40 uppercase tracking-widest mb-3">
           How It Works
         </p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
@@ -55,7 +55,7 @@ export default function HowItWorks() {
             className="relative text-center"
           >
             {/* Step number */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-white text-black text-sm font-bold flex items-center justify-center z-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-black text-white text-sm font-bold flex items-center justify-center z-10">
               {i + 1}
             </div>
 
@@ -71,7 +71,7 @@ export default function HowItWorks() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--glass)]" />
               </div>
               <div className="p-8 pt-4 text-center">
-                <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-white/70 mx-auto mb-5">
+                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-black/50 mx-auto mb-5">
                   {step.icon}
                 </div>
                 <h3 className="text-lg font-semibold mb-3">{step.title}</h3>

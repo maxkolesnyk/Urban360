@@ -73,8 +73,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
       {/* Subtle glow orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-white/5 rounded-full blur-[150px]" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-white/3 rounded-full blur-[150px]" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-black/[0.03] rounded-full blur-[150px]" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-black/[0.02] rounded-full blur-[150px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-20 md:py-32">
         <div className="max-w-4xl">
@@ -83,8 +83,8 @@ export default function Hero() {
             ref={badgeRef}
             className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8"
           >
-            <Shield size={14} className="text-white/70" />
-            <span className="text-xs font-medium text-white/70">
+            <Shield size={14} className="text-black/50" />
+            <span className="text-xs font-medium text-black/50">
               AS 4349.1 Compliant &middot; Licensed Victorian Building Surveyor
             </span>
           </div>
@@ -119,20 +119,20 @@ export default function Hero() {
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all hover:scale-[1.02]"
             >
               Book Your Inspection
               <ArrowRight size={18} />
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 glass-card border border-glass-border text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-glass-hover transition-all"
+              className="inline-flex items-center justify-center gap-2 glass-card border border-glass-border text-foreground px-8 py-4 rounded-xl text-base font-medium hover:bg-glass-hover transition-all"
             >
               View Service Details
             </Link>
             <a
               href={`tel:${SITE.phone}`}
-              className="inline-flex items-center justify-center gap-2 text-white/70 px-8 py-4 rounded-xl text-base font-medium hover:text-white hover:bg-white/5 transition-all"
+              className="inline-flex items-center justify-center gap-2 text-black/50 px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
             >
               <Phone size={18} />
               Call Us Now

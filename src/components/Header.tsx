@@ -17,7 +17,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-black font-bold text-lg transition-transform group-hover:scale-105">
+          <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:scale-105">
             U3
           </div>
           <div>
@@ -39,8 +39,8 @@ export default function Header() {
               className={cn(
                 "px-3 py-2 text-sm rounded-md transition-all",
                 pathname === link.href
-                  ? "text-white bg-white/10"
-                  : "text-muted hover:text-white hover:bg-white/5"
+                  ? "text-foreground bg-black/5"
+                  : "text-muted hover:text-black hover:bg-black/[0.03]"
               )}
             >
               {link.label}
@@ -52,7 +52,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href={`tel:${SITE.phone}`}
-            className="flex items-center gap-2 bg-white text-black p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-white/90 transition-colors"
+            className="flex items-center gap-2 bg-black text-white p-2 md:px-4 md:py-2 rounded-lg text-sm font-semibold hover:bg-black/90 transition-colors"
           >
             <Phone size={16} />
             <span className="hidden md:inline">{SITE.phone}</span>
@@ -86,8 +86,8 @@ export default function Header() {
                   className={cn(
                     "px-4 py-3 rounded-lg text-sm transition-colors",
                     pathname === link.href
-                      ? "text-white bg-white/10"
-                      : "text-muted hover:text-white hover:bg-white/5"
+                      ? "text-foreground bg-black/5"
+                      : "text-muted hover:text-black hover:bg-black/[0.03]"
                   )}
                 >
                   {link.label}
@@ -95,7 +95,7 @@ export default function Header() {
               ))}
               <a
                 href={`tel:${SITE.phone}`}
-                className="mt-3 flex items-center justify-center gap-2 bg-white text-black px-4 py-3 rounded-lg text-sm font-semibold"
+                className="mt-3 flex items-center justify-center gap-2 bg-black text-white px-4 py-3 rounded-lg text-sm font-semibold"
               >
                 <Phone size={16} />
                 {SITE.phone}

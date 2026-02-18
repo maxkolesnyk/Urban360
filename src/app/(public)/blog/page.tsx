@@ -48,7 +48,7 @@ export default async function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-background border border-border rounded-2xl overflow-hidden hover:border-white/10 transition-colors"
+                className="group bg-background border border-border rounded-2xl overflow-hidden hover:border-black/8 transition-colors"
               >
                 <div className="aspect-[16/9] bg-surface-light relative">
                   <Image
@@ -62,11 +62,11 @@ export default async function BlogPage() {
 
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-medium text-white bg-white/5 px-2.5 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-white bg-black/[0.03] px-2.5 py-0.5 rounded-full">
                       {post.category}
                     </span>
                   </div>
-                  <h2 className="text-lg font-semibold mb-2 group-hover:text-white transition-colors">
+                  <h2 className="text-lg font-semibold mb-2 group-hover:text-black transition-colors">
                     {post.title}
                   </h2>
                   <p className="text-muted leading-relaxed mb-4">

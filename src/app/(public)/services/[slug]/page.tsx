@@ -52,7 +52,7 @@ export default async function ServicePage({ params }: PageProps) {
       <Section>
         <Link
           href="/services"
-          className="inline-flex items-center gap-1 text-sm text-muted hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-1 text-sm text-muted hover:text-black transition-colors mb-8"
         >
           <ArrowLeft size={14} /> All Services
         </Link>
@@ -72,7 +72,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-white text-black px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-black text-white px-7 py-3.5 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
             >
               Book This Inspection <ArrowRight size={16} />
             </Link>
@@ -166,7 +166,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={point}
                 className="flex items-start gap-3 p-4 bg-background border border-border rounded-xl"
               >
-                <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full bg-black/[0.03] flex items-center justify-center shrink-0 mt-0.5">
                   <Check size={14} className="text-white" />
                 </div>
                 <span className="text-foreground">{point}</span>
@@ -220,7 +220,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={step.step}
                 className="relative bg-background border border-border rounded-xl p-6"
               >
-                <div className="absolute -top-3 left-5 w-7 h-7 rounded-full bg-white text-black text-xs font-bold flex items-center justify-center">
+                <div className="absolute -top-3 left-5 w-7 h-7 rounded-full bg-black text-white text-xs font-bold flex items-center justify-center">
                   {i + 1}
                 </div>
                 <h3 className="font-semibold mb-2 mt-1">{step.step}</h3>
@@ -318,9 +318,9 @@ export default async function ServicePage({ params }: PageProps) {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group bg-background border border-border rounded-xl p-6 hover:border-white/15 transition-all"
+                className="group bg-background border border-border rounded-xl p-6 hover:border-black/10 transition-all"
               >
-                <h3 className="font-semibold mb-2 group-hover:text-white transition-colors">
+                <h3 className="font-semibold mb-2 group-hover:text-black transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-muted leading-relaxed mb-3">
@@ -337,8 +337,8 @@ export default async function ServicePage({ params }: PageProps) {
 
       {/* ── CTA ── */}
       <Section>
-        <div className="relative bg-gradient-to-br from-primary/10 via-surface to-accent/5 border border-white/8 rounded-3xl p-10 md:p-16 text-center overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-white/8 rounded-full blur-[100px]" />
+        <div className="relative bg-gradient-to-br from-primary/10 via-surface to-accent/5 border border-black/[0.06] rounded-3xl p-10 md:p-16 text-center overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-black/[0.04] rounded-full blur-[100px]" />
           <div className="relative">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Ready to Book This Inspection?
@@ -350,7 +350,7 @@ export default async function ServicePage({ params }: PageProps) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all hover:scale-[1.02]"
               >
                 Book Your Inspection <ArrowRight size={18} />
               </Link>
@@ -363,7 +363,7 @@ export default async function ServicePage({ params }: PageProps) {
               </a>
               <Link
                 href="/resources"
-                className="inline-flex items-center gap-2 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-white/[0.03] transition-all"
+                className="inline-flex items-center gap-2 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-black/[0.02] transition-all"
               >
                 <FileText size={18} />
                 Download Sample Report

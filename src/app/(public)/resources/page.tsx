@@ -57,7 +57,7 @@ export default async function ResourcesPage() {
             {reports.map((report) => (
               <div
                 key={report.id}
-                className="bg-background border border-border rounded-2xl p-8 hover:border-white/10 transition-colors"
+                className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
               >
                 <div className="aspect-[3/4] bg-surface-light border border-border rounded-xl mb-6 flex items-center justify-center overflow-hidden">
                   {report.thumbnail_url ? (
@@ -89,7 +89,7 @@ export default async function ResourcesPage() {
                       href={report.file_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/90 transition-colors"
+                      className="inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/90 transition-colors"
                     >
                       <Download size={14} /> Download
                     </a>
@@ -121,15 +121,15 @@ export default async function ResourcesPage() {
             {guides.map((guide) => (
               <div
                 key={guide.id}
-                className="flex items-start gap-5 bg-surface border border-border rounded-2xl p-6 hover:border-white/10 transition-colors"
+                className="flex items-start gap-5 bg-surface border border-border rounded-2xl p-6 hover:border-black/8 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-white shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                   <BookOpen size={24} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <h3 className="font-semibold">{guide.title}</h3>
-                    <span className="text-xs font-medium text-white bg-white/5 px-2 py-0.5 rounded-full">
+                    <span className="text-xs font-medium text-white bg-black/[0.03] px-2 py-0.5 rounded-full">
                       {guide.resource_type}
                     </span>
                   </div>
@@ -169,7 +169,7 @@ export default async function ResourcesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
           >
             Book Your Inspection <ArrowRight size={18} />
           </Link>

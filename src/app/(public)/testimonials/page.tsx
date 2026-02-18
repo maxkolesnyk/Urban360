@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
           {GOOGLE_REVIEWS.map((review, i) => (
             <div
               key={i}
-              className="bg-background border border-border rounded-2xl p-7 hover:border-white/8 transition-colors flex flex-col"
+              className="bg-background border border-border rounded-2xl p-7 hover:border-black/[0.06] transition-colors flex flex-col"
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
@@ -130,7 +130,7 @@ export default function TestimonialsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+              className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
             >
               Book Your Inspection <ArrowRight size={18} />
             </Link>

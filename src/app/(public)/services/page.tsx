@@ -64,14 +64,14 @@ export default function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group bg-background border border-border rounded-2xl p-8 hover:border-white/15 transition-all hover:shadow-[0_0_30px_rgba(255,255,255,0.04)]"
+              className="group bg-background border border-border rounded-2xl p-8 hover:border-black/10 transition-all hover:shadow-[0_0_30px_rgba(0,0,0,0.03)]"
             >
               <div className="flex items-start gap-5">
-                <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-white shrink-0 group-hover:bg-white/10 transition-colors">
+                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-white shrink-0 group-hover:bg-black/5 transition-colors">
                   {ICON_MAP[service.icon]}
                 </div>
                 <div>
-                  <h2 className="text-xl font-semibold mb-3 group-hover:text-white transition-colors">
+                  <h2 className="text-xl font-semibold mb-3 group-hover:text-black transition-colors">
                     {service.title}
                   </h2>
                   <p className="text-muted leading-relaxed mb-4">
@@ -97,7 +97,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
           >
             Request a Consultation <ArrowRight size={18} />
           </Link>

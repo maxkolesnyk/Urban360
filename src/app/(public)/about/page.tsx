@@ -136,9 +136,9 @@ export default function AboutPage() {
           {QUALIFICATIONS.map((item) => (
             <div
               key={item.title}
-              className="flex gap-4 p-6 rounded-xl border border-border bg-surface hover:border-white/10 transition-colors"
+              className="flex gap-4 p-6 rounded-xl border border-border bg-surface hover:border-black/8 transition-colors"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center text-white shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-white shrink-0">
                 {item.icon}
               </div>
               <div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/90 transition-all"
+            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all"
           >
             Get in Touch <ArrowRight size={18} />
           </Link>
