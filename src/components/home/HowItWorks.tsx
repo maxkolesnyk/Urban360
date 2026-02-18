@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ClipboardCheck, FileSearch, MessageCircle } from "lucide-react";
 import Section from "@/components/Section";
@@ -10,18 +11,21 @@ const STEPS = [
     title: "Book Your Inspection",
     description:
       "Get in touch with your property details. We'll confirm availability, scope, and schedule your inspection promptly.",
+    image: "/images/step-book.webp",
   },
   {
     icon: <FileSearch size={32} />,
     title: "Detailed Inspection & Report",
     description:
       "Our senior consultant conducts a thorough on-site assessment. You receive a comprehensive, risk-prioritised report with clear photography and findings.",
+    image: "/images/step-inspect.webp",
   },
   {
     icon: <MessageCircle size={32} />,
     title: "Expert Advice & Guidance",
     description:
       "We walk you through the report, explain key findings, and provide actionable advice to support your negotiation and decision-making.",
+    image: "/images/step-report.webp",
   },
 ];
 
@@ -55,14 +59,26 @@ export default function HowItWorks() {
               {i + 1}
             </div>
 
-            <div className="bg-surface border border-border rounded-2xl p-8 pt-10 h-full">
-              <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-5">
-                {step.icon}
+            <div className="bg-surface border border-border rounded-2xl overflow-hidden h-full">
+              <div className="relative h-36 w-full">
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface/80" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
-              <p className="text-muted leading-relaxed">
-                {step.description}
-              </p>
+              <div className="p-8 pt-4 text-center">
+                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-5">
+                  {step.icon}
+                </div>
+                <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
+                <p className="text-muted leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
             </div>
           </motion.div>
         ))}

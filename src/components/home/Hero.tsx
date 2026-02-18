@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
 import gsap from "gsap";
+import Image from "next/image";
 import { ArrowRight, Phone, Shield } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
@@ -59,8 +60,16 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-[90vh] flex items-center overflow-hidden"
     >
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,153,204,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(0,153,204,0.07)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      {/* Background photo */}
+      <Image
+        src="/images/hero-house.webp"
+        alt=""
+        fill
+        priority
+        className="object-cover opacity-15"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
       {/* Accent glow */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Search,
@@ -31,18 +32,29 @@ export default function ServicesPage() {
   return (
     <>
       <Section>
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
-            Our Services
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            Inspection &amp; Compliance Services
-          </h1>
-          <p className="text-lg text-muted leading-relaxed">
-            From pre-purchase inspections to construction stage assessments —
-            every service is delivered with technical rigour, clear reporting,
-            and expert guidance tailored to your situation.
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+              Our Services
+            </p>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+              Inspection &amp; Compliance Services
+            </h1>
+            <p className="text-lg text-muted leading-relaxed">
+              From pre-purchase inspections to construction stage assessments —
+              every service is delivered with technical rigour, clear reporting,
+              and expert guidance tailored to your situation.
+            </p>
+          </div>
+          <div className="relative aspect-[5/2] rounded-2xl overflow-hidden border border-border hidden lg:block">
+            <Image
+              src="/images/services-hero.webp"
+              alt="Melbourne property inspection"
+              fill
+              className="object-cover"
+              sizes="500px"
+            />
+          </div>
         </div>
       </Section>
 

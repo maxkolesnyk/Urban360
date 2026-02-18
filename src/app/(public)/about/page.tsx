@@ -7,6 +7,7 @@ import {
   UserCheck,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import Section from "@/components/Section";
 import { SITE } from "@/lib/constants";
@@ -76,13 +77,15 @@ export default function AboutPage() {
       {/* Mark Rozin */}
       <Section dark>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
-          <div className="aspect-[4/5] max-w-md bg-surface-light border border-border rounded-2xl flex items-center justify-center">
-            <div className="text-center text-muted">
-              <UserCheck size={48} className="mx-auto mb-3 text-primary/40" />
-              <p className="text-sm">Professional Photo</p>
-              <p className="text-xs">{SITE.founder}</p>
-            </div>
+          {/* Photo */}
+          <div className="aspect-[4/5] max-w-md rounded-2xl overflow-hidden border border-border relative">
+            <Image
+              src="/images/about-inspector.webp"
+              alt={`${SITE.founder} — Senior Building Consultant`}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 500px"
+            />
           </div>
 
           <div>

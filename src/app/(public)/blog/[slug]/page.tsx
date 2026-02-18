@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -71,6 +72,17 @@ export default async function BlogPostPage({ params }: PageProps) {
             {post.title}
           </h1>
           <p className="text-lg text-muted leading-relaxed">{post.excerpt}</p>
+        </div>
+
+        <div className="relative aspect-[21/9] max-w-4xl rounded-2xl overflow-hidden border border-border mt-10">
+          <Image
+            src={post.featured_image_url || "/images/blog-default.webp"}
+            alt={post.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 900px"
+          />
         </div>
       </Section>
 

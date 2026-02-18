@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Calendar, Clock } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import Section from "@/components/Section";
 import NewsletterForm from "@/components/NewsletterForm";
@@ -49,16 +50,14 @@ export default async function BlogPage() {
                 href={`/blog/${post.slug}`}
                 className="group bg-background border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-colors"
               >
-                <div className="aspect-[16/9] bg-surface-light flex items-center justify-center">
-                  {post.featured_image_url ? (
-                    <img
-                      src={post.featured_image_url}
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-xs text-muted">Featured Image</span>
-                  )}
+                <div className="aspect-[16/9] bg-surface-light relative">
+                  <Image
+                    src={post.featured_image_url || "/images/blog-default.webp"}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
 
                 <div className="p-6">
