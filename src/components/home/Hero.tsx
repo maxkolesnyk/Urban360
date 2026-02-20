@@ -60,16 +60,22 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Background photo */}
+      {/* Background blueprint with gradient opacity mask */}
       <Image
-        src="/images/hero-house.webp"
+        src="/images/blueprint.avif"
         alt=""
         fill
         priority
-        className="object-cover opacity-20"
+        className="object-cover"
         sizes="100vw"
+        style={{
+          maskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.10) 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.10) 100%)",
+        }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-background/30" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
       {/* Subtle glow orbs */}
