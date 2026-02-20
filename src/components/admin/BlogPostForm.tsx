@@ -1,8 +1,11 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
+import { useActionState, useCallback, useEffect, useRef, useState } from "react";
 import { createBlogPost, updateBlogPost } from "@/lib/actions/blog";
 import type { ActionResult, BlogPost } from "@/lib/types/database";
+import { ImageIcon } from "lucide-react";
+import { uploadBlogImage } from "@/lib/supabase/upload";
+import ImageUpload from "./ImageUpload";
 
 const initialState: ActionResult = { success: false, message: "" };
 
@@ -19,10 +22,64 @@ export default function BlogPostForm({ post }: { post?: BlogPost }) {
   const [title, setTitle] = useState(post?.title ?? "");
   const [slug, setSlug] = useState(post?.slug ?? "");
   const [autoSlug, setAutoSlug] = useState(!post);
+  const [content, setContent] = useState(post?.content ?? "");
+  const [inlineUploading, setInlineUploading] = useState(false);
+  const contentRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
     if (autoSlug) setSlug(slugify(title));
   }, [title, autoSlug]);
+
+  const insertImageAtCursor = useCallback(
+    (url: string, alt = "image") => {
+      const ta = contentRef.current;
+      if (!ta) {
+        setContent((prev) => `${prev}\n![${alt}](${url})\n`);
+        return;
+      }
+      const start = ta.selectionStart;
+      const end = ta.selectionEnd;
+      const markdown = `![${alt}](${url})`;
+      const before = content.slice(0, start);
+      const after = content.slice(end);
+      const newContent = `${before}${markdown}${after}`;
+      setContent(newContent);
+      // restore cursor after React re-render
+      requestAnimationFrame(() => {
+        ta.selectionStart = ta.selectionEnd = start + markdown.length;
+        ta.focus();
+      });
+    },
+    [content]
+  );
+
+  const handleInlineUpload = useCallback(
+    async (file: File) => {
+      setInlineUploading(true);
+      try {
+        const url = await uploadBlogImage(file);
+        insertImageAtCursor(url, file.name.replace(/\.[^.]+$/, ""));
+      } catch {
+        // silently ignore — the ImageUpload component handles errors for featured image
+      } finally {
+        setInlineUploading(false);
+      }
+    },
+    [insertImageAtCursor]
+  );
+
+  const onContentDrop = useCallback(
+    (e: React.DragEvent) => {
+      const file = e.dataTransfer.files[0];
+      if (file?.type.startsWith("image/")) {
+        e.preventDefault();
+        handleInlineUpload(file);
+      }
+    },
+    [handleInlineUpload]
+  );
+
+  const inlineFileRef = useRef<HTMLInputElement>(null);
 
   return (
     <form action={formAction} className="max-w-3xl space-y-6">
@@ -96,16 +153,53 @@ export default function BlogPostForm({ post }: { post?: BlogPost }) {
       </div>
 
       <div>
-        <label className="block text-sm font-medium mb-2">
-          Content (Markdown) *
-        </label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="block text-sm font-medium">
+            Content (Markdown) *
+          </label>
+          <button
+            type="button"
+            disabled={inlineUploading}
+            onClick={() => inlineFileRef.current?.click()}
+            className="flex items-center gap-1.5 text-xs text-primary hover:underline disabled:opacity-50"
+          >
+            <ImageIcon className="w-3.5 h-3.5" />
+            {inlineUploading ? "Uploading..." : "Insert Image"}
+          </button>
+        </div>
         <textarea
+          ref={contentRef}
           name="content"
           required
           rows={16}
-          defaultValue={post?.content}
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          onDrop={onContentDrop}
+          onDragOver={(e) => {
+            if (e.dataTransfer.types.includes("Files")) e.preventDefault();
+          }}
           className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors resize-y font-mono text-sm"
           placeholder="Write your blog post in Markdown..."
+        />
+        <input
+          ref={inlineFileRef}
+          type="file"
+          accept="image/*"
+          className="hidden"
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file) handleInlineUpload(file);
+            e.target.value = "";
+          }}
+        />
+      </div>
+
+      {/* Featured Image */}
+      <div>
+        <label className="block text-sm font-medium mb-2">Featured Image</label>
+        <ImageUpload
+          name="featured_image_url"
+          defaultValue={post?.featured_image_url ?? ""}
         />
       </div>
 
@@ -132,18 +226,6 @@ export default function BlogPostForm({ post }: { post?: BlogPost }) {
             defaultValue={post?.read_time}
             className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
             placeholder="5 min read"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium mb-2">
-            Featured Image URL
-          </label>
-          <input
-            type="url"
-            name="featured_image_url"
-            defaultValue={post?.featured_image_url ?? ""}
-            className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
-            placeholder="https://..."
           />
         </div>
       </div>
