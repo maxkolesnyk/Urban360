@@ -62,7 +62,7 @@ export default function Hero() {
     >
       {/* Background blueprint with gradient opacity mask */}
       <Image
-        src="/images/blueprint.avif"
+        src="/images/hero-blueprint.png"
         alt=""
         fill
         priority
