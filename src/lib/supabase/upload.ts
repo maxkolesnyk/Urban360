@@ -16,11 +16,11 @@ export async function uploadBlogImage(file: File): Promise<string> {
   const path = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
 
   const { error } = await supabase.storage
-    .from("blog-images")
+    .from("Blog-featured-image")
     .upload(path, file, { contentType: file.type });
 
   if (error) throw new Error(`Upload failed: ${error.message}`);
 
-  const { data } = supabase.storage.from("blog-images").getPublicUrl(path);
+  const { data } = supabase.storage.from("Blog-featured-image").getPublicUrl(path);
   return data.publicUrl;
 }
