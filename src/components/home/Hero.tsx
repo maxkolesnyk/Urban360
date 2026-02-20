@@ -70,9 +70,9 @@ export default function Hero() {
         sizes="100vw"
         style={{
           maskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.10) 100%)",
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.50) 40%, rgba(0,0,0,0.50) 60%, rgba(0,0,0,0.10) 100%)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.10) 100%)",
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.50) 40%, rgba(0,0,0,0.50) 60%, rgba(0,0,0,0.10) 100%)",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-background/30" />
