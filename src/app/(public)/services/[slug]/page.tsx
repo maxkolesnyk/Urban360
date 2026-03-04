@@ -61,7 +61,7 @@ export default async function ServicePage({ params }: PageProps) {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Our Services
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {content.headline}
           </h1>
           <p className="text-lg text-muted leading-relaxed mb-8">
@@ -340,7 +340,7 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="relative bg-gradient-to-br from-primary/10 via-surface to-accent/5 border border-black/[0.06] rounded-3xl p-10 md:p-16 text-center overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-black/[0.04] rounded-full blur-[100px]" />
           <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Book This Inspection?
             </h2>
             <p className="text-muted leading-relaxed mb-8 max-w-lg mx-auto">

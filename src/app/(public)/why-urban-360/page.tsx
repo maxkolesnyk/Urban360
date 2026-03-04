@@ -120,7 +120,7 @@ export default function WhyUrban360Page() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Why Choose Urban 360
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Technical Clarity,{" "}
             <span className="text-muted">Not Checklists</span>
           </h1>
@@ -160,7 +160,7 @@ export default function WhyUrban360Page() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             How We Compare
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Urban 360 vs. The Alternatives
           </h2>
         </div>

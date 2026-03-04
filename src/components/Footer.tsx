@@ -9,18 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center text-white font-bold text-lg">
-                U3
-              </div>
-              <div>
-                <span className="text-lg font-bold tracking-tight text-foreground">
-                  Urban <span className="text-muted">360</span>
-                </span>
-                <p className="text-xs text-muted leading-none">
-                  Building Inspections
-                </p>
-              </div>
+            <div className="mb-4">
+              <span className="text-xl font-extrabold uppercase tracking-[0.15em] text-foreground">
+                Urban<span className="text-muted">360</span>
+              </span>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-muted leading-none">
+                Building Inspections
+              </p>
             </div>
             <p className="text-sm text-muted leading-relaxed mb-4">
               {SITE.description}

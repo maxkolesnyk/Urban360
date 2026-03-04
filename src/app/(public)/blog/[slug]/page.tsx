@@ -68,7 +68,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <Clock size={12} /> {post.read_time}
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {post.title}
           </h1>
           <p className="text-lg text-muted leading-relaxed">{post.excerpt}</p>

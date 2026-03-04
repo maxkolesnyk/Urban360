@@ -18,7 +18,7 @@ export default function TestimonialsPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Google Reviews
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {REVIEW_STATS.total} Five-Star Reviews on{" "}
             <span className="text-muted">Google</span>
           </h1>

@@ -36,7 +36,7 @@ export default function HowItWorks() {
         <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           How It Works
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Inspection &rarr; Report &rarr; Advice
         </h2>
         <p className="text-muted max-w-2xl mx-auto">

@@ -37,7 +37,7 @@ export default function ServicesPage() {
             <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
               Our Services
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Inspection &amp; Compliance Services
             </h1>
             <p className="text-lg text-muted leading-relaxed">

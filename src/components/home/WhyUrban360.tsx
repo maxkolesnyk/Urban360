@@ -59,7 +59,7 @@ export default function WhyUrban360() {
         <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Why Choose Us
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Expert Insight When It Matters Most
         </h2>
         <p className="text-muted max-w-2xl mx-auto">

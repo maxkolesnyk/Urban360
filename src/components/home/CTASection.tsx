@@ -13,7 +13,7 @@ export default function CTASection() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-black/[0.03] rounded-full blur-[100px]" />
 
         <div className="relative">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Make a Confident Property Decision?
           </h2>
           <p className="text-muted leading-relaxed max-w-xl mx-auto mb-8">

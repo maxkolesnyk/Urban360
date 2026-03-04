@@ -31,7 +31,7 @@ export default async function ResourcesPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Resources
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Sample Reports &amp;{" "}
             <span className="text-muted">Property Guides</span>
           </h1>

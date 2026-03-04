@@ -54,7 +54,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             About Urban 360
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Expert Insight.{" "}
             <span className="text-muted">Technical Clarity.</span>
           </h1>
@@ -92,7 +92,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
               Meet Your Consultant
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {SITE.founder}
             </h2>
             <p className="text-sm text-foreground font-medium mb-4">
@@ -127,7 +127,7 @@ export default function AboutPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Qualifications & Values
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Why Clients Trust Urban 360
           </h2>
         </div>

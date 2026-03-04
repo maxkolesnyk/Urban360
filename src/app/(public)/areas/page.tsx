@@ -133,7 +133,7 @@ export default function AreasPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Service Areas
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Serving All of{" "}
             <span className="text-muted">Melbourne &amp; Victoria</span>
           </h1>

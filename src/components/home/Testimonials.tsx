@@ -20,7 +20,7 @@ export default function Testimonials() {
         <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
           Google Reviews
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           {REVIEW_STATS.average} Stars from {REVIEW_STATS.total} Reviews
         </h2>
         <div className="flex items-center justify-center gap-2 mb-2">

@@ -17,18 +17,13 @@ export default function Header() {
       <div className="rounded-2xl glass-card bg-background/70 backdrop-blur-xl">
         <div className="flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:scale-105">
-              U3
-            </div>
-            <div>
-              <span className="text-lg font-bold tracking-tight text-foreground">
-                Urban <span className="text-muted">360</span>
-              </span>
-              <p className="text-xs text-muted leading-none">
-                Building Inspections
-              </p>
-            </div>
+          <Link href="/" className="group">
+            <span className="text-xl font-extrabold uppercase tracking-[0.15em] text-foreground transition-opacity group-hover:opacity-80">
+              Urban<span className="text-muted">360</span>
+            </span>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted leading-none">
+              Building Inspections
+            </p>
           </Link>
 
           {/* Desktop Nav */}

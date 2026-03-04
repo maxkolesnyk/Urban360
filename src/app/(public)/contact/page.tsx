@@ -18,7 +18,7 @@ export default function ContactPage() {
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Contact Us
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Book Your{" "}
             <span className="text-muted">Inspection</span>
           </h1>
