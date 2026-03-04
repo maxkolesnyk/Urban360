@@ -98,7 +98,7 @@ export default function Hero() {
           {/* Headline */}
           <h1
             ref={headlineRef}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[-0.04em] leading-[1.1] mb-6"
           >
             Inspect to{" "}
             <span className="text-muted">Protect</span>

@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -17,13 +18,8 @@ export default function Header() {
       <div className="rounded-2xl glass-card bg-background/70 backdrop-blur-xl">
         <div className="flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <Link href="/" className="group">
-            <span className="text-xl font-extrabold uppercase tracking-[0.15em] text-foreground transition-opacity group-hover:opacity-80">
-              Urban<span className="text-muted">360</span>
-            </span>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-muted leading-none">
-              Building Inspections
-            </p>
+          <Link href="/" className="group transition-opacity hover:opacity-80">
+            <Logo className="h-9 w-auto" />
           </Link>
 
           {/* Desktop Nav */}

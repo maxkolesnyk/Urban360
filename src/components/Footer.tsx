@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { SITE, NAV_LINKS, SERVICES } from "@/lib/constants";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -10,12 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <span className="text-xl font-extrabold uppercase tracking-[0.15em] text-foreground">
-                Urban<span className="text-muted">360</span>
-              </span>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-muted leading-none">
-                Building Inspections
-              </p>
+              <Logo className="h-9 w-auto" />
             </div>
             <p className="text-sm text-muted leading-relaxed mb-4">
               {SITE.description}
