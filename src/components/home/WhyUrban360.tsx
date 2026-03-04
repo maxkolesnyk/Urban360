@@ -56,10 +56,10 @@ export default function WhyUrban360() {
   return (
     <Section dark>
       <div className="text-center mb-14">
-        <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
+        <p className="text-base md:text-lg font-bold text-foreground uppercase tracking-[0.3em] mb-4">
           Why Choose Us
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4">
           Expert Insight When It Matters Most
         </h2>
         <p className="text-muted max-w-2xl mx-auto">
