@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <Logo className="h-9 w-auto" />
+              <Logo className="h-[72px] w-auto" />
             </div>
             <p className="text-sm text-muted leading-relaxed mb-4">
               {SITE.description}
