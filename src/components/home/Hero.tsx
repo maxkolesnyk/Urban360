@@ -89,8 +89,8 @@ export default function Hero() {
             ref={badgeRef}
             className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8 shadow-[inset_0_1px_2px_rgba(0,0,0,0.06)] border border-black/[0.08]"
           >
-            <Shield size={14} className="text-black/60" />
-            <span className="text-xs font-medium text-black/60">
+            <Shield size={14} className="text-icon" />
+            <span className="text-xs font-medium text-icon">
               AS 4349.1 Compliant &middot; Licensed Victorian Building Surveyor
             </span>
           </div>

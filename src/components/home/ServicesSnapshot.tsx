@@ -52,7 +52,7 @@ export default function ServicesSnapshot() {
               href={`/services/${service.slug}`}
               className="group block h-full glass-card glass-shimmer rounded-2xl p-8 transition-all hover:scale-[1.01]"
             >
-              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-black/60 mb-5 group-hover:bg-black/5 transition-colors">
+              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-icon mb-5 group-hover:bg-black/5 transition-colors">
                 {ICON_MAP[service.icon]}
               </div>
               <h3 className="text-lg font-semibold mb-3 group-hover:text-black transition-colors">

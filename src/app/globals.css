@@ -14,6 +14,7 @@
   --glass-border: rgba(0, 0, 0, 0.06);
   --glass-hover: rgba(0, 0, 0, 0.05);
   --glass-glow: rgba(0, 0, 0, 0.02);
+  --icon: #3b6fa0;
 }
 
 @theme inline {
@@ -30,6 +31,7 @@
   --color-glass-border: var(--glass-border);
   --color-glass-hover: var(--glass-hover);
   --color-glass-glow: var(--glass-glow);
+  --color-icon: var(--icon);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

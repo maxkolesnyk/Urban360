@@ -68,7 +68,7 @@ export default function Footer() {
                   href={`tel:${SITE.phone}`}
                   className="flex items-center gap-3 text-sm text-muted hover:text-black transition-colors"
                 >
-                  <Phone size={16} className="text-black/50 shrink-0" />
+                  <Phone size={16} className="text-icon shrink-0" />
                   {SITE.phone}
                 </a>
               </li>
@@ -77,13 +77,13 @@ export default function Footer() {
                   href={`mailto:${SITE.email}`}
                   className="flex items-center gap-3 text-sm text-muted hover:text-black transition-colors"
                 >
-                  <Mail size={16} className="text-black/50 shrink-0" />
+                  <Mail size={16} className="text-icon shrink-0" />
                   {SITE.email}
                 </a>
               </li>
               <li>
                 <div className="flex items-center gap-3 text-sm text-muted">
-                  <MapPin size={16} className="text-black/50 shrink-0" />
+                  <MapPin size={16} className="text-icon shrink-0" />
                   {SITE.address}
                 </div>
               </li>

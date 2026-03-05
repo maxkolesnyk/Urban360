@@ -16,10 +16,10 @@ export default function Header() {
   return (
     <header className="fixed top-3 left-0 right-0 z-50 mx-auto max-w-7xl px-4">
       <div className="rounded-2xl glass-card bg-background/70 backdrop-blur-xl">
-        <div className="flex items-center justify-between px-6 py-4">
+        <div className="flex items-center justify-between px-6 py-2.5">
           {/* Logo */}
           <Link href="/" className="group transition-opacity hover:opacity-80 flex items-center">
-            <Logo className="h-6 md:h-12 w-auto" />
+            <Logo className="h-8 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
