@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Phone, FileText } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import Section from "@/components/Section";
 
@@ -37,13 +37,6 @@ export default function CTASection() {
               <Phone size={18} />
               Call Us Now
             </a>
-            <Link
-              href="/resources"
-              className="inline-flex items-center gap-2 text-muted px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.03] transition-all"
-            >
-              <FileText size={18} />
-              Download Sample Report
-            </Link>
           </div>
         </div>
       </div>

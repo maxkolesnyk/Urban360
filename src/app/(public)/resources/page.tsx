@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { FileText, Download, Eye, BookOpen, ArrowRight } from "lucide-react";
+import { Download, BookOpen, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Section from "@/components/Section";
 import { createClient } from "@/lib/supabase/server";
 import type { Resource } from "@/lib/types/database";
 
 export const metadata: Metadata = {
-  title: "Resources & Sample Reports",
+  title: "Resources & Guides",
   description:
-    "Download sample building inspection reports, property guides, and educational resources from Urban 360. See the quality and detail of our reporting.",
+    "Download property guides and educational resources from Urban 360 to help you make informed property decisions.",
 };
 
 export default async function ResourcesPage() {
@@ -21,7 +21,6 @@ export default async function ResourcesPage() {
     .order("created_at", { ascending: false })
     .returns<Resource[]>();
 
-  const reports = allResources?.filter((r) => r.category === "report") ?? [];
   const guides = allResources?.filter((r) => r.category === "guide") ?? [];
 
   return (
@@ -32,81 +31,18 @@ export default async function ResourcesPage() {
             Resources
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Sample Reports &amp;{" "}
-            <span className="text-muted">Property Guides</span>
+            Property{" "}
+            <span className="text-muted">Guides &amp; Resources</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            See the quality and detail of our reporting firsthand. Download
-            sample reports and educational guides to help you make informed
-            property decisions.
+            Free educational resources to help you navigate the building
+            inspection process and make informed property decisions.
           </p>
         </div>
-      </Section>
-
-      {/* Sample Reports */}
-      <Section dark>
-        <div className="mb-10">
-          <h2 className="text-2xl font-bold mb-2">Sample Reports</h2>
-          <p className="text-muted">
-            Review excerpts from real Urban 360 inspection reports.
-          </p>
-        </div>
-
-        {reports.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {reports.map((report) => (
-              <div
-                key={report.id}
-                className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
-              >
-                <div className="aspect-[3/4] bg-surface-light border border-border rounded-xl mb-6 flex items-center justify-center overflow-hidden">
-                  {report.thumbnail_url ? (
-                    <img
-                      src={report.thumbnail_url}
-                      alt={report.title}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <FileText size={48} className="text-muted" />
-                  )}
-                </div>
-                <h3 className="font-semibold mb-2">{report.title}</h3>
-                <p className="text-muted leading-relaxed mb-4">
-                  {report.description}
-                </p>
-                <div className="flex items-center gap-3 text-sm text-muted mb-4">
-                  <span>{report.resource_type}</span>
-                  {report.page_count && (
-                    <>
-                      <span>&middot;</span>
-                      <span>{report.page_count}</span>
-                    </>
-                  )}
-                </div>
-                {report.file_url && (
-                  <div className="flex gap-3">
-                    <a
-                      href={report.file_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="relative inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black/90 transition-colors glass-shimmer"
-                    >
-                      <Download size={14} /> Download
-                    </a>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="text-muted text-center py-8">
-            Sample reports are coming soon.
-          </p>
-        )}
       </Section>
 
       {/* Guides */}
-      <Section>
+      <Section dark>
         <div className="mb-10">
           <h2 className="text-2xl font-bold mb-2">
             Guides &amp; Educational Resources

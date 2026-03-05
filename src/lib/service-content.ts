@@ -31,7 +31,6 @@ export interface ServiceContent {
   whatYouGet: string[];
   riskCategories?: RiskCategory[];
   turnaround: string;
-  sampleReportNote: string;
   faqs: FAQ[];
   relatedServices: string[];
 }
@@ -138,8 +137,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Same-day or within 24 hours for standard inspections. We understand the urgency of property purchases — tight auction timelines and cooling-off periods are never a problem.",
-    sampleReportNote:
-      "Want to see the quality and detail of our reporting before you book? Download a sample pre-purchase inspection report from our Resources page.",
     faqs: [
       {
         q: "How long does a pre-purchase inspection take?",
@@ -252,8 +249,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Same-day or within 24 hours. Combined building and pest reports are delivered together for convenience.",
-    sampleReportNote:
-      "See how we document timber pest findings — download a sample report from our Resources page.",
     faqs: [
       {
         q: "Should I get a timber pest inspection with my building inspection?",
@@ -362,8 +357,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Typically 2–3 business days from inspection. Urgent turnaround available for time-critical projects — let us know your timeline.",
-    sampleReportNote:
-      "Want to see the depth of our documentation? Download a sample dilapidation report from our Resources page.",
     faqs: [
       {
         q: "Who typically commissions a dilapidation report?",
@@ -472,8 +465,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Typically within 48 hours of inspection. Urgent turnaround available for settlement deadlines — contact us to discuss.",
-    sampleReportNote:
-      "Understand what a Section 137B report looks like — download a sample from our Resources page.",
     faqs: [
       {
         q: "When is a Section 137B report required?",
@@ -587,8 +578,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Typically within 48 hours. Urgent turnaround available for lease commencement deadlines.",
-    sampleReportNote:
-      "See how our minimum standards reports are structured — visit our Resources page.",
     faqs: [
       {
         q: "What are the key areas covered by rental minimum standards?",
@@ -698,8 +687,6 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     turnaround:
       "Stage reports delivered within 24–48 hours of inspection. PCI reports within 48 hours. We understand construction schedules — reports are never the bottleneck.",
-    sampleReportNote:
-      "Want to see the quality of our stage inspection reports? Download a sample from our Resources page.",
     faqs: [
       {
         q: "What are the typical inspection stages?",

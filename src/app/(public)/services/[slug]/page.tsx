@@ -8,7 +8,6 @@ import {
   ChevronDown,
   Phone,
   Clock,
-  FileText,
   Users,
   AlertTriangle,
 } from "lucide-react";
@@ -253,9 +252,9 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
       </Section>
 
-      {/* ── Turnaround + Sample Report ── */}
+      {/* ── Report Turnaround ── */}
       <Section dark>
-        <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-2xl">
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
               <Clock size={20} className="text-foreground" />
@@ -264,21 +263,6 @@ export default async function ServicePage({ params }: PageProps) {
             <p className="text-muted leading-relaxed">
               {content.turnaround}
             </p>
-          </div>
-          <div className="bg-background border border-border rounded-xl p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <FileText size={20} className="text-foreground" />
-              <h3 className="font-semibold">Sample Report</h3>
-            </div>
-            <p className="text-muted leading-relaxed mb-4">
-              {content.sampleReportNote}
-            </p>
-            <Link
-              href="/resources"
-              className="inline-flex items-center gap-1 text-sm text-foreground font-medium hover:underline"
-            >
-              View Sample Reports <ArrowRight size={14} />
-            </Link>
           </div>
         </div>
       </Section>
@@ -361,13 +345,6 @@ export default async function ServicePage({ params }: PageProps) {
                 <Phone size={18} />
                 Call Us Now
               </a>
-              <Link
-                href="/resources"
-                className="inline-flex items-center gap-2 text-muted px-8 py-4 rounded-xl text-base font-medium hover:text-black hover:bg-black/[0.02] transition-all"
-              >
-                <FileText size={18} />
-                Download Sample Report
-              </Link>
             </div>
           </div>
         </div>

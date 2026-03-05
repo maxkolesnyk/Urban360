@@ -56,10 +56,9 @@ export default function ResourceForm({ resource }: { resource?: Resource }) {
           <select
             name="category"
             required
-            defaultValue={resource?.category ?? "report"}
+            defaultValue={resource?.category ?? "guide"}
             className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-primary transition-colors"
           >
-            <option value="report">Sample Report</option>
             <option value="guide">Guide</option>
           </select>
         </div>

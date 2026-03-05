@@ -42,11 +42,7 @@ const FAQ_CATEGORIES = [
         q: "What format is the report in?",
         a: "Reports are delivered as professional PDF documents with clear sections, risk categorisation, high-resolution photography, and written analysis. They're designed to be easy to read and share with your solicitor, conveyancer, or real estate agent.",
       },
-      {
-        q: "Can I see a sample report?",
-        a: "Yes. Visit our Resources page to view sample report excerpts and understand the quality and detail you can expect from Urban 360.",
-      },
-      {
+{
         q: "How do I use the report for negotiation?",
         a: "Our risk-prioritised reports clearly categorise findings as major defects, minor defects, or safety hazards. This gives you and your legal representative clear evidence to support price negotiations. We also provide guidance on estimated rectification approaches during our post-inspection consultation.",
       },
