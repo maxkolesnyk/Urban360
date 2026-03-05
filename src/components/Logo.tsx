@@ -7,10 +7,10 @@ interface LogoProps {
 export default function Logo({ className = "" }: LogoProps) {
   return (
     <Image
-      src="/images/logo.svg"
+      src="/images/urb360.svg"
       alt="Urban 360 Building Inspections"
-      width={200}
-      height={87}
+      width={789}
+      height={202}
       className={className}
       priority
     />
