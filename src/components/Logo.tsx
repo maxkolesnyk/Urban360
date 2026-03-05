@@ -8,7 +8,7 @@ export default function Logo({ className = "" }: LogoProps) {
     <img
       src="/images/urb360.svg"
       alt="Urban 360 Building Inspections"
-      className={`block mt-[5px] md:mt-0 ${className}`}
+      className={`block mt-[3px] md:mt-0 ${className}`}
     />
   );
 }
