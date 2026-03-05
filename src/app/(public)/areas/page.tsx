@@ -153,7 +153,7 @@ export default function AreasPage() {
               className="bg-background border border-border rounded-2xl p-6 hover:border-black/8 transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
-                <MapPin size={20} className="text-foreground" />
+                <MapPin size={20} className="text-icon" />
                 <h3 className="text-lg font-semibold">{area}</h3>
               </div>
               <div className="flex flex-wrap gap-2">

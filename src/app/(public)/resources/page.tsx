@@ -59,7 +59,7 @@ export default async function ResourcesPage() {
                 key={guide.id}
                 className="flex items-start gap-5 bg-surface border border-border rounded-2xl p-6 hover:border-black/8 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                   <BookOpen size={24} />
                 </div>
                 <div>

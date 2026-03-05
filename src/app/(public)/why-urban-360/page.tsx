@@ -142,7 +142,7 @@ export default function WhyUrban360Page() {
               key={pillar.title}
               className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
             >
-              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground mb-5">
+              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-icon mb-5">
                 {pillar.icon}
               </div>
               <h3 className="text-lg font-semibold mb-3">{pillar.title}</h3>

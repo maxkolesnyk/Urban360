@@ -138,7 +138,7 @@ export default function AboutPage() {
               key={item.title}
               className="flex gap-4 p-6 rounded-xl border border-border bg-surface hover:border-black/8 transition-colors"
             >
-              <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                 {item.icon}
               </div>
               <div>

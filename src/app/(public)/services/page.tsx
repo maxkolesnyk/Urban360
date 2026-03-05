@@ -67,7 +67,7 @@ export default function ServicesPage() {
               className="group bg-background border border-border rounded-2xl p-8 hover:border-black/10 transition-all hover:shadow-[0_0_30px_rgba(0,0,0,0.03)]"
             >
               <div className="flex items-start gap-5">
-                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-foreground shrink-0 group-hover:bg-black/5 transition-colors">
+                <div className="w-16 h-16 rounded-xl bg-black/[0.03] flex items-center justify-center text-icon shrink-0 group-hover:bg-black/5 transition-colors">
                   {ICON_MAP[service.icon]}
                 </div>
                 <div>

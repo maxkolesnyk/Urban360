@@ -86,7 +86,7 @@ export default async function ServicePage({ params }: PageProps) {
 
         {/* Ideal For badge row */}
         <div className="mt-12 flex items-start gap-4 p-5 bg-surface border border-border rounded-xl">
-          <Users size={20} className="text-foreground shrink-0 mt-0.5" />
+          <Users size={20} className="text-icon shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-semibold mb-2">Ideal For</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1">
@@ -119,7 +119,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-2.5">
                   <Check
                     size={16}
-                    className="text-foreground mt-0.5 shrink-0"
+                    className="text-icon mt-0.5 shrink-0"
                   />
                   <span className="text-muted">{item}</span>
                 </li>
@@ -142,7 +142,7 @@ export default async function ServicePage({ params }: PageProps) {
                 key={point}
                 className="flex items-start gap-3 bg-surface border border-border rounded-xl p-4"
               >
-                <Check size={18} className="text-foreground mt-0.5 shrink-0" />
+                <Check size={18} className="text-icon mt-0.5 shrink-0" />
                 <span className="text-muted">{point}</span>
               </div>
             ))}
@@ -242,7 +242,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <li key={item} className="flex items-start gap-3">
                   <Check
                     size={18}
-                    className="text-foreground mt-0.5 shrink-0"
+                    className="text-icon mt-0.5 shrink-0"
                   />
                   <span className="text-foreground">{item}</span>
                 </li>
@@ -257,7 +257,7 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="max-w-2xl">
           <div className="bg-background border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <Clock size={20} className="text-foreground" />
+              <Clock size={20} className="text-icon" />
               <h3 className="font-semibold">Report Turnaround</h3>
             </div>
             <p className="text-muted leading-relaxed">

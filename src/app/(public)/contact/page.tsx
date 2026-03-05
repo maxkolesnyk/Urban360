@@ -47,7 +47,7 @@ export default function ContactPage() {
                 href={`tel:${SITE.phone}`}
                 className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 href={`mailto:${SITE.email}`}
                 className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl hover:border-black/8 transition-colors"
               >
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
               </a>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start gap-4 p-5 bg-background border border-border rounded-xl">
-                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-foreground shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-black/[0.03] flex items-center justify-center text-icon shrink-0">
                   <Clock size={20} />
                 </div>
                 <div>
