@@ -10,8 +10,8 @@ export default function Logo({ className = "" }: LogoProps) {
       src="/images/urb360.svg"
       alt="Urban 360 Building Inspections"
       width={789}
-      height={202}
-      className={className}
+      height={193}
+      className={`block ${className}`}
       priority
     />
   );

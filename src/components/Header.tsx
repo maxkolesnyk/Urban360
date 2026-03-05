@@ -18,7 +18,7 @@ export default function Header() {
       <div className="rounded-2xl glass-card bg-background/70 backdrop-blur-xl">
         <div className="flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <Link href="/" className="group transition-opacity hover:opacity-80">
+          <Link href="/" className="group transition-opacity hover:opacity-80 flex items-center">
             <Logo className="h-12 w-auto" />
           </Link>
 
