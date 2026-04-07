@@ -43,7 +43,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "AS 4349.1 compliant pre-purchase building inspections in Melbourne. Risk-prioritised reporting, expert guidance for negotiation, and clear property condition insights.",
     headline: "Pre-Purchase Building Inspections",
     intro:
-      "Buying a property is one of the biggest financial decisions you'll make. Our AS 4349.1 compliant inspections give you a clear, risk-prioritised picture of a property's condition — so you can buy with confidence, negotiate effectively, and avoid costly surprises.",
+      "Protect your biggest investment with confidence. Our pre-purchase building inspection service is designed to give you complete clarity before you commit. We deliver a thorough, independent assessment of the property's condition — so you can proceed with certainty and peace of mind.",
     idealFor: [
       "Home buyers (first-time and experienced)",
       "Property investors conducting due diligence",
@@ -51,7 +51,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Buyers' advocates sourcing properties for clients",
     ],
     whatIsIt:
-      "A comprehensive visual assessment of a property's accessible areas, identifying defects, areas of concern, and potential risks — all in accordance with Australian Standard AS 4349.1.",
+      "Our qualified, experienced inspectors look beyond the surface to uncover defects, structural concerns, safety hazards, termite or pest activity, and potential hidden risks. Every accessible area is carefully examined using advanced diagnostic tools, allowing us not only to identify existing issues but also highlight areas that may lead to future problems.",
     whatsInspected: [
       "Structural elements — foundations, footings, framing, load-bearing walls",
       "Exterior — cladding, brickwork, render, paintwork, fascia, guttering",
@@ -75,7 +75,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Meet due diligence requirements for finance and insurance",
     ],
     howWeDoDifferently:
-      "Unlike generic checklist inspections, Urban 360 delivers risk-focused reporting that goes beyond simply listing defects. We help you understand what matters, what doesn't, and what to do about it.",
+      "What sets us apart is our personalised approach. We take the time to walk you through our findings, providing clear, practical insights so you fully understand the condition of the property and its implications.",
     differentiatorPoints: [
       "Risk-prioritised findings — categorised by severity, not just listed",
       "Clear explanations of what each defect means in plain language",
@@ -136,7 +136,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     turnaround:
-      "Same-day or within 24 hours for standard inspections. We understand the urgency of property purchases — tight auction timelines and cooling-off periods are never a problem.",
+      "Within 24 hours, you'll receive a comprehensive, easy-to-read report featuring detailed descriptions, high-quality images, and actionable recommendations — giving you the knowledge and confidence to make the right decision.",
     faqs: [
       {
         q: "How long does a pre-purchase inspection take?",
@@ -176,7 +176,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Comprehensive timber pest inspections in Melbourne. Termite activity detection, damage assessment, and risk condition analysis. Protect your property investment.",
     headline: "Timber Pest Inspections",
     intro:
-      "Termites cause more damage to Australian homes than fire, flood, and storms combined. Our timber pest inspections identify active infestations, damage, and high-risk conditions — giving you a complete picture of timber pest risk, not just a snapshot.",
+      "Safeguard your property from hidden threats. Our professional pest inspection service is designed to identify and assess the presence and extent of pest activity and damage within the property. By detecting early signs of termites, vermin, and other destructive insects, we help you address issues before they escalate into costly damage.",
     idealFor: [
       "Home buyers (pre-purchase pest assessment)",
       "Existing homeowners (annual inspection as per AS 3660.2)",
@@ -184,7 +184,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Property managers managing landlord compliance",
     ],
     whatIsIt:
-      "A thorough visual assessment of all accessible areas for evidence of timber pest activity, damage, and conditions conducive to infestation — including termites (subterranean, drywood, dampwood), wood borers, and wood decay fungi.",
+      "Our licensed pest inspectors specialise in detecting timber pests such as termites and wood borers, vermin, and other common infestations. The inspection includes a thorough review of the site, exterior, interior, and surrounding areas of the property. We check for active infestations, signs of existing damage, and environmental conditions that may attract pests in the future. We also assess any previous termite treatments and provide clear, practical advice on whether further treatment or ongoing maintenance is needed.",
     whatsInspected: [
       "Interior — skirting boards, architraves, door frames, window frames, flooring",
       "Subfloor — stumps, bearers, joists, piers, ant caps (where accessible)",
@@ -196,7 +196,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Conducive conditions — drainage, ventilation, stored timber, soil-to-timber contact",
     ],
     whyItMatters:
-      "Timber pest damage is often concealed within walls, floors, and roofs — invisible until the damage is severe. Early detection is the most effective and least expensive form of protection.",
+      "Termites and wood-boring insects can cause significant structural damage, affecting foundations, walls, and key building elements. Our detailed pest inspections help minimise repair costs, protect the property's structural integrity, and give you confidence to protect your assets.",
     whyItMattersPoints: [
       "Termite damage can exceed $100,000+ in repair costs",
       "Structural integrity can be compromised without visible signs",
@@ -713,6 +713,224 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "pre-purchase-inspections",
       "dilapidation-reports",
       "owner-builder-defect-reports",
+    ],
+  },
+  {
+    slug: "mould-audit",
+    metaTitle: "Mould Audit & Detection Melbourne",
+    metaDescription:
+      "Professional mould audits in Melbourne using UV and diagnostic tools. Identify hidden mould, biohazard elements, and health risks in your property.",
+    headline: "Mould Audit",
+    intro:
+      "We help to expose and highlight the areas affected by mould and biohazard elements to ensure your property is safe to occupy. Our approach identifies potential health risks, enabling you to address issues quickly and effectively.",
+    idealFor: [
+      "Homeowners concerned about indoor air quality",
+      "Buyers assessing properties with visible damp or musty odours",
+      "Landlords ensuring rental properties are safe to occupy",
+      "Property managers responding to tenant health complaints",
+      "Building owners after water damage or flooding events",
+    ],
+    whatIsIt:
+      "Using the latest technology, our licensed professionals thoroughly inspect your property to identify mould and the conditions that allow it to thrive. Hidden mould and airborne spores, often invisible to the naked eye, can pose serious health risks — including respiratory issues, allergies, and long-term complications.",
+    whatsInspected: [
+      "All interior surfaces — walls, ceilings, floors, behind furniture",
+      "Wet areas — bathrooms, laundry, kitchen surrounds",
+      "Subfloor and crawl spaces (where accessible)",
+      "Roof void — condensation, leaks, inadequate ventilation",
+      "Window frames and sills — condensation zones",
+      "HVAC systems and ductwork (visual assessment)",
+      "Areas of previous water damage or flooding",
+      "UV detection of hidden mould colonies not visible to the naked eye",
+    ],
+    whyItMatters:
+      "By identifying mould before it spreads, we help protect your family's health, maintain a safe living environment, and prevent costly property damage.",
+    whyItMattersPoints: [
+      "Mould can cause serious respiratory issues and allergic reactions",
+      "Hidden mould behind walls can spread undetected for years",
+      "Mould reduces property value and complicates sales",
+      "Early detection prevents costly large-scale remediation",
+      "Landlords have legal obligations for safe, habitable properties",
+      "Insurance claims require documented evidence of the issue",
+    ],
+    howWeDoDifferently:
+      "We use advanced UV detection and diagnostic tools to find mould that's invisible to the naked eye. Our reports don't just identify the problem — they explain the root cause and how to prevent recurrence.",
+    differentiatorPoints: [
+      "UV light detection reveals hidden mould colonies",
+      "Root cause analysis — not just symptoms, but why it's growing",
+      "Health risk assessment based on mould type and extent",
+      "Photographic evidence including UV-lit documentation",
+      "Practical remediation recommendations",
+      "Prevention guidance to stop mould returning",
+    ],
+    process: [
+      {
+        step: "Book & Brief",
+        description:
+          "Contact us with your concerns. We'll discuss symptoms, history of dampness or water damage, and schedule your audit.",
+      },
+      {
+        step: "Comprehensive Audit",
+        description:
+          "Mark conducts a thorough inspection using UV detection, moisture meters, and visual assessment of all accessible areas.",
+      },
+      {
+        step: "Detailed Report",
+        description:
+          "You receive a comprehensive report with UV and standard photography, moisture readings, risk assessment, and clear remediation recommendations.",
+      },
+      {
+        step: "Guidance & Next Steps",
+        description:
+          "We walk you through findings, explain health implications, and advise on remediation priorities — with referrals to specialist remediators if needed.",
+      },
+    ],
+    whatYouGet: [
+      "Comprehensive mould audit report",
+      "UV detection photography revealing hidden mould",
+      "Moisture mapping of affected areas",
+      "Health risk assessment and implications",
+      "Root cause analysis for each affected area",
+      "Remediation recommendations and priority guidance",
+      "Prevention strategies to stop recurrence",
+      "Post-audit consultation to discuss findings",
+    ],
+    turnaround:
+      "Reports delivered within 24–48 hours of inspection. Urgent turnaround available for health-critical situations.",
+    faqs: [
+      {
+        q: "How do you detect mould that isn't visible?",
+        a: "We use UV (ultraviolet) light technology that causes mould spores and colonies to fluoresce, revealing contamination that's invisible under normal lighting. Combined with moisture meters and thermal assessment, we can identify both active mould and the conditions causing it.",
+      },
+      {
+        q: "Is mould always a health risk?",
+        a: "While some moulds are more harmful than others, all mould growth in occupied spaces should be taken seriously. Prolonged exposure can cause respiratory issues, allergic reactions, and other health complications — particularly for children, the elderly, and those with existing respiratory conditions.",
+      },
+      {
+        q: "Can you remove the mould?",
+        a: "We provide independent inspection and assessment only — our findings are unbiased and not influenced by remediation sales. If professional remediation is needed, we can refer you to trusted, licensed specialists.",
+      },
+      {
+        q: "What causes mould in the first place?",
+        a: "Mould requires moisture, warmth, and organic material to grow. Common causes include poor ventilation, water leaks, rising damp, condensation, and inadequate waterproofing. Our report identifies the specific cause in your property so it can be addressed at the source.",
+      },
+      {
+        q: "Should I get a mould audit before buying a property?",
+        a: "If you notice musty odours, visible staining, or signs of dampness during your inspection, a mould audit is strongly recommended. Mould remediation can be expensive, and knowing the extent before purchase gives you negotiation leverage and clarity on costs.",
+      },
+    ],
+    relatedServices: [
+      "pre-purchase-inspections",
+      "thermal-assessment",
+      "rental-minimum-standards",
+    ],
+  },
+  {
+    slug: "thermal-assessment",
+    metaTitle: "Thermal Assessment & Imaging Melbourne",
+    metaDescription:
+      "Professional thermal imaging assessments in Melbourne. Detect hidden moisture, insulation gaps, electrical hotspots, and air leaks with advanced infrared technology.",
+    headline: "Thermal Assessment",
+    intro:
+      "A thermal assessment uses advanced imaging technology to detect hidden issues within your property. It can reveal problems such as moisture intrusion, insulation gaps, electrical hotspots, air leaks, and inadequate insulation — allowing for early identification of issues before they become costly repairs or safety risks.",
+    idealFor: [
+      "Homeowners investigating unexplained dampness or cold spots",
+      "Buyers wanting a deeper assessment beyond visual inspection",
+      "Landlords and property managers assessing building performance",
+      "Building owners after storm, flood, or water damage events",
+      "Energy-conscious owners wanting to improve efficiency",
+    ],
+    whatIsIt:
+      "The audit helps improve energy efficiency and provides a clearer understanding of the property's condition. Using professional-grade infrared cameras, we capture temperature variations across surfaces that reveal hidden defects invisible to the naked eye. With detailed reports and expert insights, you can make informed decisions with confidence.",
+    whatsInspected: [
+      "Walls and ceilings — moisture intrusion, insulation voids, thermal bridging",
+      "Roofing — leaks, ponding water, insulation gaps",
+      "Windows and doors — air leaks, seal failures, draught paths",
+      "Electrical systems — hotspots indicating overloaded circuits or faulty wiring",
+      "Plumbing — hidden pipe leaks within walls and floors",
+      "HVAC systems — ductwork leaks, inefficient distribution",
+      "Subfloor — rising damp, moisture migration",
+      "External envelope — thermal performance and weatherproofing integrity",
+    ],
+    whyItMatters:
+      "Many property defects are hidden behind walls, under floors, or above ceilings — invisible until damage is severe. Thermal imaging reveals these issues early, when they're cheapest to fix.",
+    whyItMattersPoints: [
+      "Detect moisture before it causes mould or structural damage",
+      "Find insulation gaps that drive up energy costs",
+      "Identify electrical faults before they become fire hazards",
+      "Locate hidden pipe leaks before they cause major water damage",
+      "Improve energy efficiency and reduce heating/cooling bills",
+      "Non-invasive — no need to open walls or floors",
+    ],
+    howWeDoDifferently:
+      "Our thermal assessments go beyond just taking infrared images. We correlate thermal anomalies with physical inspection findings to give you a complete diagnosis — not just a heat map.",
+    differentiatorPoints: [
+      "Professional-grade FLIR thermal imaging equipment",
+      "Side-by-side thermal and visual photography for every finding",
+      "Temperature differential analysis with precise readings",
+      "Correlation with moisture meter readings for confirmed diagnosis",
+      "Clear explanation of what each anomaly means in plain language",
+      "Actionable repair and improvement recommendations",
+    ],
+    process: [
+      {
+        step: "Book & Brief",
+        description:
+          "Contact us with your concerns — unexplained dampness, cold spots, high energy bills, or post-damage assessment. We'll schedule your thermal audit.",
+      },
+      {
+        step: "Thermal Scan",
+        description:
+          "Mark conducts a systematic thermal scan of all accessible areas, capturing infrared images and correlating findings with visual inspection and moisture readings.",
+      },
+      {
+        step: "Analysis & Report",
+        description:
+          "You receive a detailed report with thermal and visual images side by side, temperature readings, diagnosis of each anomaly, and repair recommendations.",
+      },
+      {
+        step: "Consultation & Guidance",
+        description:
+          "We walk you through the thermal findings, explain what each anomaly means for your property, and advise on the most effective and cost-efficient repairs.",
+      },
+    ],
+    whatYouGet: [
+      "Comprehensive thermal assessment report",
+      "Infrared images with temperature readings and annotations",
+      "Side-by-side thermal and visual photography",
+      "Moisture meter readings correlated with thermal findings",
+      "Diagnosis and explanation of each thermal anomaly",
+      "Repair and improvement recommendations",
+      "Energy efficiency improvement guidance",
+      "Post-assessment consultation to discuss findings",
+    ],
+    turnaround:
+      "Reports delivered within 24–48 hours of assessment. Includes full thermal image library and expert analysis.",
+    faqs: [
+      {
+        q: "What can thermal imaging actually detect?",
+        a: "Thermal cameras detect temperature differences across surfaces. These differences reveal hidden moisture (cooler spots), insulation gaps (heat loss patterns), electrical hotspots (overheated components), air leaks (draught paths), and plumbing leaks (temperature trails along pipe routes). It's a powerful diagnostic tool that sees what your eyes can't.",
+      },
+      {
+        q: "Is thermal imaging accurate?",
+        a: "Professional-grade thermal cameras are highly accurate — detecting temperature differences as small as 0.05°C. However, thermal images require expert interpretation. A temperature anomaly could indicate several possible issues, which is why we correlate every thermal finding with visual inspection and moisture readings for confirmed diagnosis.",
+      },
+      {
+        q: "Can it replace a standard building inspection?",
+        a: "No — thermal imaging is a complementary diagnostic tool, not a replacement for a comprehensive building inspection. It adds a deeper layer of assessment that reveals issues invisible to standard visual inspection. For maximum coverage, we recommend combining thermal assessment with a pre-purchase building inspection.",
+      },
+      {
+        q: "When is the best time for a thermal assessment?",
+        a: "Thermal imaging works best when there's a temperature differential between inside and outside — typically early morning or evening. For moisture detection, it's effective at any time. We'll advise on optimal timing based on your specific concerns.",
+      },
+      {
+        q: "Do I need a thermal assessment for a pre-purchase inspection?",
+        a: "While not required, a thermal assessment can reveal hidden issues that a standard visual inspection cannot detect — particularly moisture intrusion, insulation deficiencies, and electrical faults. If you're buying an older property or one with a history of water issues, we strongly recommend adding thermal imaging.",
+      },
+    ],
+    relatedServices: [
+      "pre-purchase-inspections",
+      "mould-audit",
+      "new-construction-stage-inspections",
     ],
   },
 ];

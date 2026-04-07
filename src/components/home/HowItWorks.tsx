@@ -11,21 +11,21 @@ const STEPS = [
     title: "Book Your Inspection",
     description:
       "Get in touch with your property details. We'll confirm availability, scope, and schedule your inspection promptly.",
-    image: "/images/step-book.webp",
+    image: "/images/property-exterior-pool.webp",
   },
   {
     icon: <FileSearch size={32} />,
     title: "Detailed Inspection & Report",
     description:
       "Our senior consultant conducts a thorough on-site assessment. You receive a comprehensive, risk-prioritised report with clear photography and findings.",
-    image: "/images/step-inspect.webp",
+    image: "/images/thermal-leak-detection.webp",
   },
   {
     icon: <MessageCircle size={32} />,
     title: "Expert Advice & Guidance",
     description:
       "We walk you through the report, explain key findings, and provide actionable advice to support your negotiation and decision-making.",
-    image: "/images/step-report.webp",
+    image: "/images/property-dining.webp",
   },
 ];
 

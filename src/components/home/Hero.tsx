@@ -111,13 +111,10 @@ export default function Hero() {
           {/* Subtext */}
           <div ref={subtextRef} className="mb-10">
             <p className="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
-              Melbourne&apos;s expert building inspections — beyond the
-              checklist. Technical clarity, risk-focused reporting, and decisive
-              advice from Senior Building Consultant{" "}
-              <span className="text-foreground font-medium">
-                {SITE.founder}
-              </span>
-              .
+              Our inspections give you a clear, accurate summary of the
+              property&apos;s condition — identifying defects, structural issues,
+              and safety concerns, with straightforward advice on the repairs and
+              maintenance you need to prioritise and plan.
             </p>
           </div>
 

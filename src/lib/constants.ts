@@ -69,6 +69,20 @@ export const SERVICES = [
       "Expert inspections at every build stage — frame, lock-up, fixing, and handover — ensuring quality and code compliance.",
     icon: "HardHat",
   },
+  {
+    slug: "mould-audit",
+    title: "Mould Audit",
+    shortDescription:
+      "Expose and identify mould and biohazard elements using advanced UV and diagnostic tools to ensure your property is safe to occupy.",
+    icon: "Droplets",
+  },
+  {
+    slug: "thermal-assessment",
+    title: "Thermal Assessment",
+    shortDescription:
+      "Advanced thermal imaging to detect hidden moisture, insulation gaps, electrical hotspots, and air leaks before they become costly repairs.",
+    icon: "Thermometer",
+  },
 ] as const;
 
 export const MELBOURNE_AREAS = [

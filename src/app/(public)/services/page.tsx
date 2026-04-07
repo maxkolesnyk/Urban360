@@ -9,6 +9,8 @@ import {
   ShieldCheck,
   HardHat,
   ArrowRight,
+  Droplets,
+  Thermometer,
 } from "lucide-react";
 import { SERVICES } from "@/lib/constants";
 import Section from "@/components/Section";
@@ -26,6 +28,8 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   Wrench: <Wrench size={32} />,
   ShieldCheck: <ShieldCheck size={32} />,
   HardHat: <HardHat size={32} />,
+  Droplets: <Droplets size={32} />,
+  Thermometer: <Thermometer size={32} />,
 };
 
 export default function ServicesPage() {
@@ -41,9 +45,10 @@ export default function ServicesPage() {
               Inspection &amp; Compliance Services
             </h1>
             <p className="text-lg text-muted leading-relaxed">
-              From pre-purchase inspections to construction stage assessments —
-              every service is delivered with technical rigour, clear reporting,
-              and expert guidance tailored to your situation.
+              Our inspections give you a clear, accurate summary of the
+              property&apos;s condition — identifying defects, structural
+              issues, and safety concerns, with straightforward advice on the
+              repairs and maintenance you need to prioritise and plan.
             </p>
           </div>
           <div className="relative aspect-[5/2] rounded-2xl overflow-hidden border border-border hidden lg:block">
