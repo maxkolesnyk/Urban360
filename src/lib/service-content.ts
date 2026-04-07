@@ -93,7 +93,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "On-Site Inspection",
         description:
-          "Mark conducts a thorough 1.5–3 hour assessment of all accessible areas. You're welcome to attend — we encourage it.",
+          "Our consultant conducts a thorough 1.5–3 hour assessment of all accessible areas. You're welcome to attend — we encourage it.",
       },
       {
         step: "Report Delivery",
@@ -224,7 +224,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Thorough Assessment",
         description:
-          "Mark assesses all accessible areas for evidence of timber pest activity, damage, and conditions that increase risk.",
+          "Our team assesses all accessible areas for evidence of timber pest activity, damage, and conditions that increase risk.",
       },
       {
         step: "Detailed Report",
@@ -333,7 +333,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Systematic Documentation",
         description:
-          "Mark conducts a room-by-room, elevation-by-elevation assessment, photographing and documenting all existing conditions in detail.",
+          "Our consultant conducts a room-by-room, elevation-by-elevation assessment, photographing and documenting all existing conditions in detail.",
       },
       {
         step: "Report Compilation",
@@ -441,7 +441,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Comprehensive Assessment",
         description:
-          "Mark inspects all building work completed under the owner-builder permit, assessing quality, compliance, and identifying any defects.",
+          "Our consultant inspects all building work completed under the owner-builder permit, assessing quality, compliance, and identifying any defects.",
       },
       {
         step: "Section 137B Report",
@@ -554,7 +554,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Standards Assessment",
         description:
-          "Mark systematically assesses every applicable minimum standard category, documenting compliance status and any deficiencies.",
+          "Our consultant systematically assesses every applicable minimum standard category, documenting compliance status and any deficiencies.",
       },
       {
         step: "Compliance Report",
@@ -662,7 +662,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Stage Inspections",
         description:
-          "At each milestone, Mark conducts a thorough assessment — documenting defects, compliance issues, and workmanship quality.",
+          "At each milestone, Our consultant conducts a thorough assessment — documenting defects, compliance issues, and workmanship quality.",
       },
       {
         step: "Stage Reports",
@@ -771,7 +771,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Comprehensive Audit",
         description:
-          "Mark conducts a thorough inspection using UV detection, moisture meters, and visual assessment of all accessible areas.",
+          "Our consultant conducts a thorough inspection using UV detection, moisture meters, and visual assessment of all accessible areas.",
       },
       {
         step: "Detailed Report",
@@ -880,7 +880,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       {
         step: "Thermal Scan",
         description:
-          "Mark conducts a systematic thermal scan of all accessible areas, capturing infrared images and correlating findings with visual inspection and moisture readings.",
+          "Our consultant conducts a systematic thermal scan of all accessible areas, capturing infrared images and correlating findings with visual inspection and moisture readings.",
       },
       {
         step: "Analysis & Report",

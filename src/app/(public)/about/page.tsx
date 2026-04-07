@@ -14,29 +14,30 @@ import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Meet ${SITE.founder}, Senior Building Consultant at Urban 360. Global construction experience, deep regulatory knowledge, and a commitment to technical clarity.`,
+  description:
+    "Urban 360 Building Inspections — a team of qualified professionals delivering technically rigorous property assessments across Melbourne and Victoria.",
 };
 
 const QUALIFICATIONS = [
   {
     icon: <Globe size={24} />,
     title: "Global Experience",
-    text: "International construction expertise across diverse markets, bringing a broad perspective to Melbourne's building landscape.",
+    text: "Our team brings international construction expertise across diverse markets, giving us a broad perspective on Melbourne's building landscape.",
   },
   {
     icon: <BookOpen size={24} />,
-    title: "Ongoing Education",
-    text: "Currently pursuing advanced building surveying studies — committed to staying at the forefront of industry standards and practice.",
+    title: "Continuous Development",
+    text: "We invest in ongoing professional development and advanced qualifications — staying at the forefront of industry standards and practice.",
   },
   {
     icon: <Shield size={24} />,
-    title: "Regulatory Knowledge",
-    text: "Deep understanding of the NCC, AS 4349.1, Victorian building regulations, and compliance frameworks.",
+    title: "Regulatory Expertise",
+    text: "Deep understanding of the NCC, AS 4349.1, Victorian building regulations, and compliance frameworks across our inspection team.",
   },
   {
     icon: <Award size={24} />,
     title: "Licensed & Insured",
-    text: "Fully licensed building surveyor operating in Victoria with comprehensive professional indemnity insurance.",
+    text: "Fully licensed and operating in Victoria with comprehensive professional indemnity insurance covering every inspection we deliver.",
   },
   {
     icon: <UserCheck size={24} />,
@@ -65,23 +66,21 @@ export default function AboutPage() {
             clarity and genuine care.
           </p>
           <p className="text-lg text-muted leading-relaxed">
-            Led by Senior Building Consultant{" "}
-            <span className="text-foreground font-medium">{SITE.founder}</span>,
-            Urban 360 combines global construction experience with deep local
+            Our team combines global construction experience with deep local
             knowledge of Melbourne&apos;s building landscape — providing the
             insight you need to make confident property decisions.
           </p>
         </div>
       </Section>
 
-      {/* Mark Rozin */}
+      {/* Our Team */}
       <Section dark>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Photo */}
           <div className="aspect-[4/5] max-w-md rounded-2xl overflow-hidden border border-border relative">
             <Image
               src="/images/about-inspector.webp"
-              alt={`${SITE.founder} — Senior Building Consultant`}
+              alt="Urban 360 Building Inspections — Melbourne"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 500px"
@@ -90,30 +89,28 @@ export default function AboutPage() {
 
           <div>
             <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
-              Meet Your Consultant
+              Our Team
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {SITE.founder}
+              Qualified Professionals. Real Experience.
             </h2>
-            <p className="text-sm text-foreground font-medium mb-4">
-              {SITE.founderTitle}
-            </p>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                With years of experience spanning international construction
-                projects and the Australian building industry, Mark brings a
-                unique breadth and depth of knowledge to every inspection.
+                Our inspection team brings years of experience spanning
+                international construction projects and the Australian building
+                industry — a unique breadth and depth of knowledge that informs
+                every assessment we deliver.
               </p>
               <p>
-                Currently advancing his formal building surveying qualifications,
-                Mark is committed to continuous professional development and
-                staying at the cutting edge of building standards, construction
-                methodologies, and regulatory requirements.
+                We invest in continuous professional development, advancing
+                formal qualifications and staying at the cutting edge of
+                building standards, construction methodologies, and regulatory
+                requirements.
               </p>
               <p>
-                His approach is defined by technical precision, transparent
+                Our approach is defined by technical precision, transparent
                 communication, and a genuine commitment to helping clients
-                understand not just what he finds — but why it matters and what
+                understand not just what we find — but why it matters and what
                 to do about it.
               </p>
             </div>
@@ -156,11 +153,11 @@ export default function AboutPage() {
       <Section dark>
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Work With an Expert?
+            Ready to Work With Our Team?
           </h2>
           <p className="text-muted leading-relaxed mb-8 max-w-lg mx-auto">
-            Get in touch to discuss your property inspection needs with{" "}
-            {SITE.founder}.
+            Get in touch to discuss your property inspection needs with our
+            qualified professionals.
           </p>
           <Link
             href="/contact"

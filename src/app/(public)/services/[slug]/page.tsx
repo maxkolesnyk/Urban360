@@ -328,7 +328,7 @@ export default async function ServicePage({ params }: PageProps) {
               Ready to Book This Inspection?
             </h2>
             <p className="text-muted leading-relaxed mb-8 max-w-lg mx-auto">
-              Get in touch with {SITE.founder} to discuss your property and
+              Get in touch with our team to discuss your property and
               schedule your inspection. Limited daily availability.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

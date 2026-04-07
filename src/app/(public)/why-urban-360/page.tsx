@@ -77,7 +77,7 @@ const PILLARS = [
     icon: <UserCheck size={28} />,
     title: "Direct Expert Engagement",
     description:
-      "You're not assigned a random inspector from a pool. You work directly with Mark Rozin — a senior building consultant who personally conducts and delivers every inspection.",
+      "You're not assigned a random inspector from a pool. You work directly with a senior building consultant who personally conducts and delivers every inspection — and is available before, during, and after.",
   },
   {
     icon: <Target size={28} />,

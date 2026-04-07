@@ -7,7 +7,7 @@ import { SITE } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact & Book an Inspection",
   description:
-    "Book a building inspection with Urban 360 in Melbourne. Contact Mark Rozin directly for pre-purchase inspections, building permits, and more. Limited daily availability.",
+    "Book a building inspection with Urban 360 in Melbourne. Contact our team for pre-purchase inspections, building permits, and more. Limited daily availability.",
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
             <span className="text-muted">Inspection</span>
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            Get in touch with {SITE.founder} to discuss your inspection needs
+            Get in touch with our team to discuss your inspection needs
             and schedule an appointment. We respond to all enquiries within 2
             business hours.
           </p>
