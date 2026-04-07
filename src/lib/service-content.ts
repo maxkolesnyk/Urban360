@@ -14,12 +14,18 @@ interface RiskCategory {
   description: string;
 }
 
+interface ServiceImage {
+  src: string;
+  alt: string;
+}
+
 export interface ServiceContent {
   slug: string;
   metaTitle: string;
   metaDescription: string;
   headline: string;
   intro: string;
+  images?: ServiceImage[];
   idealFor: string[];
   whatIsIt: string;
   whatsInspected: string[];
@@ -723,6 +729,11 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     headline: "Mould Audit",
     intro:
       "We help to expose and highlight the areas affected by mould and biohazard elements to ensure your property is safe to occupy. Our approach identifies potential health risks, enabling you to address issues quickly and effectively.",
+    images: [
+      { src: "/images/mould-ceiling.webp", alt: "Severe mould growth on a ceiling above a window frame" },
+      { src: "/images/mould-uv.webp", alt: "UV light revealing hidden mould contamination on a surface" },
+      { src: "/images/mould-uv-door.webp", alt: "UV detection exposing mould growth around a door frame" },
+    ],
     idealFor: [
       "Homeowners concerned about indoor air quality",
       "Buyers assessing properties with visible damp or musty odours",
@@ -832,6 +843,15 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     headline: "Thermal Assessment",
     intro:
       "A thermal assessment uses advanced imaging technology to detect hidden issues within your property. It can reveal problems such as moisture intrusion, insulation gaps, electrical hotspots, air leaks, and inadequate insulation — allowing for early identification of issues before they become costly repairs or safety risks.",
+    images: [
+      { src: "/images/thermal-leak-detection.webp", alt: "Thermal imaging detecting a ceiling leak — visible light inset with infrared overlay showing heat signatures" },
+      { src: "/images/thermal-cold-spot.webp", alt: "Thermal scan revealing cold spots and insulation gaps in a room corner" },
+      { src: "/images/thermal-appliance.webp", alt: "Infrared imaging of an appliance showing temperature differentials" },
+      { src: "/images/thermal-scan.webp", alt: "Thermal camera scan of ceiling showing heat loss patterns" },
+      { src: "/images/thermal-leak-wall.webp", alt: "Thermal imaging identifying moisture intrusion through a wall junction" },
+      { src: "/images/thermal-leak-ceiling.webp", alt: "Infrared scan detecting a hidden ceiling leak with temperature readings" },
+      { src: "/images/thermal-ceiling.webp", alt: "Thermal assessment of ceiling insulation showing cold zones" },
+    ],
     idealFor: [
       "Homeowners investigating unexplained dampness or cold spots",
       "Buyers wanting a deeper assessment beyond visual inspection",

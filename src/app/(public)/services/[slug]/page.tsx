@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   ArrowLeft,
@@ -10,6 +11,7 @@ import {
   Clock,
   Users,
   AlertTriangle,
+  Camera,
 } from "lucide-react";
 import { SERVICES, SITE } from "@/lib/constants";
 import { SERVICE_CONTENT } from "@/lib/service-content";
@@ -103,8 +105,39 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
       </Section>
 
+      {/* ── Evidence Gallery ── */}
+      {content.images && content.images.length > 0 && (
+        <Section dark>
+          <div className="mb-8">
+            <div className="flex items-center gap-3 mb-2">
+              <Camera size={20} className="text-icon" />
+              <p className="text-sm font-semibold text-muted uppercase tracking-widest">
+                From Our Inspections
+              </p>
+            </div>
+            <h2 className="text-2xl font-bold">What We Find</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {content.images.map((img) => (
+              <div
+                key={img.src}
+                className="relative aspect-square rounded-xl overflow-hidden border border-border group"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                />
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
       {/* ── What Is It + What's Inspected ── */}
-      <Section dark>
+      <Section dark={!content.images || content.images.length === 0}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-bold mb-4">What Is It?</h2>
