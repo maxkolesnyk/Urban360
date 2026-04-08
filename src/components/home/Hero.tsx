@@ -72,7 +72,7 @@ export default function Hero() {
         quality={90}
       />
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20" />
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 md:pb-24 pt-40 w-full">
         <div className="max-w-3xl">

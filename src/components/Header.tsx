@@ -27,16 +27,16 @@ export default function Header() {
   const isDark = isHome && !scrolled;
 
   return (
-    <header className="fixed top-3 left-0 right-0 z-50 mx-auto max-w-7xl px-4">
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div
         className={cn(
-          "rounded-2xl transition-all duration-300",
+          "transition-all duration-300",
           isDark
-            ? "bg-black/30 backdrop-blur-md border border-white/10"
-            : "bg-background/90 backdrop-blur-xl border border-black/[0.06] shadow-sm"
+            ? "bg-black/40 backdrop-blur-md"
+            : "bg-background/90 backdrop-blur-xl border-b border-black/[0.06] shadow-sm"
         )}
       >
-        <div className="flex items-center justify-between px-3 md:px-6 py-2.5">
+        <div className="flex items-center justify-between mx-auto max-w-7xl px-4 md:px-6 py-3">
           {/* Logo */}
           <Link
             href="/"
@@ -106,7 +106,7 @@ export default function Header() {
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
               className={cn(
-                "lg:hidden overflow-hidden border-t rounded-b-2xl",
+                "lg:hidden overflow-hidden border-t",
                 isDark
                   ? "border-white/10 bg-neutral-950/95 backdrop-blur-xl"
                   : "border-black/[0.06] bg-background/95 backdrop-blur-xl"
