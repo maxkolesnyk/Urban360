@@ -144,7 +144,7 @@ export default function FAQPage() {
           </p>
           <Link
             href="/contact"
-            className="relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all glass-shimmer"
+            className="inline-flex items-center gap-2 bg-accent text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-accent/90 transition-all hover:scale-[1.02]"
           >
             Get in Touch <ArrowRight size={18} />
           </Link>

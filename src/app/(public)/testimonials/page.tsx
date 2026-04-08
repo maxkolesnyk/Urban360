@@ -75,12 +75,12 @@ export default function TestimonialsPage() {
         </div>
       </Section>
 
-      <Section dark>
+      <Section variant="dark" className="dark-section">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {GOOGLE_REVIEWS.map((review, i) => (
             <div
               key={i}
-              className="bg-background border border-border rounded-2xl p-7 hover:border-black/[0.06] transition-colors flex flex-col"
+              className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:border-accent/20 transition-colors flex flex-col"
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
@@ -88,14 +88,14 @@ export default function TestimonialsPage() {
                   <Star
                     key={j}
                     size={15}
-                    className="text-amber-500 fill-amber-500"
+                    className="text-amber-400 fill-amber-400"
                   />
                 ))}
               </div>
 
               {/* Review text */}
               {review.text ? (
-                <p className="text-foreground leading-relaxed mb-5 flex-1">
+                <p className="text-white/80 leading-relaxed mb-5 flex-1 text-sm">
                   &ldquo;{review.text}&rdquo;
                 </p>
               ) : (
@@ -103,9 +103,9 @@ export default function TestimonialsPage() {
               )}
 
               {/* Author */}
-              <div className="border-t border-border pt-4">
-                <p className="font-semibold">{review.name}</p>
-                <div className="flex items-center gap-3 text-sm text-muted mt-1">
+              <div className="border-t border-white/10 pt-4">
+                <p className="font-semibold text-white">{review.name}</p>
+                <div className="flex items-center gap-3 text-sm text-white/50 mt-1">
                   {review.service && <span>{review.service}</span>}
                   {review.service && <span>&middot;</span>}
                   <span className="flex items-center gap-1">
@@ -130,7 +130,7 @@ export default function TestimonialsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all glass-shimmer"
+              className="inline-flex items-center gap-2 bg-accent text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-accent/90 transition-all hover:scale-[1.02]"
             >
               Book Your Inspection <ArrowRight size={18} />
             </Link>

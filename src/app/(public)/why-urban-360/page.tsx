@@ -135,18 +135,18 @@ export default function WhyUrban360Page() {
       </Section>
 
       {/* Pillars */}
-      <Section dark>
+      <Section variant="dark" className="dark-section">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PILLARS.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-background border border-border rounded-2xl p-8 hover:border-black/8 transition-colors"
+              className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-accent/20 transition-colors"
             >
-              <div className="w-14 h-14 rounded-xl bg-black/[0.03] flex items-center justify-center text-icon mb-5">
+              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center text-white mb-5">
                 {pillar.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-3">{pillar.title}</h3>
-              <p className="text-muted leading-relaxed">
+              <h3 className="text-lg font-semibold text-white mb-3">{pillar.title}</h3>
+              <p className="text-white/60 leading-relaxed">
                 {pillar.description}
               </p>
             </div>
@@ -216,25 +216,25 @@ export default function WhyUrban360Page() {
       </Section>
 
       {/* CTA */}
-      <Section dark>
+      <Section variant="dark" className="dark-section">
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-white tracking-tight">
             Experience the Difference
           </h2>
-          <p className="text-muted leading-relaxed mb-8 max-w-lg mx-auto">
+          <p className="text-white/60 leading-relaxed mb-8 max-w-lg mx-auto">
             Book with Urban 360 and see why Melbourne property owners trust us
             for clear, expert-led building inspections.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="relative inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-black/90 transition-all glass-shimmer"
+              className="inline-flex items-center gap-2 bg-accent text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-accent/90 transition-all hover:scale-[1.02]"
             >
               Book Your Inspection <ArrowRight size={18} />
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-4 rounded-xl text-base font-medium hover:bg-surface-light transition-all"
+              className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-white/15 transition-all"
             >
               View Our Services
             </Link>

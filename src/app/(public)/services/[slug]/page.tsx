@@ -298,7 +298,7 @@ export default async function ServicePage({ params }: PageProps) {
       <Section variant="dark" className="dark-section">
         {relatedServices.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-lg font-semibold mb-4 text-white/50 uppercase tracking-widest">
+            <h2 className="text-lg font-semibold mb-4 text-white/70 uppercase tracking-widest">
               Related Services
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -311,7 +311,7 @@ export default async function ServicePage({ params }: PageProps) {
                   <h3 className="font-semibold mb-1 text-white group-hover:text-accent transition-colors">
                     {service.title}
                   </h3>
-                  <span className="inline-flex items-center gap-1 text-sm text-white/50 font-medium">
+                  <span className="inline-flex items-center gap-1 text-sm text-accent font-medium">
                     Learn more <ArrowRight size={12} />
                   </span>
                 </Link>

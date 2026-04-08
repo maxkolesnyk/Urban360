@@ -53,7 +53,7 @@ export default function ServicesPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-6 pb-12 w-full">
-          <p className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">
             Our Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                 <h2 className="font-semibold text-white mb-2">
                   {service.title}
                 </h2>
-                <p className="text-white/50 text-sm leading-relaxed mb-3">
+                <p className="text-white/70 text-sm leading-relaxed mb-3">
                   {service.shortDescription}
                 </p>
                 <span className="inline-flex items-center gap-1 text-sm text-accent font-medium">

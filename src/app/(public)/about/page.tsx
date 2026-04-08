@@ -62,7 +62,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-6 pb-12 w-full">
-          <p className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">
             About Urban 360
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
@@ -97,7 +97,7 @@ export default function AboutPage() {
           imagePosition="left"
           aspectRatio="aspect-[4/5]"
         >
-          <p className="text-sm font-semibold text-white/50 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">
             Our Team
           </p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-white">
