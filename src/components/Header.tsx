@@ -32,7 +32,7 @@ export default function Header() {
         className={cn(
           "rounded-2xl transition-all duration-300",
           isDark
-            ? "bg-white/5 backdrop-blur-md border border-white/10"
+            ? "bg-black/30 backdrop-blur-md border border-white/10"
             : "bg-background/90 backdrop-blur-xl border border-black/[0.06] shadow-sm"
         )}
       >
@@ -40,12 +40,12 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className={cn(
-              "group transition-opacity hover:opacity-80 flex items-center -ml-1 md:ml-0",
-              isDark && "brightness-0 invert"
-            )}
+            className="group transition-opacity hover:opacity-80 flex items-center -ml-1 md:ml-0"
           >
-            <Logo className="h-8 md:h-12 w-auto" />
+            <Logo className={cn(
+              "h-8 md:h-12 w-auto transition-all",
+              isDark && "brightness-0 invert"
+            )} />
           </Link>
 
           {/* Desktop Nav */}
