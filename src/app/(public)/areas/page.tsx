@@ -145,22 +145,22 @@ export default function AreasPage() {
         </div>
       </Section>
 
-      <Section variant="dark" className="dark-section">
+      <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {MELBOURNE_AREAS.map((area) => (
             <div
               key={area}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/20 transition-colors"
+              className="bg-white border border-border rounded-2xl p-6 hover:border-accent/30 hover:shadow-sm transition-all"
             >
               <div className="flex items-center gap-3 mb-4">
-                <MapPin size={20} className="text-accent" />
-                <h3 className="text-lg font-semibold text-white">{area}</h3>
+                <MapPin size={20} className="text-foreground" />
+                <h3 className="text-lg font-semibold">{area}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {(SUBURB_EXAMPLES[area] || []).map((suburb) => (
                   <span
                     key={suburb}
-                    className="text-sm bg-white/10 text-white/60 px-3 py-1 rounded-full"
+                    className="text-sm bg-surface text-muted px-3 py-1 rounded-full"
                   >
                     {suburb}
                   </span>

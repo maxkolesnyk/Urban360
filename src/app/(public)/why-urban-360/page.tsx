@@ -135,18 +135,18 @@ export default function WhyUrban360Page() {
       </Section>
 
       {/* Pillars */}
-      <Section variant="dark" className="dark-section">
+      <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PILLARS.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-accent/20 transition-colors"
+              className="bg-white border border-border rounded-2xl p-8 hover:border-accent/30 hover:shadow-sm transition-all"
             >
-              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center text-white mb-5">
+              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center text-foreground mb-5">
                 {pillar.icon}
               </div>
-              <h3 className="text-lg font-semibold text-white mb-3">{pillar.title}</h3>
-              <p className="text-white/60 leading-relaxed">
+              <h3 className="text-lg font-semibold mb-3">{pillar.title}</h3>
+              <p className="text-muted leading-relaxed">
                 {pillar.description}
               </p>
             </div>

@@ -63,13 +63,13 @@ export default function ServicesPage() {
       </section>
 
       {/* All services — uniform white cards */}
-      <Section variant="dark" className="dark-section">
+      <Section>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {SERVICES.map((service) => (
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group block bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all"
+              className="group block bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg hover:border-accent/30 transition-all"
             >
               <div className="relative h-40 w-full">
                 <Image

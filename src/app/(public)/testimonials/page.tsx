@@ -75,12 +75,12 @@ export default function TestimonialsPage() {
         </div>
       </Section>
 
-      <Section variant="dark" className="dark-section">
+      <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {GOOGLE_REVIEWS.map((review, i) => (
             <div
               key={i}
-              className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:border-accent/20 transition-colors flex flex-col"
+              className="bg-white border border-border rounded-2xl p-7 hover:border-accent/30 hover:shadow-sm transition-all flex flex-col"
             >
               {/* Stars */}
               <div className="flex gap-0.5 mb-4">
@@ -88,14 +88,14 @@ export default function TestimonialsPage() {
                   <Star
                     key={j}
                     size={15}
-                    className="text-amber-400 fill-amber-400"
+                    className="text-amber-500 fill-amber-500"
                   />
                 ))}
               </div>
 
               {/* Review text */}
               {review.text ? (
-                <p className="text-white/80 leading-relaxed mb-5 flex-1 text-sm">
+                <p className="text-foreground leading-relaxed mb-5 flex-1 text-sm">
                   &ldquo;{review.text}&rdquo;
                 </p>
               ) : (
@@ -103,9 +103,9 @@ export default function TestimonialsPage() {
               )}
 
               {/* Author */}
-              <div className="border-t border-white/10 pt-4">
-                <p className="font-semibold text-white">{review.name}</p>
-                <div className="flex items-center gap-3 text-sm text-white/50 mt-1">
+              <div className="border-t border-border pt-4">
+                <p className="font-semibold">{review.name}</p>
+                <div className="flex items-center gap-3 text-sm text-muted mt-1">
                   {review.service && <span>{review.service}</span>}
                   {review.service && <span>&middot;</span>}
                   <span className="flex items-center gap-1">

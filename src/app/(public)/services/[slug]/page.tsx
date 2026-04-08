@@ -154,18 +154,18 @@ export default async function ServicePage({ params }: PageProps) {
       </Section>
 
       {/* ── 4. Why It Matters + How We Do It Differently (MERGED) ── */}
-      <Section variant="dark" className="dark-section">
+      <Section className="bg-surface">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-bold mb-4 tracking-tight">Why It Matters</h2>
-            <p className="text-white/60 leading-relaxed mb-6">
+            <p className="text-muted leading-relaxed mb-6">
               {content.whyItMatters}
             </p>
             <div className="space-y-3">
               {content.whyItMattersPoints.map((point) => (
                 <div key={point} className="flex items-start gap-3">
-                  <Check size={16} className="text-accent mt-0.5 shrink-0" />
-                  <span className="text-white/70 text-sm">{point}</span>
+                  <Check size={16} className="text-foreground mt-0.5 shrink-0" />
+                  <span className="text-muted text-sm">{point}</span>
                 </div>
               ))}
             </div>
@@ -174,16 +174,16 @@ export default async function ServicePage({ params }: PageProps) {
             <h2 className="text-2xl font-bold mb-4 tracking-tight">
               How We Do It Differently
             </h2>
-            <p className="text-white/60 leading-relaxed mb-6">
+            <p className="text-muted leading-relaxed mb-6">
               {content.howWeDoDifferently}
             </p>
             <div className="space-y-3">
               {content.differentiatorPoints.map((point) => (
                 <div key={point} className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-0.5">
-                    <Check size={12} className="text-accent" />
+                    <Check size={12} className="text-foreground" />
                   </div>
-                  <span className="text-white/80 text-sm">{point}</span>
+                  <span className="text-foreground text-sm">{point}</span>
                 </div>
               ))}
             </div>
@@ -241,25 +241,25 @@ export default async function ServicePage({ params }: PageProps) {
       </Section>
 
       {/* ── 6. What You Receive + Turnaround (MERGED) ── */}
-      <Section variant="dark" className="dark-section">
+      <Section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold mb-6 tracking-tight">What You Receive</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {content.whatYouGet.map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <Check size={16} className="text-accent mt-0.5 shrink-0" />
-                  <span className="text-white/80 text-sm">{item}</span>
+                  <Check size={16} className="text-foreground mt-0.5 shrink-0" />
+                  <span className="text-muted text-sm">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <div className="bg-surface border border-border rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <Clock size={18} className="text-accent" />
+              <Clock size={18} className="text-foreground" />
               <h3 className="font-semibold">Report Turnaround</h3>
             </div>
-            <p className="text-white/60 leading-relaxed text-sm">
+            <p className="text-muted leading-relaxed text-sm">
               {content.turnaround}
             </p>
           </div>

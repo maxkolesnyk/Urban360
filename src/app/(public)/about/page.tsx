@@ -90,20 +90,20 @@ export default function AboutPage() {
       </Section>
 
       {/* Team — split panel */}
-      <Section variant="dark" className="dark-section">
+      <Section className="bg-surface">
         <SplitPanel
           image="/images/property-dining.webp"
           imageAlt="Quality properties assessed by Urban 360"
           imagePosition="left"
           aspectRatio="aspect-[4/5]"
         >
-          <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
             Our Team
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
             Qualified Professionals.<br />Real Experience.
           </h2>
-          <div className="space-y-4 text-white/60 leading-relaxed">
+          <div className="space-y-4 text-muted leading-relaxed">
             <p>
               Our inspection team brings years of experience spanning
               international construction projects and the Australian building

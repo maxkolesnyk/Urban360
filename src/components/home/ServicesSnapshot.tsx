@@ -31,12 +31,12 @@ const ICON_MAP: Record<string, React.ReactNode> = {
 
 export default function ServicesSnapshot() {
   return (
-    <Section variant="dark" className="dark-section">
+    <Section>
       <div className="mb-10">
-        <p className="text-sm font-semibold text-white/70 uppercase tracking-widest mb-3">
+        <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Our Services
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
           Inspection &amp; Compliance Services
         </h2>
       </div>
@@ -52,7 +52,7 @@ export default function ServicesSnapshot() {
           >
             <Link
               href={`/services/${service.slug}`}
-              className="group block bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all h-full"
+              className="group block bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg hover:border-accent/30 transition-all h-full"
             >
               <div className="relative h-36 w-full">
                 <Image
