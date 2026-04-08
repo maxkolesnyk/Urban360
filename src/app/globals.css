@@ -76,6 +76,41 @@ html {
   background: #aaaaaa;
 }
 
+/* Dark section context */
+.dark-section {
+  --muted: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --surface: rgba(255, 255, 255, 0.05);
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-hover: rgba(255, 255, 255, 0.08);
+  --icon: rgba(255, 255, 255, 0.7);
+}
+
+/* Horizontal scroll gallery */
+.gallery-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-scroll > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Large quote typography */
+.quote-xl {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.5;
+  font-style: italic;
+}
+
 /* Liquid glass card utility */
 .glass-card {
   background: var(--glass);

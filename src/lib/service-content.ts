@@ -19,6 +19,17 @@ interface ServiceImage {
   alt: string;
 }
 
+export const SERVICE_HERO_IMAGES: Record<string, string> = {
+  "pre-purchase-inspections": "/images/property-exterior-pool.webp",
+  "timber-pest-inspections": "/images/termite-damage.webp",
+  "dilapidation-reports": "/images/construction-aerial.webp",
+  "owner-builder-defect-reports": "/images/construction-workers.webp",
+  "rental-minimum-standards": "/images/property-interior-modern.webp",
+  "new-construction-stage-inspections": "/images/construction-aerial.webp",
+  "mould-audit": "/images/mould-uv.webp",
+  "thermal-assessment": "/images/thermal-leak-detection.webp",
+};
+
 export interface ServiceContent {
   slug: string;
   metaTitle: string;
