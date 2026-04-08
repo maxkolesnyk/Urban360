@@ -1,33 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Calendar, FileText } from "lucide-react";
+import { Phone, Calendar } from "lucide-react";
 import { SITE } from "@/lib/constants";
 
 export default function CTABar() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-t border-glass-border p-3 lg:hidden">
-      <div className="flex items-center justify-around gap-2">
+      <div className="flex items-center justify-center gap-4">
         <a
           href={`tel:${SITE.phone}`}
-          className="flex flex-col items-center gap-1 text-muted"
+          className="flex items-center gap-2 border border-border text-foreground px-6 py-2.5 rounded-lg text-sm font-semibold"
         >
-          <Phone size={20} />
-          <span className="text-[10px] font-medium">Call Now</span>
+          <Phone size={16} />
+          Call Now
         </a>
         <Link
           href="/contact"
-          className="relative flex items-center gap-2 bg-black text-white px-6 py-2.5 rounded-lg text-sm font-semibold glass-shimmer"
+          className="flex items-center gap-2 bg-accent text-black px-6 py-2.5 rounded-lg text-sm font-semibold"
         >
           <Calendar size={16} />
           Book Inspection
-        </Link>
-        <Link
-          href="/resources"
-          className="flex flex-col items-center gap-1 text-muted"
-        >
-          <FileText size={20} />
-          <span className="text-[10px] font-medium">Reports</span>
         </Link>
       </div>
     </div>
