@@ -63,7 +63,7 @@ export default function Hero() {
     >
       {/* Background image */}
       <Image
-        src="/images/services-hero.webp"
+        src="/images/hero-main.webp"
         alt=""
         fill
         priority
