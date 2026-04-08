@@ -1,8 +1,8 @@
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
+import ServicesSnapshot from "@/components/home/ServicesSnapshot";
 import ProblemSolution from "@/components/home/ProblemSolution";
 import HomeEvidenceGallery from "@/components/home/HomeEvidenceGallery";
-import ServicesSnapshot from "@/components/home/ServicesSnapshot";
 import HowItWorks from "@/components/home/HowItWorks";
 import FeaturedTestimonial from "@/components/home/FeaturedTestimonial";
 import WhyUrban360 from "@/components/home/WhyUrban360";
@@ -14,9 +14,9 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustBar />
+      <ServicesSnapshot />
       <ProblemSolution />
       <HomeEvidenceGallery />
-      <ServicesSnapshot />
       <HowItWorks />
       <FeaturedTestimonial />
       <WhyUrban360 />
