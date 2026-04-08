@@ -151,8 +151,8 @@ export const GOOGLE_REVIEWS: Review[] = [
 ];
 
 export const REVIEW_STATS = {
-  total: 25,
+  total: GOOGLE_REVIEWS.length,
   average: 5.0,
-  fiveStarCount: 25,
+  fiveStarCount: GOOGLE_REVIEWS.length,
   source: "Google Reviews",
-} as const;
+};

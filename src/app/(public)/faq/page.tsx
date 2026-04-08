@@ -90,7 +90,7 @@ const FAQ_CATEGORIES = [
 
 export default function FAQPage() {
   return (
-    <>
+    <div className="pt-[72px]">
       <Section>
         <div className="max-w-3xl">
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
@@ -150,6 +150,6 @@ export default function FAQPage() {
           </Link>
         </div>
       </Section>
-    </>
+    </div>
   );
 }

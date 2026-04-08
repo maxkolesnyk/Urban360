@@ -113,7 +113,7 @@ const PILLARS = [
 
 export default function WhyUrban360Page() {
   return (
-    <>
+    <div className="pt-[72px]">
       {/* Hero */}
       <Section>
         <div className="max-w-3xl">
@@ -241,6 +241,6 @@ export default function WhyUrban360Page() {
           </div>
         </div>
       </Section>
-    </>
+    </div>
   );
 }

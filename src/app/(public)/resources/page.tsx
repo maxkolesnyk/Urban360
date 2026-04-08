@@ -24,7 +24,7 @@ export default async function ResourcesPage() {
   const guides = allResources?.filter((r) => r.category === "guide") ?? [];
 
   return (
-    <>
+    <div className="pt-[72px]">
       <Section>
         <div className="max-w-3xl">
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
@@ -111,6 +111,6 @@ export default async function ResourcesPage() {
           </Link>
         </div>
       </Section>
-    </>
+    </div>
   );
 }

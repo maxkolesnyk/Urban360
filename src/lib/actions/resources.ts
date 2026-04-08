@@ -23,6 +23,10 @@ export async function createResource(
   }
 
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase.from("resources").insert({
     title,
@@ -37,7 +41,7 @@ export async function createResource(
   });
 
   if (error) {
-    return { success: false, message: "Failed to create resource. " + error.message };
+    return { success: false, message: "Failed to create resource. Please try again." };
   }
 
   revalidatePath("/resources");
@@ -66,6 +70,10 @@ export async function updateResource(
   }
 
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase
     .from("resources")
@@ -83,7 +91,7 @@ export async function updateResource(
     .eq("id", id);
 
   if (error) {
-    return { success: false, message: "Failed to update resource. " + error.message };
+    return { success: false, message: "Failed to update resource. Please try again." };
   }
 
   revalidatePath("/resources");
@@ -94,6 +102,10 @@ export async function updateResource(
 
 export async function deleteResource(id: string): Promise<ActionResult> {
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase.from("resources").delete().eq("id", id);
 

@@ -48,10 +48,11 @@ export default function ContactForm() {
       <form action={formAction} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label htmlFor="full_name" className="block text-sm font-medium mb-2">
               Full Name *
             </label>
             <input
+              id="full_name"
               type="text"
               name="full_name"
               required
@@ -60,8 +61,9 @@ export default function ContactForm() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2">Phone *</label>
+            <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone *</label>
             <input
+              id="phone"
               type="tel"
               name="phone"
               required
@@ -72,8 +74,9 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">Email *</label>
+          <label htmlFor="email" className="block text-sm font-medium mb-2">Email *</label>
           <input
+            id="email"
             type="email"
             name="email"
             required
@@ -83,10 +86,11 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">
+          <label htmlFor="service_required" className="block text-sm font-medium mb-2">
             Service Required *
           </label>
           <select
+            id="service_required"
             name="service_required"
             required
             className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-black/20 transition-colors"
@@ -104,10 +108,11 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">
+          <label htmlFor="property_address" className="block text-sm font-medium mb-2">
             Property Address
           </label>
           <input
+            id="property_address"
             type="text"
             name="property_address"
             className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-black/20 transition-colors"
@@ -117,20 +122,22 @@ export default function ContactForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label htmlFor="preferred_date" className="block text-sm font-medium mb-2">
               Preferred Date
             </label>
             <input
+              id="preferred_date"
               type="date"
               name="preferred_date"
               className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-black/20 transition-colors"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label htmlFor="how_found_us" className="block text-sm font-medium mb-2">
               How Did You Find Us?
             </label>
             <select
+              id="how_found_us"
               name="how_found_us"
               className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground focus:outline-none focus:border-black/20 transition-colors"
             >
@@ -146,8 +153,9 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-2">Message</label>
+          <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
           <textarea
+            id="message"
             name="message"
             rows={4}
             className="w-full bg-background border border-border rounded-xl px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-black/20 transition-colors resize-none"

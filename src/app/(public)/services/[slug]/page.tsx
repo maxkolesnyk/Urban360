@@ -49,7 +49,7 @@ export default async function ServicePage({ params }: PageProps) {
   const heroImage = SERVICE_HERO_IMAGES[slug];
 
   return (
-    <>
+    <div className="pt-[72px]">
       {/* ── 1. Hero with Image (Split Panel) ── */}
       <Section>
         <Link
@@ -345,6 +345,6 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
         </div>
       </Section>
-    </>
+    </div>
   );
 }

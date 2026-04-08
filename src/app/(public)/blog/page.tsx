@@ -23,7 +23,7 @@ export default async function BlogPage() {
     .returns<BlogPost[]>();
 
   return (
-    <>
+    <div className="pt-[72px]">
       <Section>
         <div className="max-w-3xl">
           <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
@@ -108,6 +108,6 @@ export default async function BlogPage() {
           <NewsletterForm />
         </div>
       </Section>
-    </>
+    </div>
   );
 }

@@ -23,6 +23,10 @@ export async function createBlogPost(
   }
 
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase.from("blog_posts").insert({
     title,
@@ -76,6 +80,10 @@ export async function updateBlogPost(
   }
 
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase
     .from("blog_posts")
@@ -107,6 +115,10 @@ export async function updateBlogPost(
 
 export async function deleteBlogPost(id: string): Promise<ActionResult> {
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    return { success: false, message: "Unauthorised." };
+  }
 
   const { error } = await supabase.from("blog_posts").delete().eq("id", id);
 
