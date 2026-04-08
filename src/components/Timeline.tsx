@@ -46,13 +46,13 @@ export default function Timeline({ steps }: TimelineProps) {
               </div>
 
               {step.image && (
-                <div className="relative w-full md:w-40 h-28 md:h-28 rounded-xl overflow-hidden shrink-0">
+                <div className="relative w-full md:w-40 aspect-video md:aspect-square rounded-xl overflow-hidden shrink-0">
                   <Image
                     src={step.image}
                     alt={step.title}
                     fill
                     className="object-cover"
-                    sizes="160px"
+                    sizes="(max-width: 768px) 100vw, 160px"
                   />
                 </div>
               )}

@@ -66,7 +66,7 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover"
+        className="object-cover object-left"
         sizes="100vw"
       />
       {/* Gradient overlays for text readability */}
