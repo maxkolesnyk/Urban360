@@ -3,7 +3,6 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
 import gsap from "gsap";
-import Image from "next/image";
 import { ArrowRight, Phone, Star } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import { REVIEW_STATS } from "@/lib/reviews";
@@ -61,26 +60,23 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen flex items-end overflow-hidden bg-neutral-950"
     >
-      {/* Background image */}
-      <Image
+      {/* Background image — raw img to bypass Next.js compression */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src="/images/hero-main.webp"
         alt=""
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-        quality={95}
-        style={{ objectFit: "cover" }}
+        className="absolute inset-0 w-full h-full object-cover"
+        fetchPriority="high"
       />
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20" />
+      {/* Gradient — transparent top so image is crystal clear, dark bottom for text */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 md:pb-24 pt-40 w-full">
         <div className="max-w-3xl">
           {/* Reviews pill */}
           <div
             ref={pillRef}
-            className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-full px-5 py-2.5 mb-8 border border-white/15"
+            className="inline-flex items-center gap-3 bg-black/50 backdrop-blur-md rounded-full px-5 py-2.5 mb-8 border border-white/15"
           >
             <div className="flex gap-0.5">
               {Array.from({ length: 5 }).map((_, i) => (
@@ -107,7 +103,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <div ref={subtextRef} className="mb-10">
-            <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
               Our inspections give you a clear, accurate summary of the
               property&apos;s condition — identifying defects, structural issues,
               and safety concerns, with straightforward advice on the repairs and
@@ -132,7 +128,7 @@ export default function Hero() {
             </Link>
             <a
               href={`tel:${SITE.phone}`}
-              className="inline-flex items-center justify-center gap-2 text-white/60 px-6 py-4 rounded-xl text-base font-medium hover:text-white hover:bg-white/5 transition-all"
+              className="inline-flex items-center justify-center gap-2 text-white px-6 py-4 rounded-xl text-base font-medium hover:bg-white/10 transition-all"
             >
               <Phone size={18} />
               {SITE.phone}
