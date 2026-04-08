@@ -69,7 +69,7 @@ export default function Hero() {
         priority
         className="object-cover"
         sizes="100vw"
-        quality={90}
+        quality={95}
       />
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20" />
