@@ -4,21 +4,22 @@ import { useRef, useEffect } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import Image from "next/image";
-import { ArrowRight, Phone, Shield } from "lucide-react";
+import { ArrowRight, Phone, Star } from "lucide-react";
 import { SITE } from "@/lib/constants";
+import { REVIEW_STATS } from "@/lib/reviews";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const pillRef = useRef<HTMLDivElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const subtextRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
-  const badgeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      tl.from(badgeRef.current, {
+      tl.from(pillRef.current, {
         opacity: 0,
         y: -20,
         duration: 0.6,
@@ -62,27 +63,35 @@ export default function Hero() {
     >
       {/* Background image */}
       <Image
-        src="/images/property-cityview.webp"
+        src="/images/construction-aerial.webp"
         alt=""
         fill
         priority
-        className="object-cover object-left"
+        className="object-cover"
         sizes="100vw"
+        quality={90}
       />
-      {/* Gradient overlays for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/50 to-neutral-950/20" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-20 md:pb-28 pt-40 w-full">
+      <div className="relative mx-auto max-w-7xl px-6 pb-16 md:pb-24 pt-40 w-full">
         <div className="max-w-3xl">
-          {/* Badge */}
+          {/* Reviews pill */}
           <div
-            ref={badgeRef}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8 border border-white/10"
+            ref={pillRef}
+            className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-full px-5 py-2.5 mb-8 border border-white/15"
           >
-            <Shield size={14} className="text-accent" />
-            <span className="text-xs font-medium text-white/70">
-              AS 4349.1 Compliant &middot; Licensed Victorian Building Surveyor
+            <div className="flex gap-0.5">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star
+                  key={i}
+                  size={14}
+                  className="fill-amber-400 text-amber-400"
+                />
+              ))}
+            </div>
+            <span className="text-sm font-medium text-white">
+              {REVIEW_STATS.average} from {REVIEW_STATS.total} Google Reviews
             </span>
           </div>
 
@@ -97,7 +106,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <div ref={subtextRef} className="mb-10">
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">
               Our inspections give you a clear, accurate summary of the
               property&apos;s condition — identifying defects, structural issues,
               and safety concerns, with straightforward advice on the repairs and
@@ -106,7 +115,7 @@ export default function Hero() {
           </div>
 
           {/* CTAs */}
-          <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
+          <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center gap-2 bg-accent text-black px-8 py-4 rounded-xl text-base font-semibold hover:bg-accent/90 transition-all hover:scale-[1.02]"
@@ -122,7 +131,7 @@ export default function Hero() {
             </Link>
             <a
               href={`tel:${SITE.phone}`}
-              className="inline-flex items-center justify-center gap-2 text-white/60 px-8 py-4 rounded-xl text-base font-medium hover:text-white hover:bg-white/5 transition-all"
+              className="inline-flex items-center justify-center gap-2 text-white/60 px-6 py-4 rounded-xl text-base font-medium hover:text-white hover:bg-white/5 transition-all"
             >
               <Phone size={18} />
               {SITE.phone}
