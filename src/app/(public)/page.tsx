@@ -1,5 +1,4 @@
 import Hero from "@/components/home/Hero";
-import TrustBar from "@/components/home/TrustBar";
 import ServicesSnapshot from "@/components/home/ServicesSnapshot";
 import ProblemSolution from "@/components/home/ProblemSolution";
 import HomeEvidenceGallery from "@/components/home/HomeEvidenceGallery";
@@ -13,7 +12,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustBar />
       <ServicesSnapshot />
       <ProblemSolution />
       <HomeEvidenceGallery />
