@@ -63,7 +63,7 @@ export default function Hero() {
     >
       {/* Background image */}
       <Image
-        src="/images/construction-aerial.webp"
+        src="/images/services-hero.webp"
         alt=""
         fill
         priority
@@ -72,7 +72,7 @@ export default function Hero() {
         quality={90}
       />
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/50 to-neutral-950/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 pb-16 md:pb-24 pt-40 w-full">
         <div className="max-w-3xl">
