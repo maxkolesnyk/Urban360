@@ -22,30 +22,34 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // On homepage: transparent until scrolled, then solid dark
-  // On other pages: always solid light
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   const isDark = isHome && !scrolled;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 max-h-screen overflow-y-auto">
-      <div
+    <>
+      <header
         className={cn(
-          "transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isDark
             ? "bg-black/40 backdrop-blur-md"
-            : "bg-background/90 backdrop-blur-xl border-b border-black/[0.06] shadow-sm"
+            : "bg-background/95 backdrop-blur-xl border-b border-black/[0.06] shadow-sm"
         )}
       >
         <div className="flex items-center justify-between mx-auto max-w-7xl px-4 md:px-6 py-3">
           {/* Logo */}
           <Link
             href="/"
-            className="group transition-opacity hover:opacity-80 flex items-center -ml-1 md:ml-0"
+            className="group transition-opacity hover:opacity-80 flex items-center"
           >
-            <Logo className={cn(
-              "h-8 md:h-12 w-auto transition-all",
-              isDark && "brightness-0 invert"
-            )} />
+            <Logo
+              className={cn(
+                "h-8 md:h-10 w-auto transition-all",
+                isDark && "brightness-0 invert"
+              )}
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -96,47 +100,38 @@ export default function Header() {
             </button>
           </div>
         </div>
+      </header>
 
-        {/* Mobile Nav */}
-        <AnimatePresence>
-          {mobileOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className={cn(
-                "lg:hidden overflow-hidden border-t",
-                isDark
-                  ? "border-white/10 bg-neutral-950/95 backdrop-blur-xl"
-                  : "border-black/[0.06] bg-background/95 backdrop-blur-xl"
-              )}
-            >
-              <nav className="flex flex-col px-6 py-4 gap-1">
-                {NAV_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={cn(
-                      "px-4 py-3 rounded-lg text-sm transition-colors",
-                      isDark
-                        ? pathname === link.href
-                          ? "text-white bg-white/10"
-                          : "text-white/70 hover:text-white hover:bg-white/10"
-                        : pathname === link.href
-                          ? "text-foreground bg-black/5"
-                          : "text-muted hover:text-black hover:bg-black/[0.03]"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </header>
+      {/* Mobile Nav — separate overlay below header */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="fixed top-[56px] left-0 right-0 z-40 lg:hidden bg-background/98 backdrop-blur-xl border-b border-black/[0.06] shadow-lg"
+          >
+            <nav className="flex flex-col px-6 py-4 gap-1 max-w-7xl mx-auto">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={cn(
+                    "px-4 py-3 rounded-lg text-sm transition-colors",
+                    pathname === link.href
+                      ? "text-foreground bg-black/5 font-medium"
+                      : "text-muted hover:text-black hover:bg-black/[0.03]"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
