@@ -2,7 +2,6 @@
 
 import { AlertTriangle, Thermometer, Eye, DollarSign } from "lucide-react";
 import Section from "@/components/Section";
-import SplitPanel from "@/components/SplitPanel";
 
 const PROBLEMS = [
   {
@@ -26,11 +25,7 @@ const PROBLEMS = [
 export default function ProblemSolution() {
   return (
     <Section>
-      <SplitPanel
-        image="/images/thermal-leak-detection.webp"
-        imageAlt="Thermal imaging revealing a hidden ceiling leak — infrared camera view with temperature readings"
-        aspectRatio="aspect-[3/4]"
-      >
+      <div className="max-w-2xl">
         <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Why It Matters
         </p>
@@ -47,7 +42,7 @@ export default function ProblemSolution() {
             </div>
           ))}
         </div>
-      </SplitPanel>
+      </div>
     </Section>
   );
 }

@@ -13,7 +13,6 @@ const STEPS = [
     title: "Detailed Inspection & Report",
     description:
       "Our senior consultant conducts a thorough on-site assessment using advanced diagnostic tools. You receive a comprehensive, risk-prioritised report with clear photography and findings.",
-    image: "/images/thermal-scan.webp",
   },
   {
     title: "Expert Advice & Guidance",

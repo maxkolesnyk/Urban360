@@ -3,7 +3,6 @@
 import { Check, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Section from "@/components/Section";
-import SplitPanel from "@/components/SplitPanel";
 
 const DIFFERENTIATORS = [
   "Direct access to a senior building consultant — not a call centre",
@@ -15,12 +14,7 @@ const DIFFERENTIATORS = [
 export default function WhyUrban360() {
   return (
     <Section>
-      <SplitPanel
-        image="/images/construction-aerial.webp"
-        imageAlt="Aerial view of construction framing — Urban 360 inspection scope"
-        imagePosition="left"
-        aspectRatio="aspect-[4/5]"
-      >
+      <div className="max-w-2xl">
         <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
           Why Choose Us
         </p>
@@ -50,7 +44,7 @@ export default function WhyUrban360() {
         >
           Learn more about our approach <ArrowRight size={14} />
         </Link>
-      </SplitPanel>
+      </div>
     </Section>
   );
 }
