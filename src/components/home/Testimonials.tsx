@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Star, ArrowRight } from "lucide-react";
 import Section from "@/components/Section";
 import Link from "next/link";
-import { GOOGLE_REVIEWS, REVIEW_STATS } from "@/lib/reviews";
+import { GOOGLE_REVIEWS } from "@/lib/reviews";
 
 // Show 3 reviews (skip index 0 which is the featured quote)
 const REVIEWS = [
@@ -32,7 +32,6 @@ export default function Testimonials() {
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} size={16} className="text-amber-500 fill-amber-500" />
               ))}
-              <span className="text-sm text-muted ml-1">{REVIEW_STATS.total} reviews</span>
             </div>
           </div>
         </div>
