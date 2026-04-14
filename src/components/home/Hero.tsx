@@ -5,7 +5,6 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ArrowRight, Phone, Star } from "lucide-react";
 import { SITE } from "@/lib/constants";
-import { REVIEW_STATS } from "@/lib/reviews";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -31,8 +30,7 @@ export default function Hero() {
             duration: 0.8,
           },
           "-=0.3"
-        )
-        .from(
+        ).from(
           subtextRef.current,
           {
             opacity: 0,
@@ -88,7 +86,7 @@ export default function Hero() {
               ))}
             </div>
             <span className="text-sm font-medium text-white">
-              {REVIEW_STATS.average} from {REVIEW_STATS.total} Google Reviews
+              Verified Google Reviews
             </span>
           </div>
 

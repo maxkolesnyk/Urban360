@@ -3,14 +3,10 @@ import {
   UserCheck,
   Target,
   FileText,
-  Award,
   Globe,
   HeartHandshake,
-  ShieldCheck,
   TrendingUp,
   ArrowRight,
-  X,
-  Check,
 } from "lucide-react";
 import Link from "next/link";
 import Section from "@/components/Section";
@@ -20,57 +16,6 @@ export const metadata: Metadata = {
   description:
     "Urban 360 is not a marketplace, franchise, or checklist inspector. Discover what makes our building inspections different — direct expert engagement, risk-focused reporting, and technical depth.",
 };
-
-const COMPARISON = [
-  {
-    feature: "Direct access to senior consultant",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-  {
-    feature: "Risk-prioritised reporting",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-  {
-    feature: "Negotiation & decision guidance",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-  {
-    feature: "AS 4349.1 compliant inspections",
-    urban360: true,
-    marketplace: true,
-    franchise: true,
-  },
-  {
-    feature: "In-depth technical analysis",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-  {
-    feature: "Personalised post-inspection support",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-  {
-    feature: "Independent & unbiased",
-    urban360: true,
-    marketplace: false,
-    franchise: true,
-  },
-  {
-    feature: "Future risk assessment included",
-    urban360: true,
-    marketplace: false,
-    franchise: false,
-  },
-];
 
 const PILLARS = [
   {
@@ -151,67 +96,6 @@ export default function WhyUrban360Page() {
               </p>
             </div>
           ))}
-        </div>
-      </Section>
-
-      {/* Comparison Table */}
-      <Section>
-        <div className="text-center mb-14">
-          <p className="text-sm font-semibold text-muted uppercase tracking-widest mb-3">
-            How We Compare
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Urban 360 vs. The Alternatives
-          </h2>
-        </div>
-
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-border">
-                <th className="text-left py-4 px-4 text-muted font-medium">
-                  Feature
-                </th>
-                <th className="py-4 px-4 text-foreground font-semibold">
-                  Urban 360
-                </th>
-                <th className="py-4 px-4 text-muted font-medium">
-                  Marketplace
-                </th>
-                <th className="py-4 px-4 text-muted font-medium">
-                  Franchise
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {COMPARISON.map((row) => (
-                <tr key={row.feature} className="border-b border-border/50">
-                  <td className="py-4 px-4 text-foreground">{row.feature}</td>
-                  <td className="py-4 px-4 text-center">
-                    {row.urban360 ? (
-                      <Check size={18} className="text-foreground mx-auto" />
-                    ) : (
-                      <X size={18} className="text-muted mx-auto" />
-                    )}
-                  </td>
-                  <td className="py-4 px-4 text-center">
-                    {row.marketplace ? (
-                      <Check size={18} className="text-muted mx-auto" />
-                    ) : (
-                      <X size={18} className="text-muted mx-auto" />
-                    )}
-                  </td>
-                  <td className="py-4 px-4 text-center">
-                    {row.franchise ? (
-                      <Check size={18} className="text-muted mx-auto" />
-                    ) : (
-                      <X size={18} className="text-muted mx-auto" />
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </Section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Section from "@/components/Section";
+import SuburbSearch from "@/components/SuburbSearch";
 import { MELBOURNE_AREAS } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -10,118 +11,110 @@ export const metadata: Metadata = {
     "Urban 360 Building Inspections serves all of Melbourne and regional Victoria. Find building inspection services in your suburb.",
 };
 
-const SUBURB_EXAMPLES: Record<string, string[]> = {
+const SUBURB_DATA: Record<string, string[]> = {
   "Melbourne CBD": [
-    "Melbourne",
-    "Southbank",
-    "Docklands",
-    "West Melbourne",
-    "East Melbourne",
+    "Melbourne", "Southbank", "Docklands", "West Melbourne", "East Melbourne",
+    "Carlton", "North Melbourne", "Parkville", "Flemington", "Kensington",
   ],
   "Inner North": [
-    "Carlton",
-    "Fitzroy",
-    "Collingwood",
-    "Brunswick",
-    "Northcote",
-    "Thornbury",
-    "Preston",
+    "Fitzroy", "Collingwood", "Abbotsford", "Clifton Hill", "Northcote",
+    "Thornbury", "Preston", "Brunswick", "Brunswick East", "Brunswick West",
+    "Coburg", "Coburg North", "Pascoe Vale", "Pascoe Vale South", "Fairfield",
+    "Alphington", "Fitzroy North", "Edinburgh Gardens",
   ],
   "Inner South": [
-    "South Yarra",
-    "Prahran",
-    "Windsor",
-    "St Kilda",
-    "Albert Park",
-    "South Melbourne",
+    "South Yarra", "Prahran", "Windsor", "St Kilda", "St Kilda East",
+    "St Kilda West", "Albert Park", "South Melbourne", "Middle Park",
+    "Port Melbourne", "Elwood", "Ripponlea", "Balaclava", "Armadale", "Toorak",
   ],
   "Inner East": [
-    "Richmond",
-    "Hawthorn",
-    "Kew",
-    "Camberwell",
-    "Balwyn",
-    "Surrey Hills",
+    "Richmond", "Cremorne", "Burnley", "Hawthorn", "Hawthorn East", "Kew",
+    "Kew East", "Camberwell", "Balwyn", "Balwyn North", "Surrey Hills",
+    "Mont Albert", "Mont Albert North", "Canterbury", "Deepdene", "Studley Park",
   ],
   "Inner West": [
-    "Footscray",
-    "Seddon",
-    "Yarraville",
-    "Williamstown",
-    "Newport",
-    "Spotswood",
+    "Footscray", "Seddon", "Yarraville", "Williamstown", "Newport", "Spotswood",
+    "Kingsville", "West Footscray", "Maidstone", "Braybrook", "Maribyrnong",
+    "Altona", "Altona North", "Seaholme", "Williamstown North",
   ],
   "Northern Suburbs": [
-    "Reservoir",
-    "Heidelberg",
-    "Ivanhoe",
-    "Bundoora",
-    "Mill Park",
-    "South Morang",
+    "Reservoir", "Heidelberg", "Heidelberg Heights", "Heidelberg West",
+    "Ivanhoe", "Ivanhoe East", "Eaglemont", "Rosanna", "Viewbank",
+    "Bundoora", "Mill Park", "South Morang", "Epping", "Wollert",
+    "Lalor", "Thomastown", "Kingsbury", "Macleod", "Greensborough",
+    "Briar Hill", "Montmorency", "Eltham", "Eltham North", "Diamond Creek",
+    "Doreen", "Mernda", "Whittlesea", "Hurstbridge", "Plenty",
+    "Yarrambat", "Watsonia", "Watsonia North", "Bellfield",
   ],
   "Southern Suburbs": [
-    "Moorabbin",
-    "Bentleigh",
-    "Oakleigh",
-    "Carnegie",
-    "Caulfield",
-    "Elsternwick",
+    "Moorabbin", "Bentleigh", "Bentleigh East", "Oakleigh", "Oakleigh East",
+    "Oakleigh South", "Carnegie", "Murrumbeena", "Caulfield", "Caulfield East",
+    "Caulfield North", "Caulfield South", "Elsternwick", "Ormond", "McKinnon",
+    "Glenhuntly", "Glen Eira", "Hughesdale", "Huntingdale", "Clayton",
+    "Clayton South", "Springvale", "Springvale South", "Noble Park",
+    "Noble Park North", "Keysborough",
   ],
   "Eastern Suburbs": [
-    "Box Hill",
-    "Glen Waverley",
-    "Doncaster",
-    "Templestowe",
-    "Ringwood",
-    "Blackburn",
+    "Box Hill", "Box Hill North", "Box Hill South", "Glen Waverley",
+    "Mount Waverley", "Doncaster", "Doncaster East", "Templestowe",
+    "Templestowe Lower", "Ringwood", "Ringwood East", "Ringwood North",
+    "Blackburn", "Blackburn North", "Blackburn South", "Nunawading",
+    "Mitcham", "Forest Hill", "Vermont", "Vermont South", "Wantirna",
+    "Wantirna South", "Boronia", "Bayswater", "Bayswater North",
+    "Croydon", "Croydon Hills", "Croydon North", "Croydon South",
+    "Mooroolbark", "Kilsyth", "Montrose", "Warranwood", "Heathmont",
+    "Donvale", "Park Orchards", "Warrandyte", "Bulleen", "Burwood",
+    "Burwood East", "Glen Iris", "Ashwood", "Chadstone",
   ],
   "Western Suburbs": [
-    "Sunshine",
-    "Caroline Springs",
-    "Werribee",
-    "Point Cook",
-    "Tarneit",
-    "Melton",
+    "Sunshine", "Sunshine North", "Sunshine West", "St Albans",
+    "Caroline Springs", "Deer Park", "Derrimut", "Ravenhall",
+    "Werribee", "Point Cook", "Tarneit", "Truganina", "Williams Landing",
+    "Melton", "Melton South", "Melton West", "Bacchus Marsh",
+    "Hoppers Crossing", "Wyndham Vale", "Manor Lakes", "Lara",
+    "Laverton", "Laverton North", "Altona Meadows", "Sydenham",
+    "Taylors Lakes", "Taylors Hill", "Hillside", "Rockbank", "Plumpton",
+    "Aintree", "Fraser Rise", "Burnside", "Burnside Heights",
   ],
   "South East": [
-    "Dandenong",
-    "Cranbourne",
-    "Berwick",
-    "Narre Warren",
-    "Pakenham",
-    "Officer",
+    "Dandenong", "Dandenong North", "Dandenong South", "Cranbourne",
+    "Cranbourne East", "Cranbourne North", "Cranbourne South", "Cranbourne West",
+    "Berwick", "Narre Warren", "Narre Warren North", "Narre Warren South",
+    "Pakenham", "Officer", "Beaconsfield", "Clyde", "Clyde North",
+    "Hallam", "Endeavour Hills", "Lynbrook", "Lyndhurst", "Hampton Park",
+    "Doveton", "Eumemmerring", "Fountain Gate", "Nar Nar Goon",
   ],
   "Mornington Peninsula": [
-    "Mornington",
-    "Frankston",
-    "Mount Martha",
-    "Rosebud",
-    "Dromana",
-    "Sorrento",
+    "Mornington", "Frankston", "Frankston North", "Frankston South",
+    "Mount Martha", "Mount Eliza", "Rosebud", "Rosebud West", "Dromana",
+    "Sorrento", "Portsea", "Rye", "Blairgowrie", "Tootgarook",
+    "Safety Beach", "McCrae", "Red Hill", "Red Hill South", "Hastings",
+    "Somerville", "Baxter", "Langwarrin", "Langwarrin South", "Seaford",
+    "Carrum Downs", "Skye", "Bittern", "Balnarring", "Somers", "Tyabb",
+    "Karingal", "Sandhurst",
   ],
   "Yarra Ranges": [
-    "Lilydale",
-    "Healesville",
-    "Mount Evelyn",
-    "Belgrave",
-    "Olinda",
-    "Monbulk",
+    "Lilydale", "Healesville", "Mount Evelyn", "Belgrave", "Belgrave Heights",
+    "Belgrave South", "Olinda", "Monbulk", "Sassafras", "Ferntree Gully",
+    "Upper Ferntree Gully", "Upwey", "Tecoma", "Kallista", "The Patch",
+    "Emerald", "Cockatoo", "Gembrook", "Yarra Glen", "Wandin North",
+    "Seville", "Seville East", "Silvan", "Mount Dandenong", "Kalorama",
+    "Chirnside Park", "Mooroolbark", "Kilsyth South", "Woori Yallock",
+    "Launching Place", "Warburton", "Yarra Junction",
   ],
   Bayside: [
-    "Brighton",
-    "Hampton",
-    "Sandringham",
-    "Black Rock",
-    "Beaumaris",
-    "Cheltenham",
+    "Brighton", "Brighton East", "Hampton", "Hampton East", "Sandringham",
+    "Black Rock", "Beaumaris", "Cheltenham", "Highett", "Mentone",
+    "Parkdale", "Mordialloc", "Aspendale", "Aspendale Gardens", "Edithvale",
+    "Chelsea", "Chelsea Heights", "Bonbeach", "Carrum", "Patterson Lakes",
   ],
   "Greater Geelong": [
-    "Geelong",
-    "Belmont",
-    "Newtown",
-    "Corio",
-    "Lara",
-    "Ocean Grove",
+    "Geelong", "Geelong West", "Newtown", "Belmont", "Highton",
+    "Corio", "Norlane", "Bell Park", "Bell Post Hill", "Lara",
+    "Ocean Grove", "Barwon Heads", "Torquay", "Jan Juc", "Grovedale",
+    "Waurn Ponds", "Armstrong Creek", "Clifton Springs", "Drysdale",
+    "Leopold", "Lovely Banks", "Point Lonsdale", "Queenscliff",
+    "Portarlington", "Indented Head", "St Leonards",
   ],
 };
 
@@ -137,37 +130,55 @@ export default function AreasPage() {
             Serving All of{" "}
             <span className="text-muted">Melbourne &amp; Victoria</span>
           </h1>
-          <p className="text-lg text-muted leading-relaxed">
+          <p className="text-lg text-muted leading-relaxed mb-10">
             Urban 360 provides building inspection services across metropolitan
             Melbourne and regional Victoria. Licensed to operate throughout the
             state, we cover all suburbs and regions listed below.
           </p>
+          <SuburbSearch
+            suburbs={Object.entries(SUBURB_DATA).flatMap(([region, suburbs]) =>
+              suburbs.map((name) => ({ name, region }))
+            )}
+          />
         </div>
       </Section>
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {MELBOURNE_AREAS.map((area) => (
-            <div
-              key={area}
-              className="bg-white border border-border rounded-2xl p-6 hover:border-accent/30 hover:shadow-sm transition-all"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <MapPin size={20} className="text-foreground" />
-                <h3 className="text-lg font-semibold">{area}</h3>
+          {MELBOURNE_AREAS.map((area) => {
+            const all = SUBURB_DATA[area] || [];
+            const shown = all.slice(0, 5);
+            const remaining = all.length - shown.length;
+            return (
+              <div
+                key={area}
+                className="bg-white border border-border rounded-2xl p-6 hover:border-accent/30 hover:shadow-sm transition-all"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <MapPin size={20} className="text-foreground" />
+                  <h3 className="text-lg font-semibold">{area}</h3>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {shown.map((suburb) => (
+                    <span
+                      key={suburb}
+                      className="text-sm bg-surface text-muted px-3 py-1 rounded-full"
+                    >
+                      {suburb}
+                    </span>
+                  ))}
+                  {remaining > 0 && (
+                    <a
+                      href="#suburb-search"
+                      className="text-sm bg-accent/10 text-foreground font-medium px-3 py-1 rounded-full hover:bg-accent/20 transition-colors"
+                    >
+                      +{remaining} more
+                    </a>
+                  )}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {(SUBURB_EXAMPLES[area] || []).map((suburb) => (
-                  <span
-                    key={suburb}
-                    className="text-sm bg-surface text-muted px-3 py-1 rounded-full"
-                  >
-                    {suburb}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </Section>
 

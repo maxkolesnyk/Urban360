@@ -20,8 +20,8 @@ export const NAV_LINKS = [
   { label: "Services", href: "/services" },
   { label: "Why Urban 360", href: "/why-urban-360" },
   { label: "Areas We Serve", href: "/areas" },
-  { label: "Resources", href: "/resources" },
-  { label: "Blog", href: "/blog" },
+  // { label: "Resources", href: "/resources" },
+  // { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
