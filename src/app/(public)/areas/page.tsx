@@ -130,11 +130,13 @@ export default function AreasPage() {
             Serving All of{" "}
             <span className="text-muted">Melbourne &amp; Victoria</span>
           </h1>
-          <p className="text-lg text-muted leading-relaxed mb-10">
+          <p className="text-lg text-muted leading-relaxed">
             Urban 360 provides building inspection services across metropolitan
             Melbourne and regional Victoria. Licensed to operate throughout the
             state, we cover all suburbs and regions listed below.
           </p>
+        </div>
+        <div className="mt-10">
           <SuburbSearch
             suburbs={Object.entries(SUBURB_DATA).flatMap(([region, suburbs]) =>
               suburbs.map((name) => ({ name, region }))
