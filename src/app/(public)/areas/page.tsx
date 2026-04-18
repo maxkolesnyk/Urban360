@@ -338,8 +338,8 @@ export default function AreasPage() {
             </h2>
           </div>
           <p className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-sm">
-            From CBD warehouse conversions to the Peninsula coast, we bring
-            the same senior consultant to every inspection.
+            From CBD warehouse conversions to the Peninsula coast, every
+            inspection gets a senior consultant from our team.
           </p>
         </div>
 

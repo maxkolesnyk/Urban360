@@ -25,7 +25,7 @@ const CONTACT_ITEMS = [
     label: "Call us",
     value: SITE.phone,
     href: `tel:${SITE.phone}`,
-    hint: "Senior consultant, direct line.",
+    hint: "Direct line to our team.",
   },
   {
     icon: <Mail size={18} strokeWidth={1.75} />,
@@ -50,7 +50,7 @@ const CONTACT_ITEMS = [
 ];
 
 const TRUST_POINTS = [
-  "Direct access to a senior consultant — no call centres",
+  "Direct access to senior consultants — no call centres",
   "Same-day or next-day reports as standard",
   "AS 4349.1 compliant inspection methodology",
   "Post-inspection consultation included",
@@ -70,7 +70,7 @@ const NEXT_STEPS = [
     icon: <PhoneCall size={18} strokeWidth={1.75} />,
     title: "We call back",
     description:
-      "A senior consultant phones within two business hours to confirm scope, pricing, and answer questions.",
+      "One of our senior consultants calls within two business hours to confirm scope, pricing, and answer questions.",
   },
   {
     number: "03",
@@ -101,7 +101,8 @@ export default function ContactPage() {
             <p className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-xl mb-8">
               Tell us about the property and we&apos;ll confirm availability,
               scope, and pricing within two business hours. No phone trees, no
-              sales funnels — you speak directly to a senior consultant.
+              sales funnels — you speak directly with one of our senior
+              consultants.
             </p>
 
             <div className="flex flex-wrap gap-3">

@@ -37,8 +37,8 @@ const ICON_MAP: Record<string, React.ReactNode> = {
 const DIFFERENTIATORS = [
   {
     icon: <UserCog size={18} strokeWidth={1.75} />,
-    title: "Senior consultant, always",
-    text: "Direct access to an experienced building consultant — never a call centre or junior tech.",
+    title: "Senior consultants only",
+    text: "Every inspection is led by an experienced building consultant from our team — never a call centre or junior tech.",
   },
   {
     icon: <Target size={18} strokeWidth={1.75} />,
@@ -148,8 +148,8 @@ export default function ServicesIndexClient() {
             </h2>
             <p className="text-base md:text-lg text-neutral-500 leading-relaxed mt-6 max-w-xl">
               From pre-purchase due diligence to construction stage oversight —
-              each inspection is led by a senior consultant and delivered with
-              the same rigour.
+              every inspection is led by a senior consultant from our team and
+              delivered with the same rigour.
             </p>
           </div>
           <a

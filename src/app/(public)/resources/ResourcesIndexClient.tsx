@@ -354,8 +354,8 @@ export default function ResourcesIndexClient({ resources }: Props) {
             <span className="text-neutral-500">book a real inspection.</span>
           </h2>
           <p className="text-base md:text-lg text-neutral-500 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Guides help you prepare. A senior consultant on-site is what
-            actually answers the question: is this property a good buy?
+            Guides help you prepare. A senior consultant from our team on-site
+            is what actually answers the question: is this property a good buy?
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

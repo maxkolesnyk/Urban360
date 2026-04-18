@@ -62,7 +62,7 @@ export default function FAQPage() {
                   {cat.category}
                 </span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900 mb-5">
+              <h2 className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900">
                 {cat.title}
                 {cat.subtitle && (
                   <>
@@ -71,9 +71,6 @@ export default function FAQPage() {
                   </>
                 )}
               </h2>
-              <p className="text-base md:text-lg text-neutral-500 leading-relaxed">
-                {cat.description}
-              </p>
             </div>
             <div className="lg:col-span-7">
               <FAQAccordion items={cat.questions} />

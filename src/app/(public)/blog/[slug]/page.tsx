@@ -319,8 +319,8 @@ export default async function BlogPostPage({ params }: PageProps) {
             <span className="text-neutral-500">on your property.</span>
           </h2>
           <p className="text-base md:text-lg text-neutral-500 leading-relaxed mb-8 max-w-2xl mx-auto">
-            Book a senior consultant for an inspection tailored to your
-            property, your stage, and your concerns.
+            Book one of our senior consultants for an inspection tailored to
+            your property, your stage, and your concerns.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

@@ -18,7 +18,7 @@ const STEPS = [
     icon: <ScanSearch size={18} strokeWidth={1.75} />,
     title: "Detailed inspection & report",
     description:
-      "A senior consultant conducts an on-site assessment with thermal and UV diagnostics, delivering a risk-prioritised report with clear photography.",
+      "One of our senior consultants conducts an on-site assessment with thermal and UV diagnostics, delivering a risk-prioritised report with clear photography.",
   },
   {
     number: "03",

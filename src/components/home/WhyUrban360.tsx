@@ -8,8 +8,8 @@ import Section from "@/components/Section";
 const DIFFERENTIATORS = [
   {
     icon: <UserCog size={18} strokeWidth={1.75} />,
-    title: "Senior consultant, always",
-    text: "Direct access to an experienced building consultant — never a call centre or junior tech.",
+    title: "Senior consultants only",
+    text: "Every inspection is led by an experienced building consultant from our team — never a call centre or junior tech.",
   },
   {
     icon: <Target size={18} strokeWidth={1.75} />,

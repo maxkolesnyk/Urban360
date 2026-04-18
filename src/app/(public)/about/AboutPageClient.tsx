@@ -69,8 +69,8 @@ const VALUES = [
   },
   {
     icon: <UserCheck size={18} strokeWidth={1.75} />,
-    title: "Senior consultant, always",
-    text: "The person who inspects your property is the person who wrote the report and takes your call.",
+    title: "Senior consultants only",
+    text: "The consultant who inspects your property is the one who writes your report and takes your call.",
   },
 ];
 

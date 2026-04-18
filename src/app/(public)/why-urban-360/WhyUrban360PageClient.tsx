@@ -41,8 +41,8 @@ const PHILOSOPHY = [
 const DIFFERENTIATORS = [
   {
     icon: <UserCog size={18} strokeWidth={1.75} />,
-    title: "Senior consultant, always",
-    text: "You get direct access to an experienced building consultant for every inspection — never a call centre, junior tech, or marketplace stranger.",
+    title: "Senior consultants only",
+    text: "Every inspection is led by an experienced building consultant from our team — never a call centre, junior tech, or marketplace stranger.",
   },
   {
     icon: <Target size={18} strokeWidth={1.75} />,
@@ -108,7 +108,7 @@ const COMPARISON = [
   {
     axis: "Who inspects",
     them: "Whoever's closest on the marketplace",
-    us: "Senior consultant who owns your file end-to-end",
+    us: "A senior consultant from our team owns your file end-to-end",
   },
   {
     axis: "Report format",
@@ -225,8 +225,8 @@ export default function WhyUrban360PageClient() {
                 </span>
               </div>
               <p className="text-lg font-semibold text-neutral-900 leading-snug tracking-tight mb-4">
-                One senior consultant, your property from first call to final
-                walk-through.
+                Your assigned consultant stays with your property from first
+                call to final walk-through.
               </p>
               <p className="text-neutral-500 text-sm leading-relaxed">
                 No hand-offs, no call centres, no junior techs. That&apos;s the
@@ -540,7 +540,7 @@ export default function WhyUrban360PageClient() {
           <p className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-2xl mb-10">
             Share your property details and we&apos;ll confirm scope and
             availability within one business day — often same day. Every
-            inspection is conducted personally by a senior consultant.
+            inspection is led personally by one of our senior consultants.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
