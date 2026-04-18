@@ -442,8 +442,7 @@ export default function AboutPageClient() {
               transition={{ duration: 0.55, delay: 0.08, ease: EASE }}
               className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-white"
             >
-              Book an inspection<br />
-              <span className="text-white/55">with people who&apos;ll pick up the phone.</span>
+              Book an inspection.
             </motion.h2>
           </div>
           <motion.div
