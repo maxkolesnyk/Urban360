@@ -61,8 +61,9 @@ export default function ProblemSolution() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-2xl mx-auto"
         >
-          Most surprises on a property aren't accidents — they're missed during
-          the inspection. Here's what we look for that others don't.
+          Most surprises on a property aren&apos;t accidents — they&apos;re
+          missed during the inspection. Here&apos;s what we look for that
+          others don&apos;t.
         </motion.p>
       </div>
 

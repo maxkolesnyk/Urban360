@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Upload, X, ImageIcon } from "lucide-react";
+import Image from "next/image";
+import { X, ImageIcon } from "lucide-react";
 import { uploadBlogImage } from "@/lib/supabase/upload";
 
 interface ImageUploadProps {
@@ -55,11 +56,13 @@ export default function ImageUpload({ name, defaultValue, onChange }: ImageUploa
       <input type="hidden" name={name} value={url} />
 
       {url ? (
-        <div className="relative rounded-xl overflow-hidden border border-border bg-surface">
-          <img
+        <div className="relative rounded-xl overflow-hidden border border-border bg-surface h-48">
+          <Image
             src={url}
             alt="Upload preview"
-            className="w-full h-48 object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 640px"
           />
           <button
             type="button"
