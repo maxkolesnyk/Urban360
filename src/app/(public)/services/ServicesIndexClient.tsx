@@ -91,8 +91,8 @@ export default function ServicesIndexClient() {
               transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="text-5xl md:text-6xl lg:text-[4rem] font-semibold tracking-[-0.025em] leading-[1.05] text-white mb-6"
             >
-              Inspection &amp; compliance,<br />
-              <span className="text-white/60">for every stage.</span>
+              Expert inspection. Trusted assurance.<br />
+              <span className="text-white/60">Total asset protection.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -100,9 +100,11 @@ export default function ServicesIndexClient() {
               transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="text-base md:text-lg text-white/70 leading-relaxed max-w-2xl mb-8"
             >
-              Our inspections give you a clear, accurate summary of the
-              property&apos;s condition — identifying defects, structural
-              issues, and safety concerns across eight dedicated service lines.
+              Our comprehensive inspection and assurance services are built to
+              safeguard your property at every stage. From structural integrity
+              to detailed condition reporting, Urban 360 delivers the insights
+              you need to make informed decisions — and protect everything
+              you&apos;ve worked hard to build.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -143,12 +145,13 @@ export default function ServicesIndexClient() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900">
-              Eight services,<br />
-              <span className="text-neutral-500">one standard.</span>
+              Every service.<br />
+              <span className="text-neutral-500">The same high standard.</span>
             </h2>
             <p className="text-base md:text-lg text-neutral-500 leading-relaxed mt-6 max-w-xl">
-              From pre-purchase due diligence to construction stage oversight —
-              every inspection is led by a senior consultant from our team and
+              Pre-purchase due diligence, construction stage oversight, and
+              everything in between — each inspection is led by a senior
+              member of our team and held to the same exacting standard,
               delivered with the same rigour.
             </p>
           </div>

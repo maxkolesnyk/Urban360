@@ -100,7 +100,7 @@ export default function AboutPageClient() {
           >
             <span className="h-px w-8 bg-accent" />
             <span className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">
-              About Urban 360
+              About Urban 360 Group
             </span>
           </motion.div>
           <motion.h1
@@ -118,9 +118,10 @@ export default function AboutPageClient() {
             transition={{ duration: 0.55, delay: 0.2, ease: EASE }}
             className="mt-8 text-base md:text-lg text-white/70 leading-relaxed max-w-2xl"
           >
-            Urban 360 is a team of licensed building consultants delivering
-            technically rigorous property assessments across Melbourne and
-            Victoria — grounded in standards, written for humans.
+            Urban 360 is a team of qualified building experts delivering
+            comprehensive, professional property assessments across Melbourne
+            and Victoria — built on technical expertise with a personal touch,
+            for real people making real decisions.
           </motion.p>
         </div>
       </section>
@@ -161,21 +162,19 @@ export default function AboutPageClient() {
             className="lg:col-span-7 space-y-5 text-base md:text-lg text-neutral-500 leading-relaxed"
           >
             <p>
-              Property owners and buyers deserve more than a checklist. They
-              deserve expert-led, technically rigorous assessments delivered
-              with clarity and genuine care — so they can act with confidence
-              rather than gut feel.
+              Urban 360 Building Inspections was founded on solid principles
+              — and backed by the expertise to match.
             </p>
             <p>
-              Urban 360 Building Inspections was built around that belief. Our
-              team combines global construction experience with deep local
-              knowledge of Melbourne&apos;s building landscape, providing the
-              insight you need to make sound property decisions.
+              With 28 years of global construction experience, Mark combines
+              deep market knowledge, building surveying, and property
+              development insight to deliver the critical intelligence you
+              need for confident property decisions.
             </p>
             <p>
-              We don&apos;t work for agents, builders, or developers — we work
-              for the client holding the report. That independence shapes
-              everything we do.
+              We work independently of agents, builders, and developers. Our
+              commitment is to you — our client — always. This transparent
+              approach is the foundation of our trust and credibility.
             </p>
           </motion.div>
         </div>

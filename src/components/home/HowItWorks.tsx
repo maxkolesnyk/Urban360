@@ -16,9 +16,9 @@ const STEPS = [
   {
     number: "02",
     icon: <ScanSearch size={18} strokeWidth={1.75} />,
-    title: "Detailed inspection & report",
+    title: "Complete assessment, instant clarity",
     description:
-      "One of our senior consultants conducts an on-site assessment with thermal and UV diagnostics, delivering a risk-prioritised report with clear photography.",
+      "Our senior consultant conducts a comprehensive assessment of your property from top to bottom — and delivers clear, honest verbal feedback the moment the inspection is complete.",
   },
   {
     number: "03",

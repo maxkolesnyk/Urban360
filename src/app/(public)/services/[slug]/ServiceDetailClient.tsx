@@ -557,11 +557,24 @@ export default function ServiceDetailClient({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900 mb-8"
+              className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900 mb-6"
             >
-              A report you can<br />
-              <span className="text-neutral-500">actually act on.</span>
+              A report that&apos;s<br />
+              <span className="text-neutral-500">detailed and clear.</span>
             </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="text-base md:text-lg text-neutral-500 leading-relaxed mb-8 max-w-xl"
+            >
+              Comprehensive reporting delivered through a configurable client
+              portal — accessible across devices, with a streamlined
+              experience that puts every finding, photo, and recommendation a
+              tap away.
+            </motion.p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {content.whatYouGet.map((item, i) => (
