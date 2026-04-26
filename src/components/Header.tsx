@@ -48,7 +48,7 @@ export default function Header() {
           >
             <Logo
               className={cn(
-                "h-8 md:h-10 w-auto transition-all",
+                "h-5 md:h-6 w-auto transition-all",
                 isDark && "brightness-0 invert"
               )}
             />
