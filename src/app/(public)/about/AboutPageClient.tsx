@@ -215,26 +215,25 @@ export default function AboutPageClient() {
             transition={{ duration: 0.6, ease: EASE }}
             className="lg:col-span-5"
           >
-            <div className="relative h-full min-h-[480px] rounded-2xl overflow-hidden ring-1 ring-neutral-200/80">
+            <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden ring-1 ring-neutral-200/80 bg-neutral-100">
               <Image
                 src="/images/mark-profile.webp"
                 alt={`${SITE.founder}, ${SITE.founderTitle}`}
                 fill
-                className="object-cover object-top"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
-                <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/80 bg-white/10 backdrop-blur-md rounded-full px-3 py-1.5 ring-1 ring-white/15 mb-4">
-                  <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                  Founder
-                </span>
-                <div className="text-white text-xl md:text-2xl font-semibold tracking-tight">
-                  {SITE.founder}
-                </div>
-                <div className="text-white/70 text-sm mt-1">
-                  {SITE.founderTitle}
-                </div>
+            </div>
+            <div className="mt-5">
+              <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-neutral-500 mb-3">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                Founder
+              </span>
+              <div className="text-neutral-900 text-xl md:text-2xl font-semibold tracking-tight">
+                {SITE.founder}
+              </div>
+              <div className="text-neutral-500 text-sm mt-1">
+                {SITE.founderTitle}
               </div>
             </div>
           </motion.div>
