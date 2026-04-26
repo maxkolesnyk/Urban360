@@ -109,8 +109,8 @@ export default function AboutPageClient() {
             transition={{ duration: 0.7, delay: 0.08, ease: EASE }}
             className="text-5xl md:text-6xl lg:text-[4rem] font-semibold tracking-[-0.035em] leading-[1.05] text-white max-w-4xl"
           >
-            Expert insight.<br />
-            <span className="text-white/55">Technical clarity.</span>
+            A small team.<br />
+            <span className="text-white/55">A senior name on every report.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -162,19 +162,14 @@ export default function AboutPageClient() {
             className="lg:col-span-7 space-y-5 text-base md:text-lg text-neutral-500 leading-relaxed"
           >
             <p>
-              Urban 360 Building Inspections was founded on solid principles
-              — and backed by the expertise to match.
-            </p>
-            <p>
               With 28 years of global construction experience, Mark combines
               deep market knowledge, building surveying, and property
-              development insight to deliver the critical intelligence you
-              need for confident property decisions.
+              development insight — so the report you get is grounded in what
+              actually happens on a site, not what looks good on paper.
             </p>
             <p>
               We work independently of agents, builders, and developers. Our
-              commitment is to you — our client — always. This transparent
-              approach is the foundation of our trust and credibility.
+              commitment is to you, our client, always.
             </p>
           </motion.div>
         </div>
@@ -246,21 +241,20 @@ export default function AboutPageClient() {
             className="lg:col-span-7 flex flex-col justify-center space-y-5 text-base md:text-lg text-neutral-500 leading-relaxed"
           >
             <p>
-              Our inspection team brings years of experience spanning
-              international construction projects and the Australian building
-              industry — a rare breadth of knowledge that informs every
-              assessment we deliver.
+              Our team blends international construction experience with deep
+              local knowledge of Melbourne&apos;s building stock — older
+              terraces, brick veneer, modern volume builds, and everything in
+              between.
             </p>
             <p>
-              We invest in continuous professional development, advancing
-              formal qualifications and staying current with building
-              standards, construction methodologies, and regulatory
-              requirements.
+              We stay current with the National Construction Code, Australian
+              Standards, and Victorian regulations. Continuous professional
+              development isn&apos;t a marketing line; it&apos;s how we keep
+              the assessments sharp.
             </p>
             <p>
-              Our approach is defined by technical precision, transparent
-              communication, and a commitment to helping clients understand
-              not just what we find — but why it matters and what to do next.
+              When we find something, we explain why it matters and what to
+              do next. The report shouldn&apos;t need a translator.
             </p>
             <div className="pt-2 flex flex-wrap gap-3">
               <Link
@@ -321,8 +315,7 @@ export default function AboutPageClient() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-2xl mx-auto"
           >
-            They&apos;re not bullet points on a pitch deck — they shape how
-            each job is scoped, inspected, written, and explained.
+            How each job is scoped, inspected, written, and explained.
           </motion.p>
         </div>
 
@@ -387,8 +380,7 @@ export default function AboutPageClient() {
             className="max-w-md"
           >
             <p className="text-base md:text-lg text-neutral-500 leading-relaxed">
-              Credentials matter — but so does how they&apos;re used. Here&apos;s
-              what sits behind every Urban 360 inspection.
+              Credentials matter. So does how they&apos;re used.
             </p>
           </motion.div>
         </div>

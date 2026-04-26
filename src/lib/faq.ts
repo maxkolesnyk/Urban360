@@ -93,7 +93,7 @@ export const FAQ_CATEGORIES: FAQCategory[] = [
     title: "Standards, licensing,",
     subtitle: "and compliance.",
     description:
-      "Every report is backed by the right credentials, the right insurance, and the relevant Australian Standards. Here's what sits behind the paperwork.",
+      "Every report is backed by the right credentials, the right insurance, and the relevant Australian Standards.",
     questions: [
       {
         q: "What is AS 4349.1?",

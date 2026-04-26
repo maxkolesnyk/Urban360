@@ -9,12 +9,12 @@ const DIFFERENTIATORS = [
   {
     icon: <UserCog size={18} strokeWidth={1.75} />,
     title: "Senior consultants only",
-    text: "Every inspection is led by an experienced building consultant from our team — never a call centre or junior tech.",
+    text: "Your inspection is led by an experienced building consultant from our team. No call centres, no junior techs.",
   },
   {
     icon: <Target size={18} strokeWidth={1.75} />,
     title: "Risk-prioritised reporting",
-    text: "Reports built around what actually matters — structural, safety, and cost-critical issues first.",
+    text: "Structural, safety, and cost-critical issues called out first. The 50-page checklist dump goes in the bin.",
   },
   {
     icon: <Radar size={18} strokeWidth={1.75} />,
@@ -24,7 +24,7 @@ const DIFFERENTIATORS = [
   {
     icon: <MessageCircle size={18} strokeWidth={1.75} />,
     title: "Plain-language advice",
-    text: "Clear, actionable guidance you can use to negotiate, plan works, or walk away with confidence.",
+    text: "Direct guidance you can use to negotiate, plan works, or walk away.",
   },
 ];
 
@@ -62,9 +62,8 @@ export default function WhyUrban360() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="text-base md:text-lg text-neutral-500 leading-relaxed mb-8"
           >
-            Urban 360 isn&apos;t a checklist inspector. We&apos;re your expert
-            partner in uncovering property condition with clarity, detail, and
-            confidence.
+            A small team of senior building consultants. Every inspection is
+            led personally — never handed off, never templated.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 12 }}

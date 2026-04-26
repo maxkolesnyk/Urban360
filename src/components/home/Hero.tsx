@@ -102,10 +102,10 @@ export default function Hero() {
           {/* Subtext */}
           <div ref={subtextRef} className="mb-10">
             <p className="text-base md:text-lg text-white/80 max-w-2xl leading-relaxed">
-              Our inspections give you a clear, accurate summary of the
-              property&apos;s condition — identifying defects, structural issues,
-              and safety concerns, with straightforward advice on the repairs and
-              maintenance you need to prioritise and plan.
+              Independent building inspections across Melbourne. Defects,
+              structural issues, and safety risks identified — with
+              straightforward advice on what to fix, what to watch, and what to
+              walk away from.
             </p>
           </div>
 

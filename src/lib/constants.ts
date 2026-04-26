@@ -4,7 +4,7 @@ export const SITE = {
   tagline: "Inspect to Protect",
   headline: "Melbourne's Expert Building Inspections — Beyond the Checklist",
   description:
-    "Urban 360 provides expert-led, technically rigorous building inspection services. Clear reporting, real-world risk assessment, and confident property decisions across Melbourne and Victoria.",
+    "Independent building inspections across Melbourne and Victoria. Senior consultants on every job, risk-prioritised reports, plain-language advice.",
   phone: "0421 588 588",
   email: "inspect@urban360.com.au",
   address: "Melbourne, VIC",

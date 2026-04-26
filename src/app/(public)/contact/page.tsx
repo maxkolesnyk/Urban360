@@ -95,14 +95,13 @@ export default function ContactPage() {
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-[4rem] font-semibold tracking-[-0.025em] leading-[1.05] text-neutral-900 mb-6">
-              Ready when<br />
-              <span className="text-neutral-500">you are.</span>
+              Tell us about<br />
+              <span className="text-neutral-500">the property.</span>
             </h1>
             <p className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-xl mb-8">
-              Tell us about the property and we&apos;ll confirm availability,
-              scope, and pricing within two business hours. No phone trees, no
-              sales funnels — you speak directly with one of our senior
-              consultants.
+              We&apos;ll confirm availability, scope, and pricing within two
+              business hours. No phone trees — you speak directly with one of
+              our senior consultants.
             </p>
 
             <div className="flex flex-wrap gap-3">

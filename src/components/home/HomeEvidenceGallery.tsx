@@ -53,8 +53,8 @@ export default function HomeEvidenceGallery() {
     <Section variant="dark" className="dark-section overflow-hidden">
       <EvidenceGallery
         items={GALLERY_ITEMS}
-        heading="See what our inspections reveal."
-        subheading="Real Evidence From Real Inspections"
+        heading="What inspections reveal."
+        subheading="Evidence from the field"
       />
     </Section>
   );

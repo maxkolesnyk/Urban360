@@ -24,50 +24,50 @@ const PHILOSOPHY = [
   {
     icon: <Microscope size={18} strokeWidth={1.75} />,
     title: "Evidence over opinion",
-    text: "Every conclusion is backed by on-site observation, measurement, and diagnostic imaging — not assumption.",
+    text: "Every conclusion is backed by on-site observation, measurement, and diagnostic imaging.",
   },
   {
     icon: <Scale size={18} strokeWidth={1.75} />,
     title: "Risk, not volume",
-    text: "We report what matters for your decision — structural, safety, and cost-critical findings are highlighted, noise is filtered out.",
+    text: "Structural, safety, and cost-critical findings are highlighted. The minor stuff is noted, not dramatised.",
   },
   {
     icon: <MessageCircle size={18} strokeWidth={1.75} />,
-    title: "Clarity over jargon",
-    text: "Plain-language explanations so you can act on findings — negotiate, plan remediation, or walk away with confidence.",
+    title: "Plain language",
+    text: "Findings explained in words you can take to a builder, a solicitor, or the negotiating table.",
   },
 ];
 
 const DIFFERENTIATORS = [
   {
     icon: <UserCog size={18} strokeWidth={1.75} />,
-    title: "Senior consultants only",
-    text: "Every inspection is led by an experienced building consultant from our team — never a call centre, junior tech, or marketplace stranger.",
+    title: "One consultant, end-to-end",
+    text: "The senior consultant who inspects your property is the one who writes the report and answers your call afterwards.",
   },
   {
     icon: <Target size={18} strokeWidth={1.75} />,
     title: "Risk-prioritised reporting",
-    text: "Findings are categorised by severity with implications and recommendations — not a 50-page checklist dump you have to decode yourself.",
+    text: "Findings categorised by severity, with implications and recommendations. Not a 50-page checklist dump to decode yourself.",
   },
   {
     icon: <Radar size={18} strokeWidth={1.75} />,
-    title: "Advanced diagnostics",
-    text: "Thermal imaging, moisture detection, and UV tools reveal issues that standard visual inspections consistently miss.",
+    title: "Diagnostics included",
+    text: "Thermal imaging, moisture detection, and UV tools on every inspection. Not sold as an add-on.",
   },
   {
     icon: <ShieldCheck size={18} strokeWidth={1.75} />,
     title: "AS 4349.1 grounded",
-    text: "Every report aligns with Australian Standards and NCC requirements — defensible in negotiation, valuable for your records.",
+    text: "Every report aligns with Australian Standards and NCC requirements. Defensible in negotiation, valuable for your records.",
   },
   {
     icon: <HeartHandshake size={18} strokeWidth={1.75} />,
     title: "Walk-through, every time",
-    text: "We guide you through every finding with photography and context so you leave with clarity — not a PDF and a shrug.",
+    text: "We talk you through every finding with photography and context. You leave understanding the property, not just holding a PDF.",
   },
   {
     icon: <TrendingUp size={18} strokeWidth={1.75} />,
     title: "Future-risk perspective",
-    text: "Beyond current defects, we surface emerging risks — what's coming, not just what's already visible.",
+    text: "We surface emerging risks alongside current defects, so you can plan, not react.",
   },
 ];
 
@@ -173,10 +173,9 @@ export default function WhyUrban360PageClient() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base md:text-lg text-neutral-500 leading-relaxed max-w-2xl mb-10"
             >
-              Urban 360 isn&apos;t a marketplace, a franchise, or a volume
-              operation. We&apos;re a small team of senior building consultants
-              who treat every inspection as the high-stakes decision it is —
-              for the buyer, the vendor, and the property itself.
+              We&apos;re a small team of senior building consultants. Not a
+              marketplace, not a franchise, not a volume operation — every
+              inspection is the most important one we&apos;re doing that day.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -337,9 +336,8 @@ export default function WhyUrban360PageClient() {
             transition={{ duration: 0.5, delay: 0.18 }}
             className="text-base text-neutral-500 leading-relaxed max-w-md md:self-end"
           >
-            Built over a decade of Melbourne inspections, informed by global
-            construction experience, and refined by direct feedback from every
-            client we&apos;ve worked with.
+            Built over a decade of Melbourne inspections and 28 years of
+            global construction experience.
           </motion.p>
         </div>
 
@@ -466,9 +464,8 @@ export default function WhyUrban360PageClient() {
             transition={{ duration: 0.5, delay: 0.15 }}
             className="text-base md:text-lg text-neutral-500 leading-relaxed"
           >
-            Most building inspection services were built to scale first and
-            serve second. We inverted that — here&apos;s what it looks like in
-            practice.
+            Most inspection services were built to scale first. Here&apos;s
+            what we do differently.
           </motion.p>
         </div>
 

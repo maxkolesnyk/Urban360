@@ -60,7 +60,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "AS 4349.1 compliant pre-purchase building inspections in Melbourne. Risk-prioritised reporting, expert guidance for negotiation, and clear property condition insights.",
     headline: "Pre-Purchase Building Inspections",
     intro:
-      "Protect your biggest investment with confidence. Our pre-purchase building inspection service is designed to give you complete clarity before you commit. We deliver a thorough, independent assessment of the property's condition — so you can proceed with certainty and peace of mind.",
+      "An independent AS 4349.1 building inspection before you sign. We identify defects, structural issues, and safety concerns across every accessible area, then walk you through what each finding means for your decision.",
     idealFor: [
       "Home buyers (first-time and experienced)",
       "Property investors conducting due diligence",
@@ -92,7 +92,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Meet due diligence requirements for finance and insurance",
     ],
     howWeDoDifferently:
-      "What sets us apart is our personalised approach. We take the time to walk you through our findings, providing clear, practical insights so you fully understand the condition of the property and its implications.",
+      "Findings are categorised by severity and explained in person. You get negotiation context, plain-language guidance on what each defect means, and direct access to your senior consultant before, during, and after.",
     differentiatorPoints: [
       "Risk-prioritised findings — categorised by severity, not just listed",
       "Clear explanations of what each defect means in plain language",
@@ -153,12 +153,8 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       },
     ],
     turnaround:
-      "Within 24 hours, you'll receive a comprehensive, easy-to-read report featuring detailed descriptions, high-quality images, and actionable recommendations — giving you the knowledge and confidence to make the right decision.",
+      "Most reports are in your inbox the same day. Tight deadline (auction, cooling-off)? Tell us when you book and we'll prioritise.",
     faqs: [
-      {
-        q: "How long does a pre-purchase inspection take?",
-        a: "Typically 1.5 to 3 hours depending on the property size, age, and complexity. Larger or older properties take longer. We never rush — thoroughness is more important than speed.",
-      },
       {
         q: "When will I receive the report?",
         a: "Most reports are delivered same-day or within 24 hours of the inspection. If you have an urgent deadline (auction, cooling-off period), let us know and we'll prioritise accordingly.",
@@ -193,7 +189,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Comprehensive timber pest inspections in Melbourne. Termite activity detection, damage assessment, and risk condition analysis. Protect your property investment.",
     headline: "Timber Pest Inspections",
     intro:
-      "Safeguard your property from hidden threats. Our professional pest inspection service is designed to identify and assess the presence and extent of pest activity and damage within the property. By detecting early signs of termites, vermin, and other destructive insects, we help you address issues before they escalate into costly damage.",
+      "Termites, borers, and conducive conditions assessed against AS 3660.2. We identify active infestation, existing damage, and the environmental factors that make a property vulnerable — then explain how to address each one.",
     idealFor: [
       "Home buyers (pre-purchase pest assessment)",
       "Existing homeowners (annual inspection as per AS 3660.2)",
@@ -223,7 +219,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Annual inspections are recommended under AS 3660.2",
     ],
     howWeDoDifferently:
-      "We go beyond simply noting 'evidence found' or 'no evidence found.' Our reports explain the full risk picture — what we found, what it means, and what you should do about it.",
+      "Our reports explain the full risk picture: what we found, what it means, the conducive conditions making the property vulnerable, and what to do next. Treatment recommendations come without sales pressure — we don't sell pest control.",
     differentiatorPoints: [
       "Full risk assessment, not just activity detection",
       "Conducive conditions identified and explained",
@@ -265,7 +261,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Post-inspection consultation",
     ],
     turnaround:
-      "Same-day or within 24 hours. Combined building and pest reports are delivered together for convenience.",
+      "Same-day in most cases. If you've booked a combined building + pest inspection, both reports land together.",
     faqs: [
       {
         q: "Should I get a timber pest inspection with my building inspection?",
@@ -301,7 +297,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Professional dilapidation reports in Melbourne. Pre-construction condition assessments documenting the existing state of neighbouring properties. Protect yourself from disputes.",
     headline: "Dilapidation Reports",
     intro:
-      "Planning construction near neighbouring properties? A dilapidation report documents existing conditions before work begins — providing clear, dated evidence that protects you, your neighbours, and your builder from costly disputes.",
+      "Before construction or demolition starts next door, we document the existing condition of every neighbouring property. The dated, photographed record protects you from disputes when works are done — and protects your neighbours from genuine damage going unchecked.",
     idealFor: [
       "Developers and builders commencing works near existing properties",
       "Property owners undertaking renovations or demolition",
@@ -332,7 +328,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Demonstrates professionalism and duty of care",
     ],
     howWeDoDifferently:
-      "Our dilapidation reports are exceptionally thorough. We don't just take a few photos — we systematically document every elevation, room, and surface with precise descriptions and high-resolution photography.",
+      "Every elevation, room, and surface is systematically documented with high-resolution photography and matching written descriptions. The level of detail is built for dispute resolution — because that's what these reports get used for.",
     differentiatorPoints: [
       "Extensive photographic documentation — hundreds of images per property",
       "Precise written descriptions matching every photograph",
@@ -373,7 +369,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Fast turnaround to meet project timelines",
     ],
     turnaround:
-      "Typically 2–3 business days from inspection. Urgent turnaround available for time-critical projects — let us know your timeline.",
+      "Two to three business days, since the photographic record is exhaustive. If your construction kick-off is locked in, tell us early and we'll work to it.",
     faqs: [
       {
         q: "Who typically commissions a dilapidation report?",
@@ -409,7 +405,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Section 137B owner builder defect reports in Melbourne. Expert assessment of construction quality and compliance for owner builder properties in Victoria.",
     headline: "Owner-Builder Defect Reports",
     intro:
-      "Selling a property built or renovated under an owner-builder permit in Victoria? Section 137B of the Building Act requires a defect report from a registered building practitioner before settlement. We provide thorough, compliant assessments that protect both vendor and purchaser.",
+      "Selling within 6.5 years of an owner-builder permit? Section 137B of the Victorian Building Act requires a defect report from a registered practitioner before settlement. We produce compliant reports that hold up under purchaser scrutiny — and explain anything they raise.",
     idealFor: [
       "Owner-builders selling within 6.5 years of completion",
       "Conveyancers and solicitors managing owner-builder sales",
@@ -440,7 +436,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Provides evidence of compliance with building permit conditions",
     ],
     howWeDoDifferently:
-      "We don't just satisfy the legal minimum. Our Section 137B reports provide detailed, technically grounded assessments that go beyond basic compliance.",
+      "Section 137B gets treated as a real building assessment, not a compliance tick-box. Defects are categorised by severity, paired with rectification guidance, and explained in plain language for both vendor and purchaser.",
     differentiatorPoints: [
       "Detailed technical assessment, not just a compliance tick-box",
       "Clear defect categorisation with severity ratings",
@@ -481,7 +477,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Post-inspection consultation to discuss findings and options",
     ],
     turnaround:
-      "Typically within 48 hours of inspection. Urgent turnaround available for settlement deadlines — contact us to discuss.",
+      "48 hours is standard. Settlement deadline closing in? Let us know and we'll fast-track.",
     faqs: [
       {
         q: "When is a Section 137B report required?",
@@ -517,7 +513,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Rental minimum standards assessments in Melbourne. Ensure your rental property meets Victorian requirements for safety, amenity, and compliance.",
     headline: "Rental Minimum Standards Assessments",
     intro:
-      "Victorian rental minimum standards require all rental properties to meet specific safety, function, and amenity criteria. We assess your property against these requirements and provide a clear, actionable compliance report — protecting your tenants and your legal standing.",
+      "Every Victorian rental must meet 14 prescribed minimum standards before each new tenancy. We audit each one, flag what fails, and tell you exactly what needs to change to be compliant before move-in.",
     idealFor: [
       "Landlords ensuring compliance before new tenancies",
       "Property managers conducting portfolio assessments",
@@ -553,7 +549,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Demonstrates responsible property ownership",
     ],
     howWeDoDifferently:
-      "We provide a practical, thorough assessment with clear guidance on what meets the standard and what doesn't — including specific, costed recommendations for achieving compliance.",
+      "Each of the 14 standards is assessed individually and reported pass/fail at a glance. Where something fails, we tell you what specifically needs to change and which items to fix first.",
     differentiatorPoints: [
       "Every standard category assessed and clearly reported",
       "Compliant vs non-compliant status at a glance",
@@ -594,7 +590,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Post-assessment consultation to discuss findings",
     ],
     turnaround:
-      "Typically within 48 hours. Urgent turnaround available for lease commencement deadlines.",
+      "48 hours from inspection, with rectification priorities laid out so you can move on the most critical items first.",
     faqs: [
       {
         q: "What are the key areas covered by rental minimum standards?",
@@ -630,7 +626,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Expert new construction stage inspections in Melbourne. Frame, lock-up, fixing, and handover inspections ensuring build quality and code compliance at every milestone.",
     headline: "New Construction Stage Inspections",
     intro:
-      "Building a new home or undertaking major renovations? Independent stage inspections at critical construction milestones ensure build quality, code compliance, and protect you from costly defects that become hidden once work progresses to the next phase.",
+      "Independent inspections at the critical milestones of your build — base, frame, lock-up, fixing, and pre-handover. Defects are cheap to fix while they&apos;re still visible. After the next stage covers them, they&apos;re not.",
     idealFor: [
       "New home buyers building with a volume or custom builder",
       "Owner-builders managing their own construction",
@@ -661,7 +657,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Have expert evidence if disputes arise with your builder",
     ],
     howWeDoDifferently:
-      "Our stage reports don't just note defects — they empower you to have informed, constructive conversations with your builder, backed by expert evidence and clear guidance.",
+      "Every stage report is photographically documented and assessed against your approved plans, not generic standards. You get clear rectification guidance you can take to your builder — and the same consultant stays with the build from base to handover.",
     differentiatorPoints: [
       "Detailed, photographically documented stage reports",
       "Defects categorised by severity and urgency",
@@ -703,7 +699,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Ongoing access to your consultant throughout the build",
     ],
     turnaround:
-      "Stage reports delivered within 24–48 hours of inspection. PCI reports within 48 hours. We understand construction schedules — reports are never the bottleneck.",
+      "Stage reports inside 24–48 hours so the next trade isn't held up. PCI reports inside 48 hours from inspection.",
     faqs: [
       {
         q: "What are the typical inspection stages?",
@@ -739,7 +735,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Professional mould audits in Melbourne using UV and diagnostic tools. Identify hidden mould, biohazard elements, and health risks in your property.",
     headline: "Mould Audit",
     intro:
-      "We help to expose and highlight the areas affected by mould and biohazard elements to ensure your property is safe to occupy. Our approach identifies potential health risks, enabling you to address issues quickly and effectively.",
+      "UV detection, moisture mapping, and visual assessment to find mould — visible and hidden — and identify the conditions causing it. You get a health-risk read on what we find and a remediation path forward.",
     images: [
       { src: "/images/mould-ceiling.webp", alt: "Severe mould growth on a ceiling above a window frame" },
       { src: "/images/mould-uv.webp", alt: "UV light revealing hidden mould contamination on a surface" },
@@ -775,7 +771,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Insurance claims require documented evidence of the issue",
     ],
     howWeDoDifferently:
-      "We use advanced UV detection and diagnostic tools to find mould that's invisible to the naked eye. Our reports don't just identify the problem — they explain the root cause and how to prevent recurrence.",
+      "UV detection finds mould the eye misses. Reports go past identification to root cause: why it's growing, what condition is feeding it, and how to stop it returning after remediation.",
     differentiatorPoints: [
       "UV light detection reveals hidden mould colonies",
       "Root cause analysis — not just symptoms, but why it's growing",
@@ -817,7 +813,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Post-audit consultation to discuss findings",
     ],
     turnaround:
-      "Reports delivered within 24–48 hours of inspection. Urgent turnaround available for health-critical situations.",
+      "24–48 hours, with UV photography and moisture readings included. If anyone in the property is symptomatic, flag it on booking and we'll prioritise.",
     faqs: [
       {
         q: "How do you detect mould that isn't visible?",
@@ -853,7 +849,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Professional thermal imaging assessments in Melbourne. Detect hidden moisture, insulation gaps, electrical hotspots, and air leaks with advanced infrared technology.",
     headline: "Thermal Assessment",
     intro:
-      "A thermal assessment uses advanced imaging technology to detect hidden issues within your property. It can reveal problems such as moisture intrusion, insulation gaps, electrical hotspots, air leaks, and inadequate insulation — allowing for early identification of issues before they become costly repairs or safety risks.",
+      "Professional-grade infrared imaging across walls, ceilings, electrical, and plumbing. Thermal anomalies reveal hidden moisture, insulation gaps, overheating circuits, and pipe leaks — issues a visual inspection can&apos;t see until they&apos;ve already caused damage.",
     images: [
       { src: "/images/thermal-leak-detection.webp", alt: "Thermal imaging detecting a ceiling leak — visible light inset with infrared overlay showing heat signatures" },
       { src: "/images/thermal-cold-spot.webp", alt: "Thermal scan revealing cold spots and insulation gaps in a room corner" },
@@ -893,7 +889,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Non-invasive — no need to open walls or floors",
     ],
     howWeDoDifferently:
-      "Our thermal assessments go beyond just taking infrared images. We correlate thermal anomalies with physical inspection findings to give you a complete diagnosis — not just a heat map.",
+      "Thermal images are correlated with moisture meter readings and physical inspection on the spot. You get a confirmed diagnosis of each anomaly, not a heat map and a guess.",
     differentiatorPoints: [
       "Professional-grade FLIR thermal imaging equipment",
       "Side-by-side thermal and visual photography for every finding",
@@ -935,7 +931,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       "Post-assessment consultation to discuss findings",
     ],
     turnaround:
-      "Reports delivered within 24–48 hours of assessment. Includes full thermal image library and expert analysis.",
+      "24–48 hours from scan, with the full thermal image library and side-by-side visual reference for every anomaly.",
     faqs: [
       {
         q: "What can thermal imaging actually detect?",
