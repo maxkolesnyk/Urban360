@@ -217,10 +217,10 @@ export default function AboutPageClient() {
           >
             <div className="relative h-full min-h-[480px] rounded-2xl overflow-hidden ring-1 ring-neutral-200/80">
               <Image
-                src="/images/about-inspector.webp"
+                src="/images/mark-profile.jpeg"
                 alt={`${SITE.founder}, ${SITE.founderTitle}`}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
