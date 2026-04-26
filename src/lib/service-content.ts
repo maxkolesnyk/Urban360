@@ -21,8 +21,8 @@ interface ServiceImage {
 
 export const SERVICE_HERO_IMAGES: Record<string, string> = {
   "pre-purchase-inspections": "/images/property-exterior-pool.webp",
-  "timber-pest-inspections": "/images/termite2.png",
-  "dilapidation-reports": "/images/dilapidation.jpg",
+  "timber-pest-inspections": "/images/termite2.webp",
+  "dilapidation-reports": "/images/dilapidation.webp",
   "owner-builder-defect-reports": "/images/construction-workers.webp",
   "rental-minimum-standards": "/images/property-interior-modern.webp",
   "new-construction-stage-inspections": "/images/construction-aerial.webp",

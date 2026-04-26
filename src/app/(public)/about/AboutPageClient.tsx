@@ -217,7 +217,7 @@ export default function AboutPageClient() {
           >
             <div className="relative h-full min-h-[480px] rounded-2xl overflow-hidden ring-1 ring-neutral-200/80">
               <Image
-                src="/images/mark-profile.jpeg"
+                src="/images/mark-profile.webp"
                 alt={`${SITE.founder}, ${SITE.founderTitle}`}
                 fill
                 className="object-cover object-top"
