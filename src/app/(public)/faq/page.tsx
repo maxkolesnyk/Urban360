@@ -9,11 +9,31 @@ export const metadata: Metadata = {
   title: "FAQ",
   description:
     "Frequently asked questions about building inspections in Melbourne. The inspection process, reports, pricing, and how Urban 360 works.",
+  alternates: { canonical: "/faq" },
+};
+
+const FAQ_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_CATEGORIES.flatMap((cat) =>
+    cat.questions.map((q) => ({
+      "@type": "Question",
+      name: q.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.a,
+      },
+    }))
+  ),
 };
 
 export default function FAQPage() {
   return (
     <div className="pt-[72px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSONLD) }}
+      />
       <Section>
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-5">
