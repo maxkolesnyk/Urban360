@@ -47,10 +47,8 @@ export default function Header() {
             className="group transition-opacity hover:opacity-80 flex items-center"
           >
             <Logo
-              className={cn(
-                "h-5 md:h-6 w-auto transition-all",
-                isDark && "brightness-0 invert"
-              )}
+              variant={isDark ? "dark" : "light"}
+              className="h-5 md:h-6 w-auto transition-all"
             />
           </Link>
 
